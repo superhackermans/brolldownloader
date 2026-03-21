@@ -36,8 +36,8 @@ QUALITY_THRESHOLDS = {
     "target_coverage_percentage": 98.0,
     "min_avg_relevance_score": 6.0,
     "max_era_mismatch_count": 0,
-    "min_broll_per_minute": 4.0,
-    "min_images_per_minute": 3.0,
+    "min_broll_per_minute": 8.0,
+    "min_images_per_minute": 6.0,
 }
 
 MAX_ITERATIONS = 3
