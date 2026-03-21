@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mega Tech Deals Ticker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0e1a;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    overflow: hidden;
+  }
+
+  #bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .scene {
+    position: relative;
+    z-index: 1;
+    width: 1100px;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .header-card {
+    background: rgba(8, 10, 22, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(74, 158, 247, 0.55);
+    border-radius: 20px;
+    padding: 36px 60px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+  }
+
+  .header-card h1 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+
+  .header-card p {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+
+  .deals-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .deal-item {
+    background: rgba(8, 10, 22, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 28px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+  }
+
+  .deal-item.deal-1 { border-color: rgba(74, 158, 247, 0.55); }
+  .deal-item.deal-2 { border-color: rgba(45, 212, 168, 0.55); }
+  .deal-item.deal-3 { border-color: rgba(255, 107, 122, 0.55); }
+
+  .deal-names {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex: 1;
+  }
+
+  .company-logo {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    width: 140px;
+    color: #ffffff;
+  }
+
+  .company-logo.seller { color: #4A9EF7; }
+  .company-logo.buyer { color: #5BAAFF; }
+
+  .arrow-icon {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+  }
+
+  .deal-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    min-width: 160px;
+    text-align: right;
+  }
+
+  .deal-value.gold { color: #F7C948; }
+  .deal-value.green { color: #2DD4A8; }
+  .deal-value.coral { color: #FF6B7A; }
+</style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+  <source src="Wavy Grid Background.mp4" type="video/mp4">
+</video>
+
+<div class="scene">
+
+  <div class="header-card" id="headerCard">
+    <h1>Mega Tech Deals</h1>
+    <p>Largest M&A Transactions (past 2 decades)</p>
+  </div>
+
+  <div class="deals-container">
+    <div class="deal-item deal-1" id="deal1">
+      <div class="deal-names">
+        <div class="company-logo seller">NXP</div>
+        <div class="arrow-icon">→</div>
+        <div class="company-logo buyer">Qualcomm</div>
+      </div>
+      <div class="deal-value gold">$47B</div>
+    </div>
+
+    <div class="deal-item deal-2" id="deal2">
+      <div class="deal-names">
+        <div class="company-logo seller">Ansys</div>
+        <div class="arrow-icon">→</div>
+        <div class="company-logo buyer">Synopsys</div>
+      </div>
+      <div class="deal-value green">$32B</div>
+    </div>
+
+    <div class="deal-item deal-3" id="deal3">
+      <div class="deal-names">
+        <div class="company-logo seller">LinkedIn</div>
+        <div class="arrow-icon">→</div>
+        <div class="company-logo buyer">Microsoft</div>
+      </div>
+      <div class="deal-value coral">$26B</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// === ANIMATION HELPERS ===
+
+function jsFadeIn(el, duration, translateFrom) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.opacity = String(e);
+    if (translateFrom !== undefined) {
+      el.style.transform = 'translateY(' + (translateFrom * (1 - e)) + 'px)';
+    }
+    if (p >= 1) {
+      clearInterval(iv);
+      el.style.opacity = '1';
+      if (translateFrom !== undefined) el.style.transform = 'translateY(0)';
+    }
+  }, 16);
+}
+
+function jsFadeOpacity(el, duration, fromVal, toVal) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.opacity = String(fromVal + (toVal - fromVal) * e);
+    if (p >= 1) { clearInterval(iv); el.style.opacity = String(toVal); }
+  }, 16);
+}
+
+// === ANIMATION TIMELINE ===
+// 100ms:  header fades in (500ms)
+// 700ms:  deal1 slides up (450ms)
+// 1200ms: deal2 slides up (450ms)
+// 1700ms: deal3 slides up (450ms)
+// 2300ms: all visible, hold until end
+
+setTimeout(() => jsFadeIn(document.getElementById('headerCard'), 500, -20), 100);
+setTimeout(() => jsFadeIn(document.getElementById('deal1'), 450, 28), 700);
+setTimeout(() => jsFadeIn(document.getElementById('deal2'), 450, 28), 1200);
+setTimeout(() => jsFadeIn(document.getElementById('deal3'), 450, 28), 1700);
+</script>
+</body>
+</html>

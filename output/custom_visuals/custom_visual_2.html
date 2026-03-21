@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSFB IPO Rankings Rise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0e1a;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    overflow: hidden;
+  }
+
+  #bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .scene {
+    position: relative;
+    z-index: 1;
+    width: 1100px;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+  }
+
+  .header {
+    text-align: center;
+    opacity: 0;
+  }
+
+  .header h1 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .header p {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    width: 100%;
+    max-width: 880px;
+  }
+
+  .metric-box {
+    background: rgba(8, 10, 22, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+  }
+
+  .metric-box.featured {
+    border-color: rgba(247, 201, 72, 0.55);
+    background: rgba(247, 201, 72, 0.06);
+  }
+
+  .metric-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 16px;
+  }
+
+  .metric-comparison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .year-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .year-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0.7;
+  }
+
+  .year-value {
+    font-size: 42px;
+    font-weight: 800;
+    color: #F7C948;
+    line-height: 1;
+  }
+
+  .arrow-comparison {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .growth-indicator {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2DD4A8;
+    letter-spacing: 0.5px;
+  }
+
+  .divider-line {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 20px 0;
+  }
+
+  .metric-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+  }
+</style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+  <source src="Wavy Grid Background.mp4" type="video/mp4">
+</video>
+
+<div class="scene">
+
+  <div class="header" id="header">
+    <h1>Credit Suisse First Boston — IPO Rise</h1>
+    <p>1998–2000 &nbsp;·&nbsp; Impact of Quattrone's Tech Group</p>
+  </div>
+
+  <div class="metrics-grid">
+    <div class="metric-box featured" id="rankBox">
+      <div class="metric-label">IPO Ranking</div>
+      <div class="metric-comparison">
+        <div class="year-block">
+          <div class="year-label">1998</div>
+          <div class="year-value">8</div>
+        </div>
+        <div class="arrow-comparison">→</div>
+        <div class="year-block">
+          <div class="year-label">2000</div>
+          <div class="year-value" style="color: #4A9EF7;">1</div>
+        </div>
+      </div>
+      <div class="growth-indicator">↑ #1 in Tech Underwriting</div>
+      <div class="divider-line"></div>
+      <div class="metric-subtitle">Led more IPOs than Goldman & Morgan Stanley combined</div>
+    </div>
+
+    <div class="metric-box featured" id="feesBox">
+      <div class="metric-label">IPO Fees (USD)</div>
+      <div class="metric-comparison">
+        <div class="year-block">
+          <div class="year-label">1998</div>
+          <div class="year-value">$203M</div>
+        </div>
+        <div class="arrow-comparison">→</div>
+        <div class="year-block">
+          <div class="year-label">2000</div>
+          <div class="year-value" style="color: #FF6B7A;">$686M</div>
+        </div>
+      </div>
+      <div class="growth-indicator">↑ 3.4x Growth</div>
+      <div class="divider-line"></div>
+      <div class="metric-subtitle">Tripled fee generation in 24 months</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// === ANIMATION HELPERS ===
+
+function jsFadeIn(el, duration, translateFrom) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.opacity = String(e);
+    if (translateFrom !== undefined) {
+      el.style.transform = 'translateY(' + (translateFrom * (1 - e)) + 'px)';
+    }
+    if (p >= 1) {
+      clearInterval(iv);
+      el.style.opacity = '1';
+      if (translateFrom !== undefined) el.style.transform = 'translateY(0)';
+    }
+  }, 16);
+}
+
+function jsFadeOpacity(el, duration, fromVal, toVal) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.opacity = String(fromVal + (toVal - fromVal) * e);
+    if (p >= 1) { clearInterval(iv); el.style.opacity = String(toVal); }
+  }, 16);
+}
+
+// === ANIMATION TIMELINE ===
+// 100ms:  header fades in (450ms)
+// 600ms:  rank metric box fades in from left (500ms)
+// 1150ms: fees metric box fades in from right (500ms)
+// 1800ms: all visible, hold
+
+setTimeout(() => jsFadeIn(document.getElementById('header'), 450, -18), 100);
+setTimeout(() => jsFadeIn(document.getElementById('rankBox'), 500, 24), 600);
+setTimeout(() => jsFadeIn(document.getElementById('feesBox'), 500, 24), 1150);
+</script>
+</body>
+</html>
