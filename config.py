@@ -16,6 +16,9 @@ CLAUDE_MAX_TOKENS = 16384
 # YouTube settings
 YOUTUBE_RESULTS_PER_QUERY = 5
 MAX_TRANSCRIPT_LENGTH = 50000
+MIN_VIEW_COUNT = 1000
+MAX_SHORT_DURATION = 60  # seconds; videos <= this are considered Shorts
+COOKIES_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config', 'www.youtube.com_cookies.txt')
 
 # Image settings
 MIN_IMAGE_WIDTH = 1280

@@ -2,6 +2,12 @@
 API tools for the B-Roll Bot. These handle ONLY external API calls and file I/O.
 All LLM reasoning is done by the cowork Claude instance directly.
 
+Video filtering:
+  - YouTube Shorts (<=60s) are automatically excluded
+  - Videos with fewer than 1000 views are automatically excluded
+  - Metadata (duration, view count) is fetched via yt-dlp with cookies
+  - Cookies file: config/www.youtube.com_cookies.txt
+
 Usage from cowork:
   python3 api_tools.py youtube_search "Frank Quattrone interview"
   python3 api_tools.py youtube_transcript VIDEO_ID
@@ -16,7 +22,44 @@ import json
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from config import YOUTUBE_API_KEY, GOOGLE_CSE_API_KEY, GOOGLE_CSE_ID
+from config import YOUTUBE_API_KEY, GOOGLE_CSE_API_KEY, GOOGLE_CSE_ID, COOKIES_PATH, MIN_VIEW_COUNT, MAX_SHORT_DURATION
+
+
+def _get_video_metadata(video_id: str) -> dict | None:
+    """Use yt-dlp with cookies to fetch video metadata (duration, view count)."""
+    import subprocess
+    url = f'https://www.youtube.com/watch?v={video_id}'
+    cmd = [
+        'yt-dlp',
+        '--cookies', COOKIES_PATH,
+        '--skip-download',
+        '--print', '%(duration)s',
+        '--print', '%(view_count)s',
+        '--no-warnings',
+        url
+    ]
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=15)
+        lines = result.stdout.strip().split('\n')
+        if len(lines) >= 2:
+            duration = int(float(lines[0])) if lines[0] and lines[0] != 'NA' else None
+            view_count = int(float(lines[1])) if lines[1] and lines[1] != 'NA' else None
+            return {'duration': duration, 'view_count': view_count}
+    except Exception:
+        pass
+    return None
+
+
+def _is_eligible_video(video_id: str) -> bool:
+    """Return False for Shorts (<=60s) or videos under 1000 views."""
+    meta = _get_video_metadata(video_id)
+    if meta is None:
+        return True  # allow if we can't fetch metadata
+    if meta['duration'] is not None and meta['duration'] <= MAX_SHORT_DURATION:
+        return False
+    if meta['view_count'] is not None and meta['view_count'] < MIN_VIEW_COUNT:
+        return False
+    return True
 
 
 def youtube_search(query: str, max_results: int = 5) -> list[dict]:
@@ -29,9 +72,12 @@ def youtube_search(query: str, max_results: int = 5) -> list[dict]:
         ).execute()
         results = []
         for item in response.get('items', []):
+            vid_id = item['id']['videoId']
+            if not _is_eligible_video(vid_id):
+                continue
             results.append({
-                'video_id': item['id']['videoId'],
-                'url': f"https://www.youtube.com/watch?v={item['id']['videoId']}",
+                'video_id': vid_id,
+                'url': f"https://www.youtube.com/watch?v={vid_id}",
                 'title': item['snippet']['title'],
                 'channel': item['snippet']['channelTitle'],
                 'description': item['snippet']['description'][:200],
@@ -159,6 +205,9 @@ def batch_youtube_search(queries_file: str, output_file: str):
                 continue
             vid_id = r.get("video_id", "")
             if vid_id in seen_ids:
+                continue
+            if not _is_eligible_video(vid_id):
+                seen_ids.add(vid_id)
                 continue
             seen_ids.add(vid_id)
             r["entity"] = entity
