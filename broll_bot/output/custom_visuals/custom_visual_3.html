@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qatalyst Deal Stats Comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0e1a;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    overflow: hidden;
+  }
+
+  #bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .scene {
+    position: relative;
+    z-index: 1;
+    width: 1100px;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 36px;
+    gap: 40px;
+  }
+
+  .header {
+    text-align: center;
+    opacity: 0;
+  }
+
+  .header h1 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .header p {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+
+  .comparison-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .stat-card {
+    background: rgba(8, 10, 22, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+  }
+
+  .stat-card.qatalyst-2023 { border-color: rgba(74, 158, 247, 0.55); }
+  .stat-card.qatalyst-2024 { border-color: rgba(45, 212, 168, 0.55); }
+  .stat-card.goldman { border-color: rgba(255, 107, 122, 0.55); }
+
+  .card-year {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 12px;
+  }
+
+  .card-company {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .stat-value {
+    font-size: 36px;
+    font-weight: 800;
+    color: #F7C948;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 16px 0;
+  }
+
+  .per-deal-stat {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2DD4A8;
+    margin-top: 8px;
+  }
+
+  .per-deal-label {
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .goldman-stat-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: #FF6B7A;
+  }
+
+  .goldman-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 12px;
+  }
+</style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+  <source src="Wavy Grid Background.mp4" type="video/mp4">
+</video>
+
+<div class="scene">
+
+  <div class="header" id="header">
+    <h1>Qatalyst Performance Evolution</h1>
+    <p>Year-over-Year Deal Volume & Metrics</p>
+  </div>
+
+  <div class="comparison-container">
+    <div class="stat-card qatalyst-2023" id="card2023">
+      <div class="card-year">2023</div>
+      <div class="card-company">Qatalyst Partners</div>
+      <div class="stat-value">$61B</div>
+      <div class="stat-label">Total Volume</div>
+      <div class="divider"></div>
+      <div class="stat-value" style="font-size: 28px;">9</div>
+      <div class="stat-label">Deals Closed</div>
+      <div class="per-deal-stat">$6.8B</div>
+      <div class="per-deal-label">Per Deal Average</div>
+    </div>
+
+    <div class="stat-card qatalyst-2024" id="card2024">
+      <div class="card-year">2024</div>
+      <div class="card-company">Qatalyst Partners</div>
+      <div class="stat-value">$95B</div>
+      <div class="stat-label">Total Volume</div>
+      <div class="divider"></div>
+      <div class="stat-value" style="font-size: 28px;">14</div>
+      <div class="stat-label">Deals Closed</div>
+      <div class="per-deal-stat">$6.8B</div>
+      <div class="per-deal-label">Per Deal Average</div>
+    </div>
+
+    <div class="stat-card goldman" id="cardGoldman">
+      <div class="card-year">For Context</div>
+      <div class="card-company">Goldman Sachs</div>
+      <div class="goldman-stat-value">$3B</div>
+      <div class="goldman-label">Average Per Deal Value</div>
+      <div class="divider"></div>
+      <div style="font-size: 12px; color: rgba(255, 255, 255, 0.7); line-height: 1.6; margin-top: 16px;">
+        Qatalyst's per-deal average is <span style="color: #2DD4A8; font-weight: 700;">2.3x larger</span> than Goldman's, despite Goldman having significantly larger team
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// === ANIMATION HELPERS ===
+
+function jsFadeIn(el, duration, translateFrom) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.opacity = String(e);
+    if (translateFrom !== undefined) {
+      el.style.transform = 'translateY(' + (translateFrom * (1 - e)) + 'px)';
+    }
+    if (p >= 1) {
+      clearInterval(iv);
+      el.style.opacity = '1';
+      if (translateFrom !== undefined) el.style.transform = 'translateY(0)';
+    }
+  }, 16);
+}
+
+function jsFadeOpacity(el, duration, fromVal, toVal) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.opacity = String(fromVal + (toVal - fromVal) * e);
+    if (p >= 1) { clearInterval(iv); el.style.opacity = String(toVal); }
+  }, 16);
+}
+
+// === ANIMATION TIMELINE ===
+// 100ms:  header fades in (450ms)
+// 600ms:  2023 card fades in from left (480ms)
+// 1120ms: 2024 card fades in from center (480ms)
+// 1640ms: Goldman card fades in from right (480ms)
+// 2250ms: all visible, hold
+
+setTimeout(() => jsFadeIn(document.getElementById('header'), 450, -18), 100);
+setTimeout(() => jsFadeIn(document.getElementById('card2023'), 480, 28), 600);
+setTimeout(() => jsFadeIn(document.getElementById('card2024'), 480, 28), 1120);
+setTimeout(() => jsFadeIn(document.getElementById('cardGoldman'), 480, 28), 1640);
+</script>
+</body>
+</html>

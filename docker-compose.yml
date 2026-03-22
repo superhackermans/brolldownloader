@@ -1,0 +1,17 @@
+services:
+  # ── Claude Code Agent Container ────────────────────────────────────────
+  claude:
+    build:
+      context: .
+      dockerfile: Dockerfile.claude
+    env_file: .env
+    volumes:
+      - .:/workspace
+      - claude-auth:/home/claude/.claude
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+
+volumes:
+  claude-auth:
+    name: claude-auth-${COMPOSE_PROJECT_NAME:-default}

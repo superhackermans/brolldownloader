@@ -1,0 +1,2838 @@
+{
+  "summary": {
+    "total_videos": 328,
+    "existing_videos": 18,
+    "new_videos_added": 310,
+    "search_method": "yt-dlp",
+    "filters": {
+      "min_views": 1000,
+      "min_duration_seconds": 60,
+      "quality_keywords": [
+        "documentary",
+        "interview",
+        "CNBC",
+        "Bloomberg",
+        "news"
+      ],
+      "excluded_keywords": [
+        "trailer",
+        "movie clip",
+        "animated",
+        "cartoon",
+        "fictional"
+      ]
+    }
+  },
+  "existing_video_ids": [
+    "06ChbedZuvA",
+    "073uKAH_Ibs",
+    "0QMgb7p6-SE",
+    "41S8Gd_u5KU",
+    "5uj5GILfl_I",
+    "8LYBjpmjB4k",
+    "8uklaIRJYYM",
+    "AeKnw4awmQY",
+    "At1hnVKMoMs",
+    "HaQu_XcHYnI",
+    "M0QcqrWSrTc",
+    "aL9YzkZ2lt0",
+    "c7-0bCrG7ys",
+    "eAwY9Z3G_bo",
+    "ex3wCwZl2kg",
+    "foDmbiR2kH8",
+    "npa-8GIfo8Q",
+    "qAyCWU04mK4"
+  ],
+  "new_videos": [
+    {
+      "video_id": "bluUxKIB4pA",
+      "title": "Stock Market Crash of 2008",
+      "channel": "Danny Cheek",
+      "description": "Many companies went into bankruptcy, including bank giant Lehman Brothers, and many others were damaged for many years to\u00a0...",
+      "view_count": 14257883,
+      "duration_seconds": 193.0,
+      "url": "https://www.youtube.com/watch?v=bluUxKIB4pA"
+    },
+    {
+      "video_id": "fTTGALaRZoc",
+      "title": "Banking Explained \u2013 Money and Credit",
+      "channel": "Kurzgesagt \u2013 In a Nutshell",
+      "description": "Banks are a riddle wrapped up in an enigma. We all kind of know that they do stuff with money we don't understand, while the last\u00a0...",
+      "view_count": 10794051,
+      "duration_seconds": 370.0,
+      "url": "https://www.youtube.com/watch?v=fTTGALaRZoc"
+    },
+    {
+      "video_id": "9GumiLIxLMM",
+      "title": "How Millionaire Bankers Actually Work | Authorized Account | Insider",
+      "channel": "Insider",
+      "description": "Gary Stevenson, the author of \u201cThe Trading Game,\u201d spent his early 20s trading trillions of dollars for Citibank in London and Tokyo\u00a0...",
+      "view_count": 10558251,
+      "duration_seconds": 2343.0,
+      "url": "https://www.youtube.com/watch?v=9GumiLIxLMM"
+    },
+    {
+      "video_id": "W-Q9AOp2FW8",
+      "title": "Money, Power and Wall Street, Part One (full documentary) | FRONTLINE",
+      "channel": "FRONTLINE PBS | Official",
+      "description": "... Power and Wall Street, FRONTLINE tells the story of the struggles to repair the economy after the 2008 financial crisis, exploring\u00a0...",
+      "view_count": 7498457,
+      "duration_seconds": 3199.0,
+      "url": "https://www.youtube.com/watch?v=W-Q9AOp2FW8"
+    },
+    {
+      "video_id": "C6eXTvqdaro",
+      "title": "A Once in a Lifetime Crash Is Coming (3 Warning Signs)",
+      "channel": "Mark Tilbury",
+      "description": "https://www.youtube.com/watch?v=6zb99U-_43M Join The Waitlist: http://www.thewealthportal.com History is repeating itself\u00a0...",
+      "view_count": 5744260,
+      "duration_seconds": 907.0,
+      "url": "https://www.youtube.com/watch?v=C6eXTvqdaro"
+    },
+    {
+      "video_id": "pn548uALuYw",
+      "title": "The Ex-Banker on Cocaine Binges & \u00a3600k Bonuses | Informer",
+      "channel": "VICE",
+      "description": "0:00 Intro 0:43 History as an Investment Banker 1:25 Salary 2:00 Drugs in Banking 2:50 The \"Perfect\" Job for a Psychopath 3:33\u00a0...",
+      "view_count": 5508209,
+      "duration_seconds": 390.0,
+      "url": "https://www.youtube.com/watch?v=pn548uALuYw"
+    },
+    {
+      "video_id": "oX7OduG1YmI",
+      "title": "The Future Mark Zuckerberg Is Trying To Build",
+      "channel": "Cleo Abram",
+      "description": "The Huge Conversation with Mark Zuckerberg... I interviewed Meta CEO Mark Zuckerberg before Connect. There are not many\u00a0...",
+      "view_count": 5235469,
+      "duration_seconds": 2830.0,
+      "url": "https://www.youtube.com/watch?v=oX7OduG1YmI"
+    },
+    {
+      "video_id": "Ch77I8xoUMs",
+      "title": "Margin Call (2011) - Fire Sale of Mortgage Bonds (Wall Street Investment Bank Trading) [HD 1080p]",
+      "channel": "Extractor",
+      "description": "\"...so today looks like my loss is your gain.\"",
+      "view_count": 4936671,
+      "duration_seconds": 142.0,
+      "url": "https://www.youtube.com/watch?v=Ch77I8xoUMs"
+    },
+    {
+      "video_id": "TpCb3xjh-Kk",
+      "title": "The Big Short (2015) - \"Ali vs Foreman\" of the Financial World [HD 1080p]",
+      "channel": "Extractor",
+      "description": "\"It's that for 15000 years fraud and short-sighted thinking have never, ever worked. Not once. Eventually, people get caught, things\u00a0...",
+      "view_count": 4826780,
+      "duration_seconds": 280.0,
+      "url": "https://www.youtube.com/watch?v=TpCb3xjh-Kk"
+    },
+    {
+      "video_id": "PXgUea6JVcI",
+      "title": "Why Goldman Sachs Went From Investing For The Rich To Targeting Everyone",
+      "channel": "CNBC",
+      "description": "Goldman Sachs, the Wall Street investment bank, has a storied history. Founded by Marcus Goldman 150 years ago, his son\u00a0...",
+      "view_count": 4733176,
+      "duration_seconds": 1432.0,
+      "url": "https://www.youtube.com/watch?v=PXgUea6JVcI"
+    },
+    {
+      "video_id": "7ARBJQn6QkM",
+      "title": "NVIDIA CEO Jensen Huang's Vision for the Future",
+      "channel": "Cleo Abram",
+      "description": "What NVIDIA is trying to build next\u2026 Subscribe for more optimistic science and tech stories from our show Huge If True. You're\u00a0...",
+      "view_count": 4712939,
+      "duration_seconds": 3783.0,
+      "url": "https://www.youtube.com/watch?v=7ARBJQn6QkM"
+    },
+    {
+      "video_id": "QCVxQ_3Ejkg",
+      "title": "A Message From Chad and Steve",
+      "channel": "YouTube",
+      "description": "The YouTube founders talk about the Google acquisition.",
+      "view_count": 4693173,
+      "duration_seconds": 97.0,
+      "url": "https://www.youtube.com/watch?v=QCVxQ_3Ejkg"
+    },
+    {
+      "video_id": "1QeUcfqkUzc",
+      "title": "Why Warren Buffett Said No to Lehman and AIG in 2008",
+      "channel": "The Wall Street Journal",
+      "description": "Warren Buffett's Berkshire Hathaway is famous on Wall Street for having the cash to make deals happen, even during a crisis.",
+      "view_count": 4608973,
+      "duration_seconds": 303.0,
+      "url": "https://www.youtube.com/watch?v=1QeUcfqkUzc"
+    },
+    {
+      "video_id": "hmtuvNfytjM",
+      "title": "Sam Altman Shows Me GPT 5... And What's Next",
+      "channel": "Cleo Abram",
+      "description": "We're about to time travel into the future Sam Altman is building\u2026 Subscribe for more optimistic science and tech stories.",
+      "view_count": 4526085,
+      "duration_seconds": 3907.0,
+      "url": "https://www.youtube.com/watch?v=hmtuvNfytjM"
+    },
+    {
+      "video_id": "B4TWN54KqfQ",
+      "title": "The Untouchables (full documentary) | FRONTLINE",
+      "channel": "FRONTLINE PBS | Official",
+      "description": "FRONTLINE investigates why Wall Street's leaders escaped prosecution for any fraud related to the sale of bad mortgages.",
+      "view_count": 4432635,
+      "duration_seconds": 3198.0,
+      "url": "https://www.youtube.com/watch?v=B4TWN54KqfQ"
+    },
+    {
+      "video_id": "AkHbB9GuCkE",
+      "title": "Jamie Dimon - The Most Powerful Banker in America | Full Documentary",
+      "channel": "FINAiUS",
+      "description": "Invest in blue-chip art for the very first time by signing up for #Masterworks: https://masterworks.art/finaius After falling twice to rock\u00a0...",
+      "view_count": 3836842,
+      "duration_seconds": 2072.0,
+      "url": "https://www.youtube.com/watch?v=AkHbB9GuCkE"
+    },
+    {
+      "video_id": "_s42gOg2WSU",
+      "title": "Suits - Investment bankers",
+      "channel": "Axel Seger",
+      "description": "The lawyers in Suits for once being outsmarted.",
+      "view_count": 3654861,
+      "duration_seconds": 128.0,
+      "url": "https://www.youtube.com/watch?v=_s42gOg2WSU"
+    },
+    {
+      "video_id": "RpUJfW4WTKw",
+      "title": "\"Are You Destined to Deal?\" With Goldman Sachs Managing Director Jim Donovan",
+      "channel": "University of Virginia School of Law",
+      "description": "James Donovan, Goldman Sachs managing director and adjunct professor at the University of Virginia School of Law, talks to\u00a0...",
+      "view_count": 3542922,
+      "duration_seconds": 2012.0,
+      "url": "https://www.youtube.com/watch?v=RpUJfW4WTKw"
+    },
+    {
+      "video_id": "06kJXhOZhLU",
+      "title": "What do investment bankers actually do?",
+      "channel": "Good Work",
+      "description": "... Spencer Wright, who both have partners who are investment bankers. JOIN GOOD WORK'S PATREON FOR LIVE SHOWS AND\u00a0...",
+      "view_count": 3285441,
+      "duration_seconds": 552.0,
+      "url": "https://www.youtube.com/watch?v=06kJXhOZhLU"
+    },
+    {
+      "video_id": "Mb786mTZVHk",
+      "title": "Money, Power and Wall Street, Part Two (full documentary) | FRONTLINE",
+      "channel": "FRONTLINE PBS | Official",
+      "description": "... New York Federal Reserve President Timothy Geithner\u2014struggled to respond to a financial crisis that caught them by surprise.",
+      "view_count": 3223387,
+      "duration_seconds": 3198.0,
+      "url": "https://www.youtube.com/watch?v=Mb786mTZVHk"
+    },
+    {
+      "video_id": "x4F5gIWS_Is",
+      "title": "The Great Depression - America's Biggest Economic Crisis | Free Documentary History",
+      "channel": "Free Documentary - History",
+      "description": "The Great Depression - America's Biggest Economic Crisis | History Documentary Watch 'Robert F. Kennedy - America's Lost\u00a0...",
+      "view_count": 3199624,
+      "duration_seconds": 3283.0,
+      "url": "https://www.youtube.com/watch?v=x4F5gIWS_Is"
+    },
+    {
+      "video_id": "I14b-C67EXY",
+      "title": "Steve Ballmer Going Crazy on Stage",
+      "channel": "BestTechChannel",
+      "description": "Steve Ballmer Going Crazy on Stage Steven A. Ballmer is chief executive officer of Microsoft Corporation, the world's leading\u00a0...",
+      "view_count": 3175960,
+      "duration_seconds": 177.0,
+      "url": "https://www.youtube.com/watch?v=I14b-C67EXY"
+    },
+    {
+      "video_id": "3Pk8EmyK7kw",
+      "title": "\"The Making of an Investment Banker,\" With Jim Donovan",
+      "channel": "University of Virginia School of Law",
+      "description": "UVA Law adjunct professor Jim Donovan, vice chairman of global client coverage at Goldman Sachs, discusses what it takes to\u00a0...",
+      "view_count": 3013275,
+      "duration_seconds": 1143.0,
+      "url": "https://www.youtube.com/watch?v=3Pk8EmyK7kw"
+    },
+    {
+      "video_id": "w3Td67CdWNI",
+      "title": "What Happened To Dell?",
+      "channel": "CNBC",
+      "description": "Since its 1984 launch in Michael Dell's dorm , Dell has evolved from a PC maker to a $90 billion in revenue and services in\u00a0...",
+      "view_count": 2949241,
+      "duration_seconds": 746.0,
+      "url": "https://www.youtube.com/watch?v=w3Td67CdWNI"
+    },
+    {
+      "video_id": "HSVbD7RhOHU",
+      "title": "Former Netflix CEO: \u201cHard Work Does Not Matter!\u201d A $278 Billion Company Wasn\u2019t Built On Hard Work!",
+      "channel": "The Diary Of A CEO",
+      "description": "Marc Randolph is the co-founder and former CEO of Netflix, he is also the author of the international bestseller, 'That Will Never\u00a0...",
+      "view_count": 2714069,
+      "duration_seconds": 7267.0,
+      "url": "https://www.youtube.com/watch?v=HSVbD7RhOHU"
+    },
+    {
+      "video_id": "AevhunjCuWw",
+      "title": "The Men Who Stole the World (and got away with it)",
+      "channel": "Best Documentary",
+      "description": "They're bankers, traders, investment funds executives. They forgot all about morality to make money. The entire world had to\u00a0...",
+      "view_count": 2705290,
+      "duration_seconds": 3294.0,
+      "url": "https://www.youtube.com/watch?v=AevhunjCuWw"
+    },
+    {
+      "video_id": "k2VSSNECLTQ",
+      "title": "Warren Buffett Explains the 2008 Financial Crisis",
+      "channel": "The Wall Street Journal",
+      "description": "A decade after the financial crisis, billionaire investor Warren Buffett explains what was behind the 2008 mayhem, what we can do\u00a0...",
+      "view_count": 2563335,
+      "duration_seconds": 331.0,
+      "url": "https://www.youtube.com/watch?v=k2VSSNECLTQ"
+    },
+    {
+      "video_id": "rmVWId1Wg3k",
+      "title": "How America's Debt Spiral Could Spark The Next Crisis",
+      "channel": "CNBC",
+      "description": "Independent analyses, ranging from Yale University to the Wharton School to the Congressional Budget Office, have each said\u00a0...",
+      "view_count": 2357839,
+      "duration_seconds": 1164.0,
+      "url": "https://www.youtube.com/watch?v=rmVWId1Wg3k"
+    },
+    {
+      "video_id": "5MWT_doo68k",
+      "title": "OpenAI\u2019s Sam Altman Talks ChatGPT, AI Agents and Superintelligence \u2014 Live at TED2025",
+      "channel": "TED",
+      "description": "The AI revolution is here to stay, says Sam Altman, the CEO of OpenAI. In a probing, live conversation with head of TED Chris\u00a0...",
+      "view_count": 2235301,
+      "duration_seconds": 2850.0,
+      "url": "https://www.youtube.com/watch?v=5MWT_doo68k"
+    },
+    {
+      "video_id": "cYoF-NuKanQ",
+      "title": "C\u00f3mo Steve Jobs ARRUIN\u00d3 su vida (Y suplic\u00f3 para volver a Apple)",
+      "channel": "Nate Gentile",
+      "description": "GVGmall descuento de navidad: 20% suba a 30% Cup\u00f3n \u279e NG20 Windows 10 Pro (\u20ac13): https://biitt.ly/NG10 Windows 11 Pro\u00a0...",
+      "view_count": 2153248,
+      "duration_seconds": 2290.0,
+      "url": "https://www.youtube.com/watch?v=cYoF-NuKanQ"
+    },
+    {
+      "video_id": "O2pD_y61jx4",
+      "title": "The first modern financial crisis in the globalized world | DW Documentary",
+      "channel": "DW Documentary",
+      "description": "When the Asian financial crisis hit, it was something the world hadn't seen since the 1930s. For the first time since World War II,\u00a0...",
+      "view_count": 2113637,
+      "duration_seconds": 2547.0,
+      "url": "https://www.youtube.com/watch?v=O2pD_y61jx4"
+    },
+    {
+      "video_id": "Gk-9Fd2mEnI",
+      "title": "Steve Jobs President & CEO, NeXT Computer Corp and Apple. MIT Sloan Distinguished Speaker Series",
+      "channel": "MIT Video Productions",
+      "description": "Please Subscribe! http://www.youtube.com/c/MITVideoProductions?sub_confirmation=1 Steve Jobs, one of the computer\u00a0...",
+      "view_count": 1879851,
+      "duration_seconds": 4374.0,
+      "url": "https://www.youtube.com/watch?v=Gk-9Fd2mEnI"
+    },
+    {
+      "video_id": "zQ1POHiR8m8",
+      "title": "Godfather of AI: We Have 2 Years Before Everything Changes!",
+      "channel": "The Diary Of A CEO",
+      "description": "20:20 Why Are Tech CEOs Building Dangerous AI? 22:34 AI Companies Are Getting Out of Control 23:53 Attempts to Pause\u00a0...",
+      "view_count": 1850136,
+      "duration_seconds": 5987.0,
+      "url": "https://www.youtube.com/watch?v=zQ1POHiR8m8"
+    },
+    {
+      "video_id": "7rKeXl9VJXI",
+      "title": "WTF Did Lehman Brothers Actually Do?",
+      "channel": "How History Works",
+      "description": "To try everything Brilliant has to offer for free for a full 30 days, visit http://www.brilliant.org/howhistoryworks. You'll also get 20% off\u00a0...",
+      "view_count": 1781938,
+      "duration_seconds": 1741.0,
+      "url": "https://www.youtube.com/watch?v=7rKeXl9VJXI"
+    },
+    {
+      "video_id": "sYmGNetu-UU",
+      "title": "Breaking the Bank (full documentary) | FRONTLINE",
+      "channel": "FRONTLINE PBS | Official",
+      "description": "... Lehman Brothers' Bankruptcy and the 2008 Financial Crisis - 22:50 The U.S. Government's Role in the Bank of America-Merrill\u00a0...",
+      "view_count": 1749155,
+      "duration_seconds": 3259.0,
+      "url": "https://www.youtube.com/watch?v=sYmGNetu-UU"
+    },
+    {
+      "video_id": "R-dVnHrmPA0",
+      "title": "Goldman Sachs: The Most Evil Bankers in the World",
+      "channel": "Jake Tran",
+      "description": "Do you watch YouTube? if you do, here's how to turn your passion into an extra income from YouTube, without ever showing your\u00a0...",
+      "view_count": 1732340,
+      "duration_seconds": 961.0,
+      "url": "https://www.youtube.com/watch?v=R-dVnHrmPA0"
+    },
+    {
+      "video_id": "4qs_Ca_aaNk",
+      "title": "The Wall Street Crash",
+      "channel": "The History Room",
+      "description": "This BBC documentary from 2009 takes a fresh view of the 'Crash of 1929' and the subsequent global Depression, comparing\u00a0...",
+      "view_count": 1731117,
+      "duration_seconds": 3505.0,
+      "url": "https://www.youtube.com/watch?v=4qs_Ca_aaNk"
+    },
+    {
+      "video_id": "ugjhVHcYbMU",
+      "title": "Apple vs. Banks: The Digital-Wallet War, Explained | WSJ",
+      "channel": "The Wall Street Journal",
+      "description": "Digital wallets like Apple Pay are continuing to grow in popularity. Banks are worried they're losing ground to tech companies\u00a0...",
+      "view_count": 1656519,
+      "duration_seconds": 331.0,
+      "url": "https://www.youtube.com/watch?v=ugjhVHcYbMU"
+    },
+    {
+      "video_id": "9F_sxkSHmCo",
+      "title": "The American Nightmare: 10 Years After the Financial Crisis | Full Documentary",
+      "channel": "The Penny Hoarder",
+      "description": "Read the story: https://www.thepennyhoarder.com/subprime-mortgage-crisis/ Ten years after the housing crisis, many people\u00a0...",
+      "view_count": 1586781,
+      "duration_seconds": 2522.0,
+      "url": "https://www.youtube.com/watch?v=9F_sxkSHmCo"
+    },
+    {
+      "video_id": "iMUaIUqpd7Q",
+      "title": "This is What \u201cAlways\u201d Happens Before a Market Crash",
+      "channel": "Fin Tek",
+      "description": "... warning signs that have shown up before every major crash in history, including the 2008 financial crisis, the Dot Com Bubble,\u00a0...",
+      "view_count": 1576485,
+      "duration_seconds": 1306.0,
+      "url": "https://www.youtube.com/watch?v=iMUaIUqpd7Q"
+    },
+    {
+      "video_id": "fsSCnYPyb1A",
+      "title": "Stories from 2008's Great Recession | 60 Minutes Full Episodes",
+      "channel": "60 Minutes",
+      "description": "From March 2009, Scott Pelley's report on bank failures. From April 2012, Steve Kroft's report on Lehman Brothers. From October\u00a0...",
+      "view_count": 1523402,
+      "duration_seconds": 3096.0,
+      "url": "https://www.youtube.com/watch?v=fsSCnYPyb1A"
+    },
+    {
+      "video_id": "-ueUb6PNwbs",
+      "title": "Design is how it works | Apple",
+      "channel": "Apple",
+      "description": "Most people make the mistake of thinking design is what it looks like\u2026 Design is not just what it looks like and feels like. Design is\u00a0...",
+      "view_count": 1360832,
+      "duration_seconds": 96.0,
+      "url": "https://www.youtube.com/watch?v=-ueUb6PNwbs"
+    },
+    {
+      "video_id": "BnDbdQa_r38",
+      "title": "The Collapse of Lehman Brothers  - A Simple Overview",
+      "channel": "Company Man",
+      "description": "The Lehman Brothers bankruptcy is the largest one of all time and it helped spark the 2008 financial crisis. The subject can be a\u00a0...",
+      "view_count": 1310815,
+      "duration_seconds": 775.0,
+      "url": "https://www.youtube.com/watch?v=BnDbdQa_r38"
+    },
+    {
+      "video_id": "J5Npf2xJpag",
+      "title": "Goldman Sachs - Company that Ruled the World | 2023 Documentary",
+      "channel": "FINAiUS",
+      "description": "We fund skilled traders \u2014 $100K+ capital, 80% profit split. Apply now: https://fcm.finaius.com/signup (Code Finaius for 10% off\u00a0...",
+      "view_count": 1283595,
+      "duration_seconds": 2118.0,
+      "url": "https://www.youtube.com/watch?v=J5Npf2xJpag"
+    },
+    {
+      "video_id": "f8V4XhtQ4H8",
+      "title": "John Sculley On How Steve Jobs Got Fired From Apple | Forbes",
+      "channel": "Forbes",
+      "description": "On Thursday, Sculley gave perhaps his fullest public account ever of the circumstances surrounding Apple's firing of Steve Jobs.",
+      "view_count": 1280704,
+      "duration_seconds": 483.0,
+      "url": "https://www.youtube.com/watch?v=f8V4XhtQ4H8"
+    },
+    {
+      "video_id": "AKxPIWTQYys",
+      "title": "At Home With the Billionaire CEO Behind Airbnb | The Circuit",
+      "channel": "Bloomberg Originals",
+      "description": "On this episode of The Circuit, Emily Chang visits Airbnb CEO Brian Chesky while he plays host in his San Francisco home.",
+      "view_count": 1271780,
+      "duration_seconds": 1442.0,
+      "url": "https://www.youtube.com/watch?v=AKxPIWTQYys"
+    },
+    {
+      "video_id": "V64TdrkhTqo",
+      "title": "Oracle is Genuinely Far Scarier Than Blackrock",
+      "channel": "How Money Works",
+      "description": "Upgrade your workflow with Plaud.Official Store: Plaud Note: https://bit.ly/4mwl7Hs Plaud Note Pro: https://bit.ly/4gFVGSG Use\u00a0...",
+      "view_count": 1260819,
+      "duration_seconds": 721.0,
+      "url": "https://www.youtube.com/watch?v=V64TdrkhTqo"
+    },
+    {
+      "video_id": "ZZ25uZtey34",
+      "title": "Before the Great Recession, \u201cThe Warning\u201d (full documentary)",
+      "channel": "FRONTLINE PBS | Official",
+      "description": "Long before the economic meltdown in the U.S. that led to the Great Recession, one woman tried to raise the alarm about the\u00a0...",
+      "view_count": 1226022,
+      "duration_seconds": 3275.0,
+      "url": "https://www.youtube.com/watch?v=ZZ25uZtey34"
+    },
+    {
+      "video_id": "eVu99Mr45H8",
+      "title": "INVESTMENT BANKING EXPLAINED | Introduction, History, Lifestyle",
+      "channel": "Fortunly",
+      "description": "How exactly investment banker's lifestyle looks - is it all expensive suits, dinners and champagne or is there a dark side to it?",
+      "view_count": 1197848,
+      "duration_seconds": 398.0,
+      "url": "https://www.youtube.com/watch?v=eVu99Mr45H8"
+    },
+    {
+      "video_id": "IyZibzepq-A",
+      "title": "ETHAN - Single In The Club (Official Music Video)",
+      "channel": "ETHAN",
+      "description": "... James Clough George Boutros Trevor Wright Natalia Sanchez Kleber Antonio Gordillo Andrade Luis Fernando Mancheno Alex\u00a0...",
+      "view_count": 1172911,
+      "duration_seconds": 145.0,
+      "url": "https://www.youtube.com/watch?v=IyZibzepq-A"
+    },
+    {
+      "video_id": "0Wg-tEn7UYg",
+      "title": "The Real Steve Jobs\u2026 w/ Apple Cofounder Steve Wozniak",
+      "channel": "Steve-O's Wild Ride! - Clips",
+      "description": "A clip from Steve-O's Wild Ride! Episode 96 with Steve Wozniak Watch the full episode!",
+      "view_count": 1151374,
+      "duration_seconds": 442.0,
+      "url": "https://www.youtube.com/watch?v=0Wg-tEn7UYg"
+    },
+    {
+      "video_id": "X3AcXraOW_k",
+      "title": "35 Years of Pixar Moments! | Pixar",
+      "channel": "Pixar",
+      "description": "Celebrate 35 years of epic adventures, unforgettable friendship, and incredible storytelling with this journey through Pixar movies\u00a0...",
+      "view_count": 1109297,
+      "duration_seconds": 113.0,
+      "url": "https://www.youtube.com/watch?v=X3AcXraOW_k"
+    },
+    {
+      "video_id": "-EoNrg_DR3s",
+      "title": "What is fintech? | CNBC Explains",
+      "channel": "CNBC International",
+      "description": "It's a multi-billion dollar industry that's changing everything from how we make purchases to how we get loans. What is fintech all\u00a0...",
+      "view_count": 1091523,
+      "duration_seconds": 228.0,
+      "url": "https://www.youtube.com/watch?v=-EoNrg_DR3s"
+    },
+    {
+      "video_id": "LOWOLJci8d8",
+      "title": "The Rise and Fall of Netscape - The Browser That Once Ruled the Web",
+      "channel": "Michael MJD",
+      "description": "Liked this video? Subscribe for more: http://mjd.yt/subscribe In the early days of the world wide web, there was one browser that\u00a0...",
+      "view_count": 1084722,
+      "duration_seconds": 1092.0,
+      "url": "https://www.youtube.com/watch?v=LOWOLJci8d8"
+    },
+    {
+      "video_id": "rOLyWlDpb8Q",
+      "title": "Business God | Software Billionaire | YouTube Documentary",
+      "channel": "Moconomy",
+      "description": "Documentary on Larry Ellison - Bloomberg Game Changers follows Larry Ellison's journey from his days in Chicago just to\u00a0...",
+      "view_count": 1071640,
+      "duration_seconds": 1453.0,
+      "url": "https://www.youtube.com/watch?v=rOLyWlDpb8Q"
+    },
+    {
+      "video_id": "BHUEqS1LIxk",
+      "title": "The Collapse Of Lehman Brothers | Best Documentary",
+      "channel": "Moconomy",
+      "description": "The Collapse Of Lehman Brothers - In September 2008, the collapse of Lehman Brothers is labeled as the largest bankruptcy in\u00a0...",
+      "view_count": 1069258,
+      "duration_seconds": 2782.0,
+      "url": "https://www.youtube.com/watch?v=BHUEqS1LIxk"
+    },
+    {
+      "video_id": "25_WjiZnvQk",
+      "title": "The Dot-Com Bubble - 5 Minute History Lesson",
+      "channel": "The Plain Bagel",
+      "description": "Visit https://www.squarespace.com/theplainbagel to save 10% off your first purchase of a website or domain using code\u00a0...",
+      "view_count": 1058840,
+      "duration_seconds": 418.0,
+      "url": "https://www.youtube.com/watch?v=25_WjiZnvQk"
+    },
+    {
+      "video_id": "qUxQug5gfdY",
+      "title": "The Twisted History of Morgan Stanley | A Wall Street Documentary",
+      "channel": "FINAiUS",
+      "description": "Invest in blue-chip art for the very first time with Masterworks: https://www.masterworks.art/finaius Unveil the tale of\u00a0...",
+      "view_count": 1047200,
+      "duration_seconds": 2645.0,
+      "url": "https://www.youtube.com/watch?v=qUxQug5gfdY"
+    },
+    {
+      "video_id": "kgJWD-F0YFs",
+      "title": "Meet the Men who started the Financial Crisis of 2008 | Lehman Brother | Fraud | FD Finance",
+      "channel": "FD Finance",
+      "description": "The Men who Stole the World | FD Finance Watch 'Lehman Brothers: How this Bank started the Economic Crisis of 2008 ' here:\u00a0...",
+      "view_count": 1019566,
+      "duration_seconds": 3294.0,
+      "url": "https://www.youtube.com/watch?v=kgJWD-F0YFs"
+    },
+    {
+      "video_id": "6xvrKW2H_hA",
+      "title": "Why Silicon Valley is here",
+      "channel": "Vox",
+      "description": "One radio engineer had a plan. And it worked. Subscribe and turn on notifications so you don't miss any videos:\u00a0...",
+      "view_count": 1005133,
+      "duration_seconds": 527.0,
+      "url": "https://www.youtube.com/watch?v=6xvrKW2H_hA"
+    },
+    {
+      "video_id": "P_6RhqaMUts",
+      "title": "Bill Gates: AI is the biggest technical thing ever in my lifetime",
+      "channel": "CNBC Television",
+      "description": "Microsoft co-founder Bill Gates joins 'Squawk Box' to share his thoughts on the AI technology, whether he's worried we're in an AI\u00a0...",
+      "view_count": 873241,
+      "duration_seconds": 303.0,
+      "url": "https://www.youtube.com/watch?v=P_6RhqaMUts"
+    },
+    {
+      "video_id": "49PTj9D_NpM",
+      "title": "People Mocked Google For Buying Motorola. It Was Their Best Acquisition.",
+      "channel": "Logically Answered",
+      "description": "Earn Cash Back On Stocks: Up To $5000 Per Year https://www.silomarkets.com/logic Remember Motorola? In the early 2000s,\u00a0...",
+      "view_count": 850091,
+      "duration_seconds": 732.0,
+      "url": "https://www.youtube.com/watch?v=49PTj9D_NpM"
+    },
+    {
+      "video_id": "aw5i2EB0zg0",
+      "title": "UBS - The Bank of Dirty Money | Full Documentary",
+      "channel": "FINAiUS",
+      "description": "Check out invideo AI today \u2192 https://invideo.io/i/finaius Create Your Own AI Avatar (FREE) \ud83c\udf99\ufe0f Turn text into video with\u00a0...",
+      "view_count": 820890,
+      "duration_seconds": 2750.0,
+      "url": "https://www.youtube.com/watch?v=aw5i2EB0zg0"
+    },
+    {
+      "video_id": "Rc0kNnYgImg",
+      "title": "Tech Billionaires Know the AI Bubble Will Burst (They're Already Building Bunkers)",
+      "channel": "Vanessa Wing\u00e5rdh",
+      "description": "The biggest tech companies are faking AI profits through circular deals, investing in each other then using that same investment\u00a0...",
+      "view_count": 819835,
+      "duration_seconds": 875.0,
+      "url": "https://www.youtube.com/watch?v=Rc0kNnYgImg"
+    },
+    {
+      "video_id": "k4jJSOWjQxg",
+      "title": "Lehman Brothers: How this Bank started the Economic Crisis of 2008 | Inside the Storm | FD Finance",
+      "channel": "FD Finance",
+      "description": "Rise and Fall of Lehman Brothers | FD Finance Watch 'Rise and Fall of Nintendo' here: https://youtu.be/Zadzdp7ty4M In\u00a0...",
+      "view_count": 816080,
+      "duration_seconds": 2690.0,
+      "url": "https://www.youtube.com/watch?v=k4jJSOWjQxg"
+    },
+    {
+      "video_id": "19m_U_HHqrg",
+      "title": "Gambled away in the financial crisis - The Deutsche Bank story | DW Documentary",
+      "channel": "DW Documentary",
+      "description": "Deutsche Bank managers driven by greed set it on the wrong track in the 2000s. The collapse played a key role in the financial\u00a0...",
+      "view_count": 789485,
+      "duration_seconds": 2546.0,
+      "url": "https://www.youtube.com/watch?v=19m_U_HHqrg"
+    },
+    {
+      "video_id": "svCYbkS0Sjk",
+      "title": "How to Pass an Interview, According to Ex-Microsoft CEO Steve Ballmer",
+      "channel": "Bloomberg Originals",
+      "description": "Nov. 7 -- Former Microsoft Chief Executive Officer Steve Ballmer gives \"Bloomberg Studio 1.0\" host Emily Chang one of his brain\u00a0...",
+      "view_count": 782357,
+      "duration_seconds": 169.0,
+      "url": "https://www.youtube.com/watch?v=svCYbkS0Sjk"
+    },
+    {
+      "video_id": "-MKHah7QQpY",
+      "title": "The Last of Lehman Brothers",
+      "channel": "Bloomberg Originals",
+      "description": "The Wall Street giant whose collapse 14 years ago helped trigger a global financial crisis is only mostly dead. In London, a\u00a0...",
+      "view_count": 776648,
+      "duration_seconds": 622.0,
+      "url": "https://www.youtube.com/watch?v=-MKHah7QQpY"
+    },
+    {
+      "video_id": "ZLIV0Zb5lfM",
+      "title": "Crisis On Wall Street: The Week That Shook The World (Part 1)",
+      "channel": "CNBC",
+      "description": "Ten years after the fall of Lehman Brothers, CNBC has produced the definitive televised account of the historic bankruptcy and\u00a0...",
+      "view_count": 769176,
+      "duration_seconds": 341.0,
+      "url": "https://www.youtube.com/watch?v=ZLIV0Zb5lfM"
+    },
+    {
+      "video_id": "pPkNtN8G7q8",
+      "title": "How FinTech is Shaping the Future of Banking | Henri Arslanian | TEDxWanChai",
+      "channel": "TEDx Talks",
+      "description": "While FinTech is revolutionizing the banking industry and giving millions of people access to financial services for the first time,\u00a0...",
+      "view_count": 764520,
+      "duration_seconds": 842.0,
+      "url": "https://www.youtube.com/watch?v=pPkNtN8G7q8"
+    },
+    {
+      "video_id": "aGOx7cXQga8",
+      "title": "The Great Depression: The Collapse of the American Dream | FULL DOCUMENTARY",
+      "channel": "SLICE Full Doc",
+      "description": "1929: The biggest economic crisis of the 20th century brought an abrupt end to the euphoria of the Roaring Twenties. Driven from\u00a0...",
+      "view_count": 644983,
+      "duration_seconds": 3059.0,
+      "url": "https://www.youtube.com/watch?v=aGOx7cXQga8"
+    },
+    {
+      "video_id": "p0Bx6UtherQ",
+      "title": "Growth Through Acquisitions | Wharton Scale School",
+      "channel": "Wharton School",
+      "description": "In the competitive environment of technology, speed to market is often a key to success. But creating every capability internally\u00a0...",
+      "view_count": 616401,
+      "duration_seconds": 5181.0,
+      "url": "https://www.youtube.com/watch?v=p0Bx6UtherQ"
+    },
+    {
+      "video_id": "ReGC2GtWFp4",
+      "title": "Sundar Pichai, CEO of Alphabet | The All-In Interview",
+      "channel": "All-In Podcast",
+      "description": "(0:00) David Friedberg welcomes Alphabet CEO Sundar Pichai (2:58) Will AI kill search?: Google disrupting itself, evolving search\u00a0...",
+      "view_count": 600007,
+      "duration_seconds": 3741.0,
+      "url": "https://www.youtube.com/watch?v=ReGC2GtWFp4"
+    },
+    {
+      "video_id": "JDhL1LjrgTA",
+      "title": "The real-life \"Big Short\" and the 2008 financial crisis | 60 Minutes Full Episodes",
+      "channel": "60 Minutes",
+      "description": "From January 2008, Steve Kroft's look at the U.S. sub-prime mortgage meltdown. From October 2008, Kroft's report on the\u00a0...",
+      "view_count": 592076,
+      "duration_seconds": 7755.0,
+      "url": "https://www.youtube.com/watch?v=JDhL1LjrgTA"
+    },
+    {
+      "video_id": "WW9SoVpVZSI",
+      "title": "The Man Who Lost Over a Billion Dollars | Best Documentary",
+      "channel": "Moconomy",
+      "description": "The Man Who Lost Over a Billion Dollars - Britain's oldest bank, Barings Brothers had a reputation for security - but in 1995,\u00a0...",
+      "view_count": 553151,
+      "duration_seconds": 2723.0,
+      "url": "https://www.youtube.com/watch?v=WW9SoVpVZSI"
+    },
+    {
+      "video_id": "IsScahXkvMk",
+      "title": "Perplexity CEO Srinivas on Winning Search With AI",
+      "channel": "Bloomberg Live",
+      "description": "Aravind Srinivas, Co-Founder and CEO of Perplexity, speaks with Bloomberg's Shirin Ghaffary about the startup's approach to\u00a0...",
+      "view_count": 547645,
+      "duration_seconds": 1144.0,
+      "url": "https://www.youtube.com/watch?v=IsScahXkvMk"
+    },
+    {
+      "video_id": "U7PcyE0p54s",
+      "title": "$20B AI CEO: The ONLY trait for success in the AI era | Aravind Srinivas, Co-founder of Perplexity",
+      "channel": "Silicon Valley Girl",
+      "description": "Turn your audience into loyal customers. Get 30% off your first 3 months with code SVGIRL30: https://your.omnisend.com/SVGirl In\u00a0...",
+      "view_count": 543240,
+      "duration_seconds": 2472.0,
+      "url": "https://www.youtube.com/watch?v=U7PcyE0p54s"
+    },
+    {
+      "video_id": "H5Q_-gIZIps",
+      "title": "Want to be a CEO? Become a master of paradox | Adam Bryant for Big Think+",
+      "channel": "Big Think",
+      "description": "Adam Bryant interviewed over 1000 CEOs. These are the 3 critical skills to running a company. Subscribe to Big Think on\u00a0...",
+      "view_count": 530839,
+      "duration_seconds": 328.0,
+      "url": "https://www.youtube.com/watch?v=H5Q_-gIZIps"
+    },
+    {
+      "video_id": "9dFvhq2sKfM",
+      "title": "Top 10 Disastrous Mergers & Acquisitions (M&A)",
+      "channel": "WatchMojo.com",
+      "description": "... as a merger of rough equals. That means we excluded acquisitions where a much larger company acquired a smaller company.",
+      "view_count": 527347,
+      "duration_seconds": 401.0,
+      "url": "https://www.youtube.com/watch?v=9dFvhq2sKfM"
+    },
+    {
+      "video_id": "AVIrUDEw5Gs",
+      "title": "Interviews with staff who have been let go, boxes being moved",
+      "channel": "AP Archive",
+      "description": "(15 Sep 2008) SHOTLIST 1. Pan of woman carrying box out of building 2. Lehman Brothers employees by window 3. Security\u00a0...",
+      "view_count": 519945,
+      "duration_seconds": 161.0,
+      "url": "https://www.youtube.com/watch?v=AVIrUDEw5Gs"
+    },
+    {
+      "video_id": "WBHzCDgEtVQ",
+      "title": "Mergers and Acquisitions Explained: A Crash Course on M&A",
+      "channel": "Brett Cenkus",
+      "description": "mergersandacquisitions #corporatelaw #business Mergers & Acquisitions (commonly referred to as M&A) is often considered a\u00a0...",
+      "view_count": 486261,
+      "duration_seconds": 795.0,
+      "url": "https://www.youtube.com/watch?v=WBHzCDgEtVQ"
+    },
+    {
+      "video_id": "obijayDcV40",
+      "title": "The Financial Elite's Dirty Little Secret | Documentary",
+      "channel": "MegaloMedia and 2 more",
+      "description": "Start tracking trades from politicians and hedge funds & profit yourself: https://nexus-lens.com/ If you're ready to stop following the\u00a0...",
+      "view_count": 468964,
+      "duration_seconds": 2598.0,
+      "url": "https://www.youtube.com/watch?v=obijayDcV40"
+    },
+    {
+      "video_id": "9v2eZKsEJMI",
+      "title": "Oracle: How Larry Ellison Destroyed a $900B Tech Empire",
+      "channel": "JunkBondInvestor",
+      "description": "Newsletter: https://www.junkbondinvestor.com/ Oracle wasn't supposed to be the flashy AI stock. But in 2023 and 2024, it quietly\u00a0...",
+      "view_count": 434313,
+      "duration_seconds": 1140.0,
+      "url": "https://www.youtube.com/watch?v=9v2eZKsEJMI"
+    },
+    {
+      "video_id": "KRQDfe8Mh2A",
+      "title": "The Great Depression of 1929: When the Dream Collapsed I SLICE HISTORY | FULL DOCUMENTARY",
+      "channel": "SLICE History",
+      "description": "1929: The biggest economic crisis of the 20th century brought an abrupt end to the euphoria of the Roaring Twenties. Driven from\u00a0...",
+      "view_count": 433302,
+      "duration_seconds": 3081.0,
+      "url": "https://www.youtube.com/watch?v=KRQDfe8Mh2A"
+    },
+    {
+      "video_id": "AXLcRbLRues",
+      "title": "The Dot-Com Bubble - Wall Street History",
+      "channel": "Patrick Boyle",
+      "description": "The Dot-Com bubble was one of the largest speculative bubbles in U.S. stock market history. Here's a quick history lesson on\u00a0...",
+      "view_count": 429670,
+      "duration_seconds": 1416.0,
+      "url": "https://www.youtube.com/watch?v=AXLcRbLRues"
+    },
+    {
+      "video_id": "gQSsPsbfkZI",
+      "title": "Top 10 Business Mergers and Acquisitions of All Time",
+      "channel": "WatchMojo.com",
+      "description": "These were matches made in business heaven. Join http://www.WatchMojo.com as we count down our picks for the Top 10\u00a0...",
+      "view_count": 409668,
+      "duration_seconds": 651.0,
+      "url": "https://www.youtube.com/watch?v=gQSsPsbfkZI"
+    },
+    {
+      "video_id": "RsAKKF2-_Kg",
+      "title": "Alphabet CEO Sundar Pichai on Future of AI, Antitrust, and Privacy",
+      "channel": "Bloomberg Podcasts",
+      "description": "Sundar Pichai, CEO of Google and Alphabet, speaks with Bloomberg's Emily Chang in a wide-ranging interview on artificial\u00a0...",
+      "view_count": 399345,
+      "duration_seconds": 1779.0,
+      "url": "https://www.youtube.com/watch?v=RsAKKF2-_Kg"
+    },
+    {
+      "video_id": "vrZoRNSQSPw",
+      "title": "Larry Ellison: I had all the disadvantages necessary for success",
+      "channel": "Fox Business",
+      "description": "Oracle co-founder Larry Ellison on how he achieved success and the state of the movie industry.",
+      "view_count": 366874,
+      "duration_seconds": 346.0,
+      "url": "https://www.youtube.com/watch?v=vrZoRNSQSPw"
+    },
+    {
+      "video_id": "5ksVshqVuiM",
+      "title": "The Dot Com Bubble Explained in One Minute",
+      "channel": "One Minute Economics",
+      "description": "A one-minute video which explains what the dot com bubble was all about. By knowing what generated the dot com bubble and\u00a0...",
+      "view_count": 365058,
+      "duration_seconds": 78.0,
+      "url": "https://www.youtube.com/watch?v=5ksVshqVuiM"
+    },
+    {
+      "video_id": "BYx63PKKPvg",
+      "title": "Full interview: Google CEO Sundar Pichai on the \u2018AI boom\u2019 and the future of AI",
+      "channel": "BBC Politics",
+      "description": "The BBC's economics editor and Newsnight presenter Faisal Islam travelled to Google's California campus to speak with the\u00a0...",
+      "view_count": 339349,
+      "duration_seconds": 1687.0,
+      "url": "https://www.youtube.com/watch?v=BYx63PKKPvg"
+    },
+    {
+      "video_id": "qc1WhS3qskU",
+      "title": "Overdose: The Next Financial Crisis",
+      "channel": "Martin Borgs",
+      "description": "In times of crisis people seek strong leaders and simple solutions. But what happens when their solutions are identical to the\u00a0...",
+      "view_count": 336427,
+      "duration_seconds": 2792.0,
+      "url": "https://www.youtube.com/watch?v=qc1WhS3qskU"
+    },
+    {
+      "video_id": "_lK1w7KGuNs",
+      "title": "Best Motivational Speech by Larry Ellison | Oracle Founder | Inspirational Videos | Startup Stories",
+      "channel": "Startup Stories",
+      "description": "Best Motivational Speech by Larry Ellison, the Oracle Founder - Startup Stories presents one of the best motivational speech by\u00a0...",
+      "view_count": 316226,
+      "duration_seconds": 349.0,
+      "url": "https://www.youtube.com/watch?v=_lK1w7KGuNs"
+    },
+    {
+      "video_id": "kaBdA2nVtjw",
+      "title": "Mock Interview Question: Why Investment Banking?",
+      "channel": "Wiley Finance",
+      "description": "Joshua Rosenbaum and Joshua Pearl, authors of the highly acclaimed and authoritative textbook, Investment Banking, walk you\u00a0...",
+      "view_count": 312738,
+      "duration_seconds": 84.0,
+      "url": "https://www.youtube.com/watch?v=kaBdA2nVtjw"
+    },
+    {
+      "video_id": "LQ0S_IPUOrM",
+      "title": "The Hidden Pattern behind all Financial Bubbles",
+      "channel": "Adam's Axiom",
+      "description": "... Price Bubble (1980s) - 06:45 Asian Financial Crisis (1997) - 08:09 Dot-com Bubble (2000) - 09:37 Commodities Bubble (2008)\u00a0...",
+      "view_count": 311920,
+      "duration_seconds": 948.0,
+      "url": "https://www.youtube.com/watch?v=LQ0S_IPUOrM"
+    },
+    {
+      "video_id": "2z_a0bohJoI",
+      "title": "Larry Ellison Biography | How i Built Oracle",
+      "channel": "Startup Stories",
+      "description": "In this video we take a look at The life of billionaire, Oracle cofounder Larry Ellison , who dropped out of college twice and has a\u00a0...",
+      "view_count": 295967,
+      "duration_seconds": 734.0,
+      "url": "https://www.youtube.com/watch?v=2z_a0bohJoI"
+    },
+    {
+      "video_id": "aWCrw2wa3ls",
+      "title": "At Davos, Palantir CEO Explains EXACTLY How AI Will Impact Jobs | 'Exposing Job's Real Market Value'",
+      "channel": "Mint",
+      "description": "Davos 2026 | World Economic Forum | AI | Tech Palantir Technologies Chief Executive Officer Alex Karp said he believes that\u00a0...",
+      "view_count": 289454,
+      "duration_seconds": 576.0,
+      "url": "https://www.youtube.com/watch?v=aWCrw2wa3ls"
+    },
+    {
+      "video_id": "rf9Sat5n0AQ",
+      "title": "Big Tech's AI Debt Will Crash the Economy",
+      "channel": "Vanessa Wing\u00e5rdh",
+      "description": "Big Tech is racking up debt to fund their AI infrastructure for demand that seemingly doesn't exist. Us taxpayers are subsidizing the\u00a0...",
+      "view_count": 287213,
+      "duration_seconds": 638.0,
+      "url": "https://www.youtube.com/watch?v=rf9Sat5n0AQ"
+    },
+    {
+      "video_id": "S367jjjsRJE",
+      "title": "New Steve Jobs Tapes Reveal Apple Founder's Softer Side",
+      "channel": "ABC News",
+      "description": "Steve Jobs' candid tapes, released by Apple for its employees, show a rare glimpse of the tech mogul at work.",
+      "view_count": 255859,
+      "duration_seconds": 167.0,
+      "url": "https://www.youtube.com/watch?v=S367jjjsRJE"
+    },
+    {
+      "video_id": "S7DoKFPOhZk",
+      "title": "What does \"Mergers & Acquisitions\" mean?",
+      "channel": "Frankfurt School of Finance & Management",
+      "description": "You want to dive deep into the world of finance and management? Visit us:\u00a0...",
+      "view_count": 255545,
+      "duration_seconds": 89.0,
+      "url": "https://www.youtube.com/watch?v=S7DoKFPOhZk"
+    },
+    {
+      "video_id": "8jBQ3jZnNvY",
+      "title": "Sell-Side M&A Masterclass | Structuring a Formal Sale Process for Maximum Value | Private Equity",
+      "channel": "POTOMAC M&A",
+      "description": "Paul Giannamore, a seasoned mergers & acquisitions advisor with over 20 years of experience, shares his expertise on the\u00a0...",
+      "view_count": 249907,
+      "duration_seconds": 5048.0,
+      "url": "https://www.youtube.com/watch?v=8jBQ3jZnNvY"
+    },
+    {
+      "video_id": "MrxupU5oOIE",
+      "title": "Google\u2019s First Big Acquisition In 19 Years? - Hubspot",
+      "channel": "Logically Answered",
+      "description": "Earn Cash Back On Stocks: Up To $5000 Per Year https://www.silomarkets.com/logic/ Have you noticed that Google hasn't had a\u00a0...",
+      "view_count": 231061,
+      "duration_seconds": 723.0,
+      "url": "https://www.youtube.com/watch?v=MrxupU5oOIE"
+    },
+    {
+      "video_id": "50qmXnXiSMQ",
+      "title": "8 CEO interview tips for C-Suite executive jobs",
+      "channel": "Don Georgevich",
+      "description": "If you have an executive interview with the CEO, President, Vice President or any other C-Suite job interview, you need to\u00a0...",
+      "view_count": 229686,
+      "duration_seconds": 652.0,
+      "url": "https://www.youtube.com/watch?v=50qmXnXiSMQ"
+    },
+    {
+      "video_id": "DJs3ZoEFGDU",
+      "title": "Jamie Dimon, JPMorgan CEO: Financial Crisis & Bear Stearns Acquisition",
+      "channel": "How Leaders Lead with David Novak",
+      "description": "Jamie Dimon, CEO of JPMorgan Chase, shares his experience leading the company through the 2008 financial crisis and reveals\u00a0...",
+      "view_count": 223683,
+      "duration_seconds": 451.0,
+      "url": "https://www.youtube.com/watch?v=DJs3ZoEFGDU"
+    },
+    {
+      "video_id": "JzrdpNZnNyI",
+      "title": "Henry Kravis: The Largest Dealmaker in the World | Full Documentary",
+      "channel": "MegaloMedia",
+      "description": "This is a channel by Deus Media. We build YouTube channels for organizations and individuals. More info:\u00a0...",
+      "view_count": 222973,
+      "duration_seconds": 2236.0,
+      "url": "https://www.youtube.com/watch?v=JzrdpNZnNyI"
+    },
+    {
+      "video_id": "raEm9s4AEmI",
+      "title": "Goldman Sachs - Power and Peril - CNBC Documentary",
+      "channel": "I'm a millionaire",
+      "description": "Goldman Sachs - Power and Peril - CNBC Documentary.",
+      "view_count": 222590,
+      "duration_seconds": 2543.0,
+      "url": "https://www.youtube.com/watch?v=raEm9s4AEmI"
+    },
+    {
+      "video_id": "89YZXIGOAB0",
+      "title": "The Worst Business Deals in History",
+      "channel": "Hamish Hodder",
+      "description": "Some of the worst corporate acquisitions, mergers and takeover deals, including the shockingly one-sided buyouts from Shark\u00a0...",
+      "view_count": 218833,
+      "duration_seconds": 912.0,
+      "url": "https://www.youtube.com/watch?v=89YZXIGOAB0"
+    },
+    {
+      "video_id": "Bti3FzwxHO0",
+      "title": "The Corporate History Of Goldman Sachs",
+      "channel": "How History Works",
+      "description": "Goldman Sachs is what you think of when you hear the words 'banking', 'Wall Street' and 'market crash'. The investment banking\u00a0...",
+      "view_count": 201981,
+      "duration_seconds": 1019.0,
+      "url": "https://www.youtube.com/watch?v=Bti3FzwxHO0"
+    },
+    {
+      "video_id": "AxxF5bl37oA",
+      "title": "Microsoft vs Apple - Steve Ballmer interview",
+      "channel": "BestTechChannel",
+      "description": "Steve Ballmer Talks About Apple Steven A. Ballmer is chief executive officer of Microsoft Corporation, the world's leading\u00a0...",
+      "view_count": 191243,
+      "duration_seconds": 342.0,
+      "url": "https://www.youtube.com/watch?v=AxxF5bl37oA"
+    },
+    {
+      "video_id": "zVKok-Ul4Jk",
+      "title": "AI bubble CRASH as USA begs for money",
+      "channel": "Chris Norlund",
+      "description": "Become a member! \u2713 https://www.youtube.com/channel/UCahJ9IsvXnaQiuNyWQSkrkw/join \u2b50 Support independent daily news\u00a0...",
+      "view_count": 188090,
+      "duration_seconds": 937.0,
+      "url": "https://www.youtube.com/watch?v=zVKok-Ul4Jk"
+    },
+    {
+      "video_id": "l1DBDONn9wQ",
+      "title": "Black Monday On Wall Street",
+      "channel": "CBS",
+      "description": "The Dow fell by more than 500 points in the wake of Lehman Brothers' demise and Merrill Lynch's takeover. Anthony Mason\u00a0...",
+      "view_count": 185843,
+      "duration_seconds": 193.0,
+      "url": "https://www.youtube.com/watch?v=l1DBDONn9wQ"
+    },
+    {
+      "video_id": "HsrbITLwurg",
+      "title": "AI, Mega-Deals & the New M&A Landscape | Sullivan & Cromwell Partner Frank Aquila",
+      "channel": "New to The Street TV",
+      "description": "For investors, dealmakers, and corporate strategists \u2014 this New To The Street interview features Frank Aquila, Senior M&A\u00a0...",
+      "view_count": 184880,
+      "duration_seconds": 822.0,
+      "url": "https://www.youtube.com/watch?v=HsrbITLwurg"
+    },
+    {
+      "video_id": "uaBvJlHevAQ",
+      "title": "Michael Dell, Founder, Chairman and CEO, Dell Inc.",
+      "channel": "The Economic Club of Washington, D.C.",
+      "description": "David M. Rubenstein speaks with Michael Dell, Founder, Chairman and CEO, Dell Inc. on March 4, 2015.",
+      "view_count": 180573,
+      "duration_seconds": 2831.0,
+      "url": "https://www.youtube.com/watch?v=uaBvJlHevAQ"
+    },
+    {
+      "video_id": "1G-X70bnJEg",
+      "title": "FULL INTERVIEW: Google\u2019s Sundar Pichai Reveals Future of AI in Candid Talk with Marc Benioff | AI1G",
+      "channel": "DWS News",
+      "description": "At Dreamforce 2025, Google CEO Sundar Pichai sat down with Salesforce CEO Marc Benioff for a deep conversation on artificial\u00a0...",
+      "view_count": 179724,
+      "duration_seconds": 2691.0,
+      "url": "https://www.youtube.com/watch?v=1G-X70bnJEg"
+    },
+    {
+      "video_id": "DBL_XAY0Oz8",
+      "title": "Accretion Dilution - Rules of Thumb for Merger Models",
+      "channel": "Mergers & Inquisitions / Breaking Into Wall Street",
+      "description": "Learn more: https://breakingintowallstreet.com/core-financial-modeling/?utm_medium=yt&utm_source=yt&utm_campaign=yt13\u00a0...",
+      "view_count": 178601,
+      "duration_seconds": 805.0,
+      "url": "https://www.youtube.com/watch?v=DBL_XAY0Oz8"
+    },
+    {
+      "video_id": "1PZwzRbq94U",
+      "title": "Michael Burry Warns of a Crash Worse Than 2000 \u2014 AI, Tech, Bitcoin",
+      "channel": "Mark Moss",
+      "description": "Wealth isn't earned, it's engineered. Join me Jan 7-9 for 3 days where we'll engineer your complete Wealth Operating System for\u00a0...",
+      "view_count": 166725,
+      "duration_seconds": 875.0,
+      "url": "https://www.youtube.com/watch?v=1PZwzRbq94U"
+    },
+    {
+      "video_id": "DcyaQBCGM28",
+      "title": "closing bell - bear sterns debacle 14 march 2008",
+      "channel": "wesawthat",
+      "description": "bear sterns loses three and a half billion dollars in market value today alone... \"bear sterns today leading the tumble on wall street,\u00a0...",
+      "view_count": 163705,
+      "duration_seconds": 510.0,
+      "url": "https://www.youtube.com/watch?v=DcyaQBCGM28"
+    },
+    {
+      "video_id": "V5iE-4JsUms",
+      "title": "Dot Com Bubble Wall Street Documentary",
+      "channel": "Strange World",
+      "description": "The documentary about the end of the dot com bubble on Wall Street 2000.",
+      "view_count": 150107,
+      "duration_seconds": 3626.0,
+      "url": "https://www.youtube.com/watch?v=V5iE-4JsUms"
+    },
+    {
+      "video_id": "mDfnLlkKSJI",
+      "title": "Lehman Bros meltdown shakes world's markets - 15 Sep 08",
+      "channel": "Al Jazeera English",
+      "description": "Top US investment bank Lehman Brothers filed for bankruptcy protection, a move that sent shockwaves through financial markets.",
+      "view_count": 147380,
+      "duration_seconds": 160.0,
+      "url": "https://www.youtube.com/watch?v=mDfnLlkKSJI"
+    },
+    {
+      "video_id": "fhZgMkXO3jc",
+      "title": "The Bank That Almost Broke Britain | BBC Documentary 2018 HD",
+      "channel": "Media Highlights",
+      "description": "",
+      "view_count": 144345,
+      "duration_seconds": 3541.0,
+      "url": "https://www.youtube.com/watch?v=fhZgMkXO3jc"
+    },
+    {
+      "video_id": "fbwf8KUZsRM",
+      "title": "Booming stock market led by tech has some saying it feels like the 1999 internet bubble",
+      "channel": "NBC News",
+      "description": "Stocks are being fueled by billions in spending on artificial intelligence, setting record highs in the U.S. NBC News' Christine\u00a0...",
+      "view_count": 139606,
+      "duration_seconds": 159.0,
+      "url": "https://www.youtube.com/watch?v=fbwf8KUZsRM"
+    },
+    {
+      "video_id": "nXq9NTjEdTo",
+      "title": "Microsoft CEO Steve Ballmer laughs at Apple iPhone",
+      "channel": "MacDailyNews",
+      "description": "http://www.macdailynews.com Microsoft CEO Steve Ballmer laughs at Apple's iPhone.",
+      "view_count": 137398,
+      "duration_seconds": 143.0,
+      "url": "https://www.youtube.com/watch?v=nXq9NTjEdTo"
+    },
+    {
+      "video_id": "tSLZCGG3RK8",
+      "title": "Mergers and Acquisitions: M&A Model",
+      "channel": "Corporate Finance Institute",
+      "description": "The purpose of the M&A model is to value a target business and determine how much to pay for an acquisition. The model also\u00a0...",
+      "view_count": 130173,
+      "duration_seconds": 307.0,
+      "url": "https://www.youtube.com/watch?v=tSLZCGG3RK8"
+    },
+    {
+      "video_id": "9y7TTU1jIvk",
+      "title": "Two Legendary Founders: Travis Kalanick & Michael Dell Live from Austin, Texas",
+      "channel": "All-In Podcast",
+      "description": "(0:00) Travis Kalanick: Officially exiting stealth mode, what he's been working on (5:52) How to automate the physical world,\u00a0...",
+      "view_count": 129764,
+      "duration_seconds": 4556.0,
+      "url": "https://www.youtube.com/watch?v=9y7TTU1jIvk"
+    },
+    {
+      "video_id": "ASUM5illI98",
+      "title": "Merger & Acquisition (M&A) Deal Structures Explained",
+      "channel": "Brett Cenkus",
+      "description": "So, what M&A deal structure is best for you? Great question! You'll find out more about the pros and cons of each structure in this\u00a0...",
+      "view_count": 126741,
+      "duration_seconds": 407.0,
+      "url": "https://www.youtube.com/watch?v=ASUM5illI98"
+    },
+    {
+      "video_id": "9zn2lWCwVOg",
+      "title": "Mergers and Acquisitions Explained: M&A Process Secrets Revealed! (Step by Step)",
+      "channel": "We have to talk about Finance!",
+      "description": "If you're ready to move beyond basic spreadsheets and master the high-stakes world of corporate deal-making, I highly\u00a0...",
+      "view_count": 125281,
+      "duration_seconds": 1029.0,
+      "url": "https://www.youtube.com/watch?v=9zn2lWCwVOg"
+    },
+    {
+      "video_id": "VR932YegDTo",
+      "title": "Goldman Sachs CEO David Solomon on US Economy, AI Spending, M&A",
+      "channel": "Bloomberg Television",
+      "description": "Goldman Sachs CEO David Solomon discusses the outlook for the US economy, the deals environment, the bank's spending on\u00a0...",
+      "view_count": 124191,
+      "duration_seconds": 1029.0,
+      "url": "https://www.youtube.com/watch?v=VR932YegDTo"
+    },
+    {
+      "video_id": "7ipFwEOviiE",
+      "title": "How to Survive an AI Market Crash: Lessons from the Dot-Com Bubble",
+      "channel": "PensionCraft",
+      "description": "The year is 2000 \u2014 the Nasdaq crashes 78%. Fortunes vanish overnight. Twenty-five years later, people are asking: Is AI the new\u00a0...",
+      "view_count": 122544,
+      "duration_seconds": 837.0,
+      "url": "https://www.youtube.com/watch?v=7ipFwEOviiE"
+    },
+    {
+      "video_id": "tdXqs_cHi6k",
+      "title": "Larry Ellison on the Race for AI",
+      "channel": "PodiumVC",
+      "description": "Oracle co-founder Larry Ellison on the race for AI and comparison to F1 - - - full video:\u00a0...",
+      "view_count": 113893,
+      "duration_seconds": 263.0,
+      "url": "https://www.youtube.com/watch?v=tdXqs_cHi6k"
+    },
+    {
+      "video_id": "zVZSS88gIGQ",
+      "title": "Mergers and Acquisitions Due Diligence Explained",
+      "channel": "Brett Cenkus",
+      "description": "Due diligence is a concept that comes up in all different business contexts, but Brett will be discussing it in the context of mergers\u00a0...",
+      "view_count": 111319,
+      "duration_seconds": 357.0,
+      "url": "https://www.youtube.com/watch?v=zVZSS88gIGQ"
+    },
+    {
+      "video_id": "9Nda_dUfVac",
+      "title": "Steve Ballmer Explains Rise From Bill Gates's Assistant to Microsoft CEO",
+      "channel": "Bloomberg Television",
+      "description": "Jul.18 -- Former Microsoft CEO Steve Ballmer, the owner of the Los Angeles Clippers basketball team, discusses leaving Stanford\u00a0...",
+      "view_count": 110074,
+      "duration_seconds": 159.0,
+      "url": "https://www.youtube.com/watch?v=9Nda_dUfVac"
+    },
+    {
+      "video_id": "gup4KmPirLQ",
+      "title": "What are Mergers and Acquisitions (M&A)? Types, Form of integration.",
+      "channel": "Educationleaves",
+      "description": "This video is about \"What is Mergers and Acquisitions (M&A)?\" Topics I have discussed are - 1. What is Mergers and acquisitions\u00a0...",
+      "view_count": 107051,
+      "duration_seconds": 368.0,
+      "url": "https://www.youtube.com/watch?v=gup4KmPirLQ"
+    },
+    {
+      "video_id": "J1GpLqugFeM",
+      "title": "Learn M&A Case Interviews in 10 Minutes | QUICKEST Tutorial on YouTube",
+      "channel": "Hacking the Case Interview",
+      "description": "Want an MBB offer? Free 40-min training to triple your chances:\u00a0...",
+      "view_count": 104783,
+      "duration_seconds": 606.0,
+      "url": "https://www.youtube.com/watch?v=J1GpLqugFeM"
+    },
+    {
+      "video_id": "SDCjAd1dlrI",
+      "title": "Goldman Sachs How Does it Make Money? Documentary on Its Methods",
+      "channel": "Kellymichellefx",
+      "description": "http://www.learncurrencytradingonline.com In his March 2012 resignation letter, printed in The New York Times, the former head\u00a0...",
+      "view_count": 95570,
+      "duration_seconds": 3836.0,
+      "url": "https://www.youtube.com/watch?v=SDCjAd1dlrI"
+    },
+    {
+      "video_id": "MvwhS39de1o",
+      "title": "What Caused the Dot-Com Bubble?",
+      "channel": "The Big Picture",
+      "description": "The Dot-Com Bubble was one of the most major economic events in recent history that ultimately led to a stock market crash.",
+      "view_count": 91187,
+      "duration_seconds": 392.0,
+      "url": "https://www.youtube.com/watch?v=MvwhS39de1o"
+    },
+    {
+      "video_id": "_R0SESwWBjM",
+      "title": "Goldman Sachs: Masters of the World? | Market Manipulation | Secrets of the Financial Empire",
+      "channel": "Moconomy",
+      "description": "Goldman Sachs, once a humble brokerage house founded in 1869 by a German immigrant, has grown into one of the world's\u00a0...",
+      "view_count": 90802,
+      "duration_seconds": 2920.0,
+      "url": "https://www.youtube.com/watch?v=_R0SESwWBjM"
+    },
+    {
+      "video_id": "L5MR3kx2zlQ",
+      "title": "The Billionaire Behind Everything",
+      "channel": "Newsthink",
+      "description": "Larry Ellison's Oracle is building an AI empire. Try https://brilliant.org/Newsthink/ and get 20% off your annual premium\u00a0...",
+      "view_count": 87985,
+      "duration_seconds": 742.0,
+      "url": "https://www.youtube.com/watch?v=L5MR3kx2zlQ"
+    },
+    {
+      "video_id": "jUK-VYCh5go",
+      "title": "Palantir CEO Alexander Karp with Andrew Ross Sorkin: The Technological Republic",
+      "channel": "The 92nd Street Y, New York",
+      "description": "Join Palantir CEO Alexander Karp with New York Times DealBook creator Andrew Ross Sorkin on the promises and peril of\u00a0...",
+      "view_count": 87492,
+      "duration_seconds": 3927.0,
+      "url": "https://www.youtube.com/watch?v=jUK-VYCh5go"
+    },
+    {
+      "video_id": "90ly8djhyg0",
+      "title": "J P Morgan Documentary & History of an Investment Bank",
+      "channel": "FX Education FX Analysis",
+      "description": "http://www.learncurrencytradingonline.com.",
+      "view_count": 87305,
+      "duration_seconds": 2638.0,
+      "url": "https://www.youtube.com/watch?v=90ly8djhyg0"
+    },
+    {
+      "video_id": "zQWSpfYOHAg",
+      "title": "How to Create a Successful Merger or Acquisition - A Case Study for Entrepreneurs",
+      "channel": "Valuetainment",
+      "description": "How to Create a Successful Merger or Acquisition http://bit.ly/2aPEwD4 In Case Study #27 the Biz Doc take a suggestion from the\u00a0...",
+      "view_count": 82342,
+      "duration_seconds": 654.0,
+      "url": "https://www.youtube.com/watch?v=zQWSpfYOHAg"
+    },
+    {
+      "video_id": "cvKBy0UTq4Q",
+      "title": "America\u2019s Greatest Investment Banker | David Solomon Documentary",
+      "channel": "MegaloMedia",
+      "description": "Goldman Sachs is the pinnacle of prestige for ambitious finance chimps. But the status and money you can earn at Goldman\u00a0...",
+      "view_count": 81699,
+      "duration_seconds": 1692.0,
+      "url": "https://www.youtube.com/watch?v=cvKBy0UTq4Q"
+    },
+    {
+      "video_id": "5sn8dqhPEg4",
+      "title": "Panic: The Untold Story of the 2008 Financial Crisis | Full VICE Special Report | HBO",
+      "channel": "Matt O'Neill",
+      "description": "VICE on HBO looks at factors that led to the 2008 financial crisis and the efforts made by then-Treasury Secretary Henry Paulson,\u00a0...",
+      "view_count": 81139,
+      "duration_seconds": 5754.0,
+      "url": "https://www.youtube.com/watch?v=5sn8dqhPEg4"
+    },
+    {
+      "video_id": "L8y6X786tFs",
+      "title": "Mergers and Acquisitions (With Real-World Examples) | From A Business Professor",
+      "channel": "Business School 101",
+      "description": "Big firms often use mergers and acquisitions to better expand their businesses and compete with their competitors. For example\u00a0...",
+      "view_count": 79280,
+      "duration_seconds": 630.0,
+      "url": "https://www.youtube.com/watch?v=L8y6X786tFs"
+    },
+    {
+      "video_id": "WKY2oVb5Faw",
+      "title": "Everything About The 2008 Crisis in Under 90 Minutes",
+      "channel": "Money Talks",
+      "description": "The Big Short Book(Affiliate Link)  :- https://amzn.to/4jHWS7W 2008 Crisis has changed how people look at wall street now.",
+      "view_count": 74968,
+      "duration_seconds": 5118.0,
+      "url": "https://www.youtube.com/watch?v=WKY2oVb5Faw"
+    },
+    {
+      "video_id": "FSTuvvT_VhE",
+      "title": "Larry Ellison Interview at D10 - All Things Digital Conference 2012 (Full Video)",
+      "channel": "Ray Captain",
+      "description": "Lawrence J. Ellison (born August 17, 1944) is an American businessman, entrepreneur, and philanthropist who is a co-founder\u00a0...",
+      "view_count": 73484,
+      "duration_seconds": 3156.0,
+      "url": "https://www.youtube.com/watch?v=FSTuvvT_VhE"
+    },
+    {
+      "video_id": "qBVe3M2g_SA",
+      "title": "Marc Andreessen: The World Is More Malleable Than You Think",
+      "channel": "David Senra and a16z",
+      "description": "Marc Andreessen is the co-founder and general partner of Andreessen Horowitz (@a16z), one of the most influential venture\u00a0...",
+      "view_count": 66032,
+      "duration_seconds": 6581.0,
+      "url": "https://www.youtube.com/watch?v=qBVe3M2g_SA"
+    },
+    {
+      "video_id": "GfQXmrBt9m8",
+      "title": "Lehman Brothers Explained in less than 2 minutes",
+      "channel": "drive80studios",
+      "description": "lehmanbrothers #bigshort #lehmanscandal This animation explains what happened with Lehman Brothers. Created by\u00a0...",
+      "view_count": 65818,
+      "duration_seconds": 105.0,
+      "url": "https://www.youtube.com/watch?v=GfQXmrBt9m8"
+    },
+    {
+      "video_id": "dz_dkJnkcjM",
+      "title": "Morgan Stanley, Bank of America Beat Estimates as Trading Activity Surges",
+      "channel": "Bloomberg Television",
+      "description": "Morgan Stanley and Bank of America both beat Wall Street estimates for third quarter earnings. It was a very special quarter for\u00a0...",
+      "view_count": 64378,
+      "duration_seconds": 167.0,
+      "url": "https://www.youtube.com/watch?v=dz_dkJnkcjM"
+    },
+    {
+      "video_id": "hYiwjdB-_yQ",
+      "title": "The Birth of Silicon Valley: The Hippies That Built the First PC | Full Documentary",
+      "channel": "Get.history",
+      "description": "In the heart of 1960s California, a cultural revolution was underway. By 1964, the counterculture was questioning authority and\u00a0...",
+      "view_count": 62271,
+      "duration_seconds": 3127.0,
+      "url": "https://www.youtube.com/watch?v=hYiwjdB-_yQ"
+    },
+    {
+      "video_id": "LSndZFVGkfg",
+      "title": "Bill Gates: Microsoft Can Make LinkedIn as Successful as Facebook",
+      "channel": "Bloomberg Originals",
+      "description": "June 17 -- Microsoft co-founder Bill Gates thinks that the company's $26.2 billion acquisition of LinkedIn is a great transaction and\u00a0...",
+      "view_count": 60030,
+      "duration_seconds": 155.0,
+      "url": "https://www.youtube.com/watch?v=LSndZFVGkfg"
+    },
+    {
+      "video_id": "50TUA8E5eg0",
+      "title": "One of the toughest M&A deals I did in investment banking",
+      "channel": "Defiant Gatekeeper",
+      "description": "Stock Investing Strategy: https://youtu.be/len22DXc8AQ Surviving 6 years in investment banking:\u00a0...",
+      "view_count": 59231,
+      "duration_seconds": 884.0,
+      "url": "https://www.youtube.com/watch?v=50TUA8E5eg0"
+    },
+    {
+      "video_id": "7xp8X0OacTc",
+      "title": "Nvidia Stock vs Cisco | The 2000 Dot-Com Bubble Crash.",
+      "channel": "Meet Kevin",
+      "description": "Kevin's Courses on Wealth w/ Private Livestreams (Real Estate, Stocks, Productivity): https://meetkevin.com. These are\u00a0...",
+      "view_count": 56610,
+      "duration_seconds": 1110.0,
+      "url": "https://www.youtube.com/watch?v=7xp8X0OacTc"
+    },
+    {
+      "video_id": "Q9xyIBjwGl8",
+      "title": "Goldman Sachs and Greece's decline - VPRO documentary - 2012",
+      "channel": "vpro documentary",
+      "description": "Between 2000 and 2012, Goldman Sachs provided Greece with risky financial products in order to hide the country's public debt.",
+      "view_count": 56403,
+      "duration_seconds": 3015.0,
+      "url": "https://www.youtube.com/watch?v=Q9xyIBjwGl8"
+    },
+    {
+      "video_id": "l80fKg5sKQ0",
+      "title": "Michael Eisner Reveals Why Steve Jobs HATED Disney's Pixar Deal",
+      "channel": "GB Wealth",
+      "description": "Michael Eisner reveals how Disney's early Pixar deal gave them 85-90% ownership of Toy Story, which infuriated Steve Jobs\u00a0...",
+      "view_count": 52749,
+      "duration_seconds": 208.0,
+      "url": "https://www.youtube.com/watch?v=l80fKg5sKQ0"
+    },
+    {
+      "video_id": "0yJu10vaNXU",
+      "title": "What are Mergers and Acquisitions?",
+      "channel": "Yadnya Investment Academy",
+      "description": "In this informative video, we dive deep into the fascinating world of Mergers and Acquisitions (M&A) to help you understand the\u00a0...",
+      "view_count": 52394,
+      "duration_seconds": 261.0,
+      "url": "https://www.youtube.com/watch?v=0yJu10vaNXU"
+    },
+    {
+      "video_id": "vmDOLs1ok94",
+      "title": "Morgan Stanley - The Most Formidable Investment Bank",
+      "channel": "Wall Street Millennial",
+      "description": "In this video we examine one of Wall Streets most powerful banks: Morgan Stanley. Morgan Stanley has been an investment\u00a0...",
+      "view_count": 51651,
+      "duration_seconds": 656.0,
+      "url": "https://www.youtube.com/watch?v=vmDOLs1ok94"
+    },
+    {
+      "video_id": "K50nmMGin7Y",
+      "title": "Mergers and Acquisitions - Explained",
+      "channel": "The Valuation School",
+      "description": "If you're interested in M&A and Investment Banking, this video is for you! In this video, we'll discuss what the Mergers and\u00a0...",
+      "view_count": 49748,
+      "duration_seconds": 1849.0,
+      "url": "https://www.youtube.com/watch?v=K50nmMGin7Y"
+    },
+    {
+      "video_id": "FB4ker-Pxnk",
+      "title": "The Dot-Com Crash 2000-2001",
+      "channel": "Jake K-A",
+      "description": "",
+      "view_count": 49015,
+      "duration_seconds": 437.0,
+      "url": "https://www.youtube.com/watch?v=FB4ker-Pxnk"
+    },
+    {
+      "video_id": "LFdUFuhB9jo",
+      "title": "Sell Side M&A Process in Plain English",
+      "channel": "Financeable Training",
+      "description": "What is a Buy Side vs Sell Side deal? How does M&A work? What do Investment Bankers do in an M&A deal? Learn the full\u00a0...",
+      "view_count": 48983,
+      "duration_seconds": 484.0,
+      "url": "https://www.youtube.com/watch?v=LFdUFuhB9jo"
+    },
+    {
+      "video_id": "sTttm39gfMU",
+      "title": "The difference between a merger and an acquisition",
+      "channel": "Marketplace APM",
+      "description": "What is the difference between a merger and an acquisition? It's subtle, but distinct -- like a good cologne. Paddy Hirsch explains.",
+      "view_count": 44996,
+      "duration_seconds": 110.0,
+      "url": "https://www.youtube.com/watch?v=sTttm39gfMU"
+    },
+    {
+      "video_id": "ftQZKVbPIEo",
+      "title": "The Private Credit COLLAPSE Took Out Morgan Stanley",
+      "channel": "Finance Blaze and Nick Bencino Finance",
+      "description": "While Wall Street is pushing the narrative that private credit is the ultimate safe yield, the $3 trillion bubble is quietly collapsing\u00a0...",
+      "view_count": 43482,
+      "duration_seconds": 402.0,
+      "url": "https://www.youtube.com/watch?v=ftQZKVbPIEo"
+    },
+    {
+      "video_id": "mlIuLzBww2o",
+      "title": "M&A consulting case interview: Airline acquisition (w/ Bain and McKinsey consultants)",
+      "channel": "rocketblocks",
+      "description": "Here's a consulting case interview featuring an ex-Bain Senior Associate Consultant & ex-McKinsey Engagement Manager\u00a0...",
+      "view_count": 42726,
+      "duration_seconds": 1800.0,
+      "url": "https://www.youtube.com/watch?v=mlIuLzBww2o"
+    },
+    {
+      "video_id": "PiZVZ5SJenw",
+      "title": "SAP's Bill McDermott explains his decision to step down as CEO",
+      "channel": "CNBC Television",
+      "description": "SAP CEO Bill McDermott joins \"Squawk Box\" to discuss his decision to step down from his role as well as why he feels his\u00a0...",
+      "view_count": 41699,
+      "duration_seconds": 360.0,
+      "url": "https://www.youtube.com/watch?v=PiZVZ5SJenw"
+    },
+    {
+      "video_id": "lmFlOd0MGZg",
+      "title": "Steve Jobs Prediction on Apple's Failure",
+      "channel": "Criticality",
+      "description": "Steve Jobs in 1995 interview talking about how technology companies like IBM and Xerox got driven by marketing and sales and\u00a0...",
+      "view_count": 41453,
+      "duration_seconds": 160.0,
+      "url": "https://www.youtube.com/watch?v=lmFlOd0MGZg"
+    },
+    {
+      "video_id": "GkgVpTzjm0Q",
+      "title": "Remembering one of the darkest days in financial history",
+      "channel": "CNN Business",
+      "description": "The collapse of Bear Stearns was one of the first dominoes to fall in the Great Recession. CNN's Chief Business Correspondent\u00a0...",
+      "view_count": 40511,
+      "duration_seconds": 251.0,
+      "url": "https://www.youtube.com/watch?v=GkgVpTzjm0Q"
+    },
+    {
+      "video_id": "rp5pkrhOnwA",
+      "title": "Rise of the boutique banks",
+      "channel": "Financial Times",
+      "description": "Learn more at https://bigdeal.ft.com/ There was a time for bankers working in M&A where big was beautiful. But this all changed\u00a0...",
+      "view_count": 39057,
+      "duration_seconds": 120.0,
+      "url": "https://www.youtube.com/watch?v=rp5pkrhOnwA"
+    },
+    {
+      "video_id": "p4StptmHPvk",
+      "title": "The Real Reason Lehman Brothers Collapsed | 2008 Crisis Explained",
+      "channel": "Money Talks",
+      "description": "FED and Lehman Brothers(Affiliate link) :- https://amzn.to/4cA4hUI In this video we explained Why exactly Lehman Brothers\u00a0...",
+      "view_count": 39051,
+      "duration_seconds": 1021.0,
+      "url": "https://www.youtube.com/watch?v=p4StptmHPvk"
+    },
+    {
+      "video_id": "9WSsLSq40Yw",
+      "title": "Michael Dell, Dell Technologies | David Senra",
+      "channel": "David Senra",
+      "description": "Michael Dell is the founder, chairman, and CEO of Dell Technologies. He is an entrepreneur and technology executive widely\u00a0...",
+      "view_count": 38393,
+      "duration_seconds": 5440.0,
+      "url": "https://www.youtube.com/watch?v=9WSsLSq40Yw"
+    },
+    {
+      "video_id": "spTJzMlzSFU",
+      "title": "Google Buys YouTube For $1.6B: CBS News",
+      "channel": "CBS",
+      "description": "It's a vast gallery of homemade video clips, TV show excerpts and music videos, but YouTube has become must-see Web\u00a0...",
+      "view_count": 37001,
+      "duration_seconds": 100.0,
+      "url": "https://www.youtube.com/watch?v=spTJzMlzSFU"
+    },
+    {
+      "video_id": "ZeLM8_dJgh0",
+      "title": "Ranking the Top 15 Elite Boutique Banks! (Part 2)",
+      "channel": "rareliquid",
+      "description": "Rankings for the top 30 investment banks in the world. (Part 2) \ud83d\udda5\ufe0fWall Street Prep\ud83d\udda5\ufe0f \u25bb Use code RARELIQUID for 20% OFF\u00a0...",
+      "view_count": 36013,
+      "duration_seconds": 1181.0,
+      "url": "https://www.youtube.com/watch?v=ZeLM8_dJgh0"
+    },
+    {
+      "video_id": "qyt6-eag-dA",
+      "title": "The Silicon Valley Revolution: How Big Tech Took Over the World | Full Documentary",
+      "channel": "Get.history",
+      "description": "From 1975 to 2004, Silicon Valley transformed from a countercultural tech haven into the world's digital empire. This documentary\u00a0...",
+      "view_count": 35495,
+      "duration_seconds": 3129.0,
+      "url": "https://www.youtube.com/watch?v=qyt6-eag-dA"
+    },
+    {
+      "video_id": "wLL0zDeAD04",
+      "title": "Negotiation: The Art in the M&A Deal - Part 1",
+      "channel": "VCFNOW",
+      "description": "Part one of the VCF Presents presentation featuring Mr. Enrique Brito on November 17, 2016. Mr. Brito, a Partner and Practice\u00a0...",
+      "view_count": 33214,
+      "duration_seconds": 1254.0,
+      "url": "https://www.youtube.com/watch?v=wLL0zDeAD04"
+    },
+    {
+      "video_id": "HHVtNgngLHA",
+      "title": "Microsoft And LinkedIn CEOs On Their $26.2B Deal | CNBC",
+      "channel": "CNBC",
+      "description": "Satya Nadella, Microsoft CEO, and Jeff Weiner, LinkedIn CEO, discuss Microsoft's acquisition of LinkedIn. \u00bb Subscribe to CNBC:\u00a0...",
+      "view_count": 32435,
+      "duration_seconds": 278.0,
+      "url": "https://www.youtube.com/watch?v=HHVtNgngLHA"
+    },
+    {
+      "video_id": "pcNnqhk6F2I",
+      "title": "How current market conditions compare to 2000's dot-com era bubble",
+      "channel": "CNBC Television",
+      "description": "CNBC's \"Power Lunch\" team discusses markets then and now, comparing to 2000, with James Mackintosh of the Wall Street\u00a0...",
+      "view_count": 31303,
+      "duration_seconds": 230.0,
+      "url": "https://www.youtube.com/watch?v=pcNnqhk6F2I"
+    },
+    {
+      "video_id": "E1FqgQotJEE",
+      "title": "Bankers: The Men Who Collapsed The Global Economy (2008 Financial Crisis Documentary)",
+      "channel": "DISPATCH",
+      "description": "They're bankers, traders, investment funds executives. Frauds, lies, cons: they forgot all about morality to make money. The entire\u00a0...",
+      "view_count": 31142,
+      "duration_seconds": 3294.0,
+      "url": "https://www.youtube.com/watch?v=E1FqgQotJEE"
+    },
+    {
+      "video_id": "2VNllXEL3Fo",
+      "title": "The Fall of Lehman Brothers in 10 Minutes",
+      "channel": "Clever Crack",
+      "description": "The Lehman Brothers collapse in 2008 was one of the most dramatic moments in financial history. This video explains the\u00a0...",
+      "view_count": 30776,
+      "duration_seconds": 605.0,
+      "url": "https://www.youtube.com/watch?v=2VNllXEL3Fo"
+    },
+    {
+      "video_id": "B7fu7eLIjeo",
+      "title": "Michael Dell, Founder of Dell \u2014 How to Play Nice But Win | The Tim Ferriss Show",
+      "channel": "Tim Ferriss",
+      "description": "Michael Dell is chairman and chief executive officer of Dell Technologies, an innovator and technology leader providing the\u00a0...",
+      "view_count": 29270,
+      "duration_seconds": 2986.0,
+      "url": "https://www.youtube.com/watch?v=B7fu7eLIjeo"
+    },
+    {
+      "video_id": "fZqnIAWgb7g",
+      "title": "Google's game-changing ad policy + Michael Dell on \"Play Nice But Win\"  | E1293",
+      "channel": "This Week in Startups",
+      "description": "Subscribe to This Week in Startups on Apple: https://rb.gy/v19fcp 00:00 Intro Zach Coelius and Michael Dell 01:43 News with Zach\u00a0...",
+      "view_count": 28928,
+      "duration_seconds": 4243.0,
+      "url": "https://www.youtube.com/watch?v=fZqnIAWgb7g"
+    },
+    {
+      "video_id": "gyMI0qgnBZg",
+      "title": "From Salesman to CEO - Bill McDermott's Mindset for Winning",
+      "channel": "Gerhard Gschwandtner",
+      "description": "SAP CEO Bill McDermott shares the winning mindset that he developed as a 16-year old when he purchased a Deli. He explains\u00a0...",
+      "view_count": 28226,
+      "duration_seconds": 287.0,
+      "url": "https://www.youtube.com/watch?v=gyMI0qgnBZg"
+    },
+    {
+      "video_id": "qoUmSer2IxA",
+      "title": "Why do we have the Fed? | CNBC Explains",
+      "channel": "CNBC International",
+      "description": "The Fed is often called the most powerful bank in the world but what does it really do? CNBC's Elizabeth Schulze explains.",
+      "view_count": 28046,
+      "duration_seconds": 194.0,
+      "url": "https://www.youtube.com/watch?v=qoUmSer2IxA"
+    },
+    {
+      "video_id": "m2_4UQcThlU",
+      "title": "On this day | 15th April 2000 | Wall Street stockmarket crash",
+      "channel": "Channel 10",
+      "description": "On the 15th of April 2000, Wall Street experienced a points drop never before seen on the US markets. At the time, the American\u00a0...",
+      "view_count": 27381,
+      "duration_seconds": 115.0,
+      "url": "https://www.youtube.com/watch?v=m2_4UQcThlU"
+    },
+    {
+      "video_id": "bStbIHxsAiw",
+      "title": "Inside the Biggest M&A Deals You Need to Know (Blackstone, Goldman Sachs, Victoria's Secrets)",
+      "channel": "AmplifyME",
+      "description": "From a $35bn \u201cValentine's Day love letter\u201d to OpenAI's mysterious $6.5bn hardware play, Anthony and Stephen break down the\u00a0...",
+      "view_count": 26851,
+      "duration_seconds": 2075.0,
+      "url": "https://www.youtube.com/watch?v=bStbIHxsAiw"
+    },
+    {
+      "video_id": "UpHyjY0ivBk",
+      "title": "Lloyd Blankfein on Surviving the 2008 Crisis, Fed Independence & the Future of Finance",
+      "channel": "Harvard Business School",
+      "description": "Former Goldman Sachs CEO Lloyd Blankfein shares insights on what it was like managing the company through near-collapse,\u00a0...",
+      "view_count": 26391,
+      "duration_seconds": 5352.0,
+      "url": "https://www.youtube.com/watch?v=UpHyjY0ivBk"
+    },
+    {
+      "video_id": "WJTJg7ehCaM",
+      "title": "Hewlett-Packard Splits Into Two Companies, Meg Whitman to Lead HP Enterprise",
+      "channel": "Bloomberg Originals",
+      "description": "Oct. 6 (Bloomberg) -- Bloomberg's Cory Johnson examines Hewlett-Packard's split into two companies and a potential investment\u00a0...",
+      "view_count": 25083,
+      "duration_seconds": 359.0,
+      "url": "https://www.youtube.com/watch?v=WJTJg7ehCaM"
+    },
+    {
+      "video_id": "ntfAPJInV6c",
+      "title": "Silicon Valley In the Beginning (Part One of Five) Narrated by Leonard Nimoy",
+      "channel": "Silicon Valley Historical Association",
+      "description": "Silicon Valley: A Five Part Series is a documentary film that was produced in 2012. This 24-minute video is Part One of the series.",
+      "view_count": 24215,
+      "duration_seconds": 1441.0,
+      "url": "https://www.youtube.com/watch?v=ntfAPJInV6c"
+    },
+    {
+      "video_id": "hwskqpf0E6Y",
+      "title": "Jeff Bezos on How Amazon survived Dotcom Crash",
+      "channel": "Investors Archive",
+      "description": "15 Books Jeff Bezos thinks you should read: https://sites.google.com/view/investorsarchive/book-recommendations/jeff-bezos\u00a0...",
+      "view_count": 24017,
+      "duration_seconds": 146.0,
+      "url": "https://www.youtube.com/watch?v=hwskqpf0E6Y"
+    },
+    {
+      "video_id": "SCPLWaC_m6k",
+      "title": "Amazon to buy self-driving technology company Zoox",
+      "channel": "CNBC Television",
+      "description": "Deal chatter surfaced even earlier, when The Information reported that the company had hired Frank Quattrone's Qatalyst Partners\u00a0...",
+      "view_count": 23268,
+      "duration_seconds": 272.0,
+      "url": "https://www.youtube.com/watch?v=SCPLWaC_m6k"
+    },
+    {
+      "video_id": "3NuTsywhLp0",
+      "title": "Mergers and Acquisitions (2021 Level II CFA\u00ae Exam \u2013 Reading 23)",
+      "channel": "AnalystPrep",
+      "description": "Understand Mergers and Acquisitions (M&A) for CFA Level II Corporate Issuers. In this detailed lesson, Professor James Forjan\u00a0...",
+      "view_count": 22985,
+      "duration_seconds": 4952.0,
+      "url": "https://www.youtube.com/watch?v=3NuTsywhLp0"
+    },
+    {
+      "video_id": "G-hezE3A2EM",
+      "title": "Panic: The Untold Story of the 2008 Financial Crisis",
+      "channel": "Finance Documentaries",
+      "description": "",
+      "view_count": 22811,
+      "duration_seconds": 5544.0,
+      "url": "https://www.youtube.com/watch?v=G-hezE3A2EM"
+    },
+    {
+      "video_id": "rRbrJEKiBvk",
+      "title": "LinkedIn: From Startup to $26 Billion Microsoft Acquisition",
+      "channel": "Valuetainment",
+      "description": "In this episode of Case Studies with the Biz Doc he takes a look at LinkedIn. In this episode he follows the companies timeline and\u00a0...",
+      "view_count": 22468,
+      "duration_seconds": 789.0,
+      "url": "https://www.youtube.com/watch?v=rRbrJEKiBvk"
+    },
+    {
+      "video_id": "lQEyM6NAyP8",
+      "title": "Pixar deal completed to show Disney employees it was a new day: Former CEO Bob Iger",
+      "channel": "CNBC Television",
+      "description": "Bob Iger, former Disney CEO, sits down with CNBC's David Faber in a CNBC exclusive interview. The two discuss Iger's best\u00a0...",
+      "view_count": 22210,
+      "duration_seconds": 249.0,
+      "url": "https://www.youtube.com/watch?v=lQEyM6NAyP8"
+    },
+    {
+      "video_id": "uN0FAhzD-WI",
+      "title": "BYU Marriott School of Business Convocation 26 April 2019 - Ryan Smith, Qualtrics CEO & Co-founder",
+      "channel": "BYU Marriott Web",
+      "description": "Commencement speech given by Ryan Smith, Qualtrics CEO & Co-Founder, on 26 April 2019 to the BYU Marriott School of\u00a0...",
+      "view_count": 22023,
+      "duration_seconds": 1322.0,
+      "url": "https://www.youtube.com/watch?v=uN0FAhzD-WI"
+    },
+    {
+      "video_id": "yusANKiOcPU",
+      "title": "The Things Nobody Tells You About An $8B Acquisition with Ryan Smith from Qualtrics",
+      "channel": "SaaStr AI",
+      "description": "Join Qualtrics Co-Founder and CEO alongside SaaStr Founder and CEO Jason Lemkin as Ryan reflects on the survey software\u00a0...",
+      "view_count": 21776,
+      "duration_seconds": 2411.0,
+      "url": "https://www.youtube.com/watch?v=yusANKiOcPU"
+    },
+    {
+      "video_id": "69j-tgjjZ8M",
+      "title": "The Life Story of Michael Dell",
+      "channel": "Founders Podcast",
+      "description": "This is one of the most extraordinary founder stories you will ever hear. Michael Dell started his company with $1000 when he was\u00a0...",
+      "view_count": 21381,
+      "duration_seconds": 6277.0,
+      "url": "https://www.youtube.com/watch?v=69j-tgjjZ8M"
+    },
+    {
+      "video_id": "kzBjXAO9jig",
+      "title": "Qualtrics founder Ryan Smith on the company's future",
+      "channel": "TechCrunch",
+      "description": "Qualtrics is a business survey company that has nearly doubled in employees over the past. It's enterprise customer base is now\u00a0...",
+      "view_count": 20628,
+      "duration_seconds": 310.0,
+      "url": "https://www.youtube.com/watch?v=kzBjXAO9jig"
+    },
+    {
+      "video_id": "1Y5Yo0vwd5c",
+      "title": "The Real Reason You Should Care About Google\u2019s Acquisition of Wiz",
+      "channel": "Chip Stock Investor",
+      "description": "Chapters: 00:00 Google's Acquisition of Wiz 03:47 Department of Justice Proposals 06:30 Financial Implications for Google and\u00a0...",
+      "view_count": 20506,
+      "duration_seconds": 775.0,
+      "url": "https://www.youtube.com/watch?v=1Y5Yo0vwd5c"
+    },
+    {
+      "video_id": "VQFjG5SWDA8",
+      "title": "Was HP Really Scammed? [Autonomy Acquisition]",
+      "channel": "SmallCapSteve",
+      "description": "Join us as we unravel the intricate details of one of the biggest financial fiascos in tech history: HP's $11 billion acquisition of\u00a0...",
+      "view_count": 18314,
+      "duration_seconds": 746.0,
+      "url": "https://www.youtube.com/watch?v=VQFjG5SWDA8"
+    },
+    {
+      "video_id": "xvgwB-EZGMk",
+      "title": "LinkedIn CEO on Microsoft acquisition, managing compassionately",
+      "channel": "CBS Mornings",
+      "description": "Microsoft announced it is buying LinkedIn for more than $26 billion, the tech company's biggest acquisition in its history. LinkedIn\u00a0...",
+      "view_count": 17985,
+      "duration_seconds": 424.0,
+      "url": "https://www.youtube.com/watch?v=xvgwB-EZGMk"
+    },
+    {
+      "video_id": "ECHvExPngGU",
+      "title": "Michael Dell, Dell Technologies | Dell Technologies World 2025",
+      "channel": "SiliconANGLE theCUBE",
+      "description": "Michael Dell, founder, chairman, and chief executive officer of Dell Technologies Inc., joins theCUBE's John Furrier and Dave\u00a0...",
+      "view_count": 17945,
+      "duration_seconds": 792.0,
+      "url": "https://www.youtube.com/watch?v=ECHvExPngGU"
+    },
+    {
+      "video_id": "XHNOfhGImH4",
+      "title": "The Rise and Fall of Lehman Brothers  I FULL DOC | SLICE EXPERTS",
+      "channel": "SLICE Experts",
+      "description": "In September 2008, Lehman Brothers collapsed after more than 150 years in business. The bankruptcy of the Wall Street giant\u00a0...",
+      "view_count": 17925,
+      "duration_seconds": 2728.0,
+      "url": "https://www.youtube.com/watch?v=XHNOfhGImH4"
+    },
+    {
+      "video_id": "buuLLZH6gNU",
+      "title": "Meta Expands AI Compute Deal, Nvidia GTC Kicks Off | Bloomberg Tech 3/16/2026",
+      "channel": "Bloomberg Technology",
+      "description": "Bloomberg's Caroline Hyde and Ed Ludlow discuss the rise in Meta's shares following reports that the social media giant is\u00a0...",
+      "view_count": 17618,
+      "duration_seconds": 2648.0,
+      "url": "https://www.youtube.com/watch?v=buuLLZH6gNU"
+    },
+    {
+      "video_id": "Nk7WW2GVagY",
+      "title": "Dell CEO Michael Dell: AI demand is very solid",
+      "channel": "CNBC Television",
+      "description": "Michael Dell, Dell Technologies founder, chairman, and CEO, joins 'Closing Bell Overtime' to talk AI adoption, the demand for\u00a0...",
+      "view_count": 16973,
+      "duration_seconds": 531.0,
+      "url": "https://www.youtube.com/watch?v=Nk7WW2GVagY"
+    },
+    {
+      "video_id": "dd2vwTkGMes",
+      "title": "3 Questions: Qualtrics Founder Ryan Smith",
+      "channel": "FOX 13 News Utah",
+      "description": "Fox 13's Bob Evans sat down with tech entrepreneur and CEO of Utah-based Qualtrics, Ryan Smith.",
+      "view_count": 16009,
+      "duration_seconds": 2424.0,
+      "url": "https://www.youtube.com/watch?v=dd2vwTkGMes"
+    },
+    {
+      "video_id": "KLPUFT6usyk",
+      "title": "Michael Dell, Dell Technologies | theCUBE + NYSE Wired: AI Factories - Data Centers of the Future",
+      "channel": "SiliconANGLE theCUBE",
+      "description": "In this exclusive interview from theCUBE + NYSE Wired: AI Factories \u2013 Data Centers of the Future, Dell Technologies founder,\u00a0...",
+      "view_count": 15190,
+      "duration_seconds": 1227.0,
+      "url": "https://www.youtube.com/watch?v=KLPUFT6usyk"
+    },
+    {
+      "video_id": "1290srbuHcM",
+      "title": "The 4 Main Categories of Merger & Acquisition (M&A) Deals",
+      "channel": "Brett Cenkus",
+      "description": "Merger and acquisition (M&A) events can be grouped into four broad categories that relate to the relationship between the\u00a0...",
+      "view_count": 14836,
+      "duration_seconds": 237.0,
+      "url": "https://www.youtube.com/watch?v=1290srbuHcM"
+    },
+    {
+      "video_id": "nyCSeKgIOnU",
+      "title": "Michael Dell: Growth Rate Accelerating as Private Company",
+      "channel": "Bloomberg Originals",
+      "description": "Dec. 4 (Bloomberg) -- Dell Chief Executive Officer and Founder Michael Dell discusses being back in charge and the benefits of\u00a0...",
+      "view_count": 14756,
+      "duration_seconds": 1296.0,
+      "url": "https://www.youtube.com/watch?v=nyCSeKgIOnU"
+    },
+    {
+      "video_id": "H6VMoTL2SGU",
+      "title": "Steve Jobs describes his departure from Apple",
+      "channel": "Investors Archive",
+      "description": "Steve Jobs tells the story behind Apple firing him in the lost interview from 1995.",
+      "view_count": 14329,
+      "duration_seconds": 337.0,
+      "url": "https://www.youtube.com/watch?v=H6VMoTL2SGU"
+    },
+    {
+      "video_id": "_8QYW7e_knM",
+      "title": "Morgan Stanley cuts 2,500 jobs: What\u2019s behind the layoffs?",
+      "channel": "Business Standard",
+      "description": "Morgan Stanley has laid off about 2500 employees globally, even after reporting one of its strongest financial years. The job cuts\u00a0...",
+      "view_count": 13989,
+      "duration_seconds": 147.0,
+      "url": "https://www.youtube.com/watch?v=_8QYW7e_knM"
+    },
+    {
+      "video_id": "mCUTnLfh7WI",
+      "title": "Utah Jazz agree to sell team to Qualtrics founder Ryan Smith",
+      "channel": "Utah Jazz",
+      "description": "In a press conference Wednesday, longtime Utah Jazz owner Gail Miller announced the intended sale of the team to Qualtrics\u00a0...",
+      "view_count": 12816,
+      "duration_seconds": 955.0,
+      "url": "https://www.youtube.com/watch?v=mCUTnLfh7WI"
+    },
+    {
+      "video_id": "sPHgTBfbkxQ",
+      "title": "Mergers & Acquisitions (M&A) Explained in 2 Minutes in Basic English",
+      "channel": "Afzal Hussein",
+      "description": "Finance Guides (\u00a33.33 each): https://careerguides.io/plus Finance Fast Track (direct access to me daily): https://financefasttrack.co\u00a0...",
+      "view_count": 12283,
+      "duration_seconds": 233.0,
+      "url": "https://www.youtube.com/watch?v=sPHgTBfbkxQ"
+    },
+    {
+      "video_id": "gN1fYDZUHlc",
+      "title": "From Basement to $8B Exit; How Qualtrics Did It - Ryan Smith",
+      "channel": "Startup Grind",
+      "description": "Startup Grind Global Conference 2019 About the session: A Fireside chat with Ryan Smith, Co-founder + CEO of Qualtrics, talking\u00a0...",
+      "view_count": 12253,
+      "duration_seconds": 2031.0,
+      "url": "https://www.youtube.com/watch?v=gN1fYDZUHlc"
+    },
+    {
+      "video_id": "MPjx4tf_pXw",
+      "title": "OpenAI Targets Banking, Warner Bros. Considers Sales Options | Bloomberg Tech 10/21/2025",
+      "channel": "Bloomberg Technology",
+      "description": "Bloomberg's Ed Ludlow discusses OpenAI's secretive project to train its artificial intelligence to build financial models and what\u00a0...",
+      "view_count": 12121,
+      "duration_seconds": 2651.0,
+      "url": "https://www.youtube.com/watch?v=MPjx4tf_pXw"
+    },
+    {
+      "video_id": "ICW1nFruK9c",
+      "title": "SAP CEO and Qualtrics CEO on SAP-Qualtrics deal",
+      "channel": "CNBC Television",
+      "description": "SAP CEO Bill McDermott and Qualtrics CEO Ryan Smith joins 'Squawk Box' to discuss the new SAP-Qualtrics merger.",
+      "view_count": 11571,
+      "duration_seconds": 497.0,
+      "url": "https://www.youtube.com/watch?v=ICW1nFruK9c"
+    },
+    {
+      "video_id": "Dz7rOiMnjM4",
+      "title": "The HP-Autonomy merger: What went wrong?",
+      "channel": "CNN",
+      "description": "CNN's Jim Boulden takes a look at HP's financially disastrous takeover of Autonomy.",
+      "view_count": 11030,
+      "duration_seconds": 176.0,
+      "url": "https://www.youtube.com/watch?v=Dz7rOiMnjM4"
+    },
+    {
+      "video_id": "3p9Y2Sayd3k",
+      "title": "Israel\u2019s Channel 10 Gil Tamary interviews Oracle\u2019s Larry Ellison",
+      "channel": "Gil Tamary (\u202b\u05d2\u05d9\u05dc \u05ea\u05de\u05e8\u05d9\u202c\u200e)",
+      "description": "Gil Tamary interview with Oracle's Larry Ellison Gil Tamary, Israel's Channel 10 US reporter, interview with Larry Ellison after\u00a0...",
+      "view_count": 10614,
+      "duration_seconds": 147.0,
+      "url": "https://www.youtube.com/watch?v=3p9Y2Sayd3k"
+    },
+    {
+      "video_id": "5_w1XIi_oWU",
+      "title": "SAP CEO Bill McDermott: Creating a Culture of Measurement",
+      "channel": "Gerhard Gschwandtner",
+      "description": "In this interview, Bill McDermott, CEO of SAP shares his insights into creating a data driven business that allows salespeople to\u00a0...",
+      "view_count": 10490,
+      "duration_seconds": 180.0,
+      "url": "https://www.youtube.com/watch?v=5_w1XIi_oWU"
+    },
+    {
+      "video_id": "HlD8Smsh3lM",
+      "title": "Walk Through an M&A Deal You\u2019ve Been Following",
+      "channel": "Wall Street Mastermind Case Studies",
+      "description": "One of the most basic questions you might get asked during an investment banking interview is to walk through an M&A deal\u00a0...",
+      "view_count": 9995,
+      "duration_seconds": 409.0,
+      "url": "https://www.youtube.com/watch?v=HlD8Smsh3lM"
+    },
+    {
+      "video_id": "geUnghf53PM",
+      "title": "Meg Whitman interview: HP boss lays blame on Autonomy",
+      "channel": "NewsInWorldNow",
+      "description": "Meg Whitman interview: HP boss lays blame on Autonomy The boss of the world's biggest computer seller has defended her\u00a0...",
+      "view_count": 9720,
+      "duration_seconds": 261.0,
+      "url": "https://www.youtube.com/watch?v=geUnghf53PM"
+    },
+    {
+      "video_id": "-A0FKL8L1IY",
+      "title": "Ryan Smith- CEO Qualtrics- Full Interview",
+      "channel": "Brek Bolton",
+      "description": "",
+      "view_count": 9614,
+      "duration_seconds": 1376.0,
+      "url": "https://www.youtube.com/watch?v=-A0FKL8L1IY"
+    },
+    {
+      "video_id": "sfO9vFZmZ-s",
+      "title": "Ryan Smith (Qualtrics) at StartUp Grind Utah",
+      "channel": "Startup Grind",
+      "description": "http://startupgrind.com/event/startup-grind-lehi-hosts-ryan-smith-ceo-co-founder-of-qualtrics/ Ryan Smith co-founded Qualtrics in\u00a0...",
+      "view_count": 9381,
+      "duration_seconds": 3489.0,
+      "url": "https://www.youtube.com/watch?v=sfO9vFZmZ-s"
+    },
+    {
+      "video_id": "bVBhHVbXDzI",
+      "title": "HP v Autonomy explained",
+      "channel": "Financial Times",
+      "description": "Subscribe to the Financial Times on YouTube: http://bit.ly/FTimeSubs In the battle between Hewlett-Packard and Autonomy, the\u00a0...",
+      "view_count": 8994,
+      "duration_seconds": 287.0,
+      "url": "https://www.youtube.com/watch?v=bVBhHVbXDzI"
+    },
+    {
+      "video_id": "yJ_CTNBe9EM",
+      "title": "How to Talk About M&A Deals in an Investment Bank Interview",
+      "channel": "AmplifyME",
+      "description": "In this episode, Anthony is joined by M&A expert Silvia Magni to break down how to confidently talk about M&A and corporate\u00a0...",
+      "view_count": 8858,
+      "duration_seconds": 1270.0,
+      "url": "https://www.youtube.com/watch?v=yJ_CTNBe9EM"
+    },
+    {
+      "video_id": "55dkRkKT8AQ",
+      "title": "Intro to M&A: Mergers & Acquisitions Explained",
+      "channel": "365 Financial Analyst",
+      "description": "Access all 365 Financial Analyst courses 100% for free \u2014 November 6\u201321! \u27a1\ufe0f https://bit.ly/4oZDhTB Sign up to\u00a0...",
+      "view_count": 8670,
+      "duration_seconds": 702.0,
+      "url": "https://www.youtube.com/watch?v=55dkRkKT8AQ"
+    },
+    {
+      "video_id": "CHEvAF0l8qg",
+      "title": "Frank Cappelleri says markets stuck in range as oil rises and VIX climbs",
+      "channel": "CNBC Television",
+      "description": "Frank Cappelleri, Founder and President of CappThesis, says markets remain range bound but momentum could drive the next\u00a0...",
+      "view_count": 8497,
+      "duration_seconds": 242.0,
+      "url": "https://www.youtube.com/watch?v=CHEvAF0l8qg"
+    },
+    {
+      "video_id": "srDIlxuVUN4",
+      "title": "How 70s Hippies Shaped the Tech Giants of the Silicon Valley | Extra Long Documentary",
+      "channel": "Get.factual",
+      "description": "How did the countercultural ideals of the 1970s hippies shape the tech revolution that followed? This documentary explores how\u00a0...",
+      "view_count": 8497,
+      "duration_seconds": 6153.0,
+      "url": "https://www.youtube.com/watch?v=srDIlxuVUN4"
+    },
+    {
+      "video_id": "vWUQruRMMAU",
+      "title": "I Investigated Bear Stearns Collapse, Here's What I Found",
+      "channel": "Money Talks",
+      "description": "In 2008, Bear Stearns \u2014 one of the biggest investment banks on Wall Street \u2014 collapsed almost overnight. How did a firm worth\u00a0...",
+      "view_count": 8287,
+      "duration_seconds": 622.0,
+      "url": "https://www.youtube.com/watch?v=vWUQruRMMAU"
+    },
+    {
+      "video_id": "dBtjNPTQbjQ",
+      "title": "Dell Technologies Co-Founder Michael Dell talks $6.25 billion donation to Invest America",
+      "channel": "CNBC Television",
+      "description": "Michael Dell, Dell Technologies Co-Founder and CEO, joins 'Closing Bell Overtime' to talk his $6.25 billion commitment to Invest\u00a0...",
+      "view_count": 8132,
+      "duration_seconds": 250.0,
+      "url": "https://www.youtube.com/watch?v=dBtjNPTQbjQ"
+    },
+    {
+      "video_id": "8pQfuwS9P6Q",
+      "title": "Bank switch deals up to \u00a3500, plus Chase and Revolut news (March 2026)",
+      "channel": "Be Clever With Your Cash",
+      "description": "If you want to switch banks, check out the latest offers on our best buy tables:\u00a0...",
+      "view_count": 7925,
+      "duration_seconds": 772.0,
+      "url": "https://www.youtube.com/watch?v=8pQfuwS9P6Q"
+    },
+    {
+      "video_id": "rF1M0_ghhro",
+      "title": "Jim Cramer on Zoom-Five9: People like the deal due its cloud-based service",
+      "channel": "CNBC Television",
+      "description": "Goldman Sachs advised Zoom on the acquisition, and Frank Quattrone's Qatalyst Partners advised Five9. The two companies will\u00a0...",
+      "view_count": 7615,
+      "duration_seconds": 209.0,
+      "url": "https://www.youtube.com/watch?v=rF1M0_ghhro"
+    },
+    {
+      "video_id": "b61F7rWiPUY",
+      "title": "Meg Whitman on 'Bloomberg Studio 1.0'",
+      "channel": "Bloomberg Technology",
+      "description": "Feb.20 -- Meg Whitman, Quibi CEO and former CEO of eBay and Hewlett-Packard, talks about the new video streaming service\u00a0...",
+      "view_count": 7475,
+      "duration_seconds": 1445.0,
+      "url": "https://www.youtube.com/watch?v=b61F7rWiPUY"
+    },
+    {
+      "video_id": "sGOGX5D2x1s",
+      "title": "Inside the Biggest M&A Deals You Need to Know (BlackRock, Toyota Industries, Pinterest, Paramount)",
+      "channel": "AmplifyME",
+      "description": "This week on the Market Maker Podcast we break down the biggest M&A deals, private equity moves and activist investor plays\u00a0...",
+      "view_count": 7102,
+      "duration_seconds": 2766.0,
+      "url": "https://www.youtube.com/watch?v=sGOGX5D2x1s"
+    },
+    {
+      "video_id": "svy7j7l-Q0U",
+      "title": "Lehman Brothers Failure Part 1 - September 15, 2008 ABC Action News",
+      "channel": "TrademarkCapitalTV",
+      "description": "The impact of Lehman Brothers filing bankruptcy on Wall Street.",
+      "view_count": 6859,
+      "duration_seconds": 213.0,
+      "url": "https://www.youtube.com/watch?v=svy7j7l-Q0U"
+    },
+    {
+      "video_id": "BmjGGAwpUEM",
+      "title": "Lehman Brothers - The Bank That Bust The World Documentary Of story life \ufffc",
+      "channel": "The Wall Street Journal",
+      "description": "",
+      "view_count": 6571,
+      "duration_seconds": 3493.0,
+      "url": "https://www.youtube.com/watch?v=BmjGGAwpUEM"
+    },
+    {
+      "video_id": "ddsUIhdw5A4",
+      "title": "The Silicon Valley Story (1989)",
+      "channel": "History San Jos\u00e9",
+      "description": "Film promoting the Silicon Valley through interviews with heads of every major technology firm in the valley, primarily\u00a0...",
+      "view_count": 6325,
+      "duration_seconds": 5928.0,
+      "url": "https://www.youtube.com/watch?v=ddsUIhdw5A4"
+    },
+    {
+      "video_id": "UcF1okBtp_4",
+      "title": "Hewlett-Packard Beats on Earnings, and More",
+      "channel": "The Wall Street Journal",
+      "description": "What's News: Hewlett-Packard posts weaker sales but swings to a profit. Burberry appeals China ban on its trademark pattern.",
+      "view_count": 6287,
+      "duration_seconds": 109.0,
+      "url": "https://www.youtube.com/watch?v=UcF1okBtp_4"
+    },
+    {
+      "video_id": "JTTOM09SoGQ",
+      "title": "Inside $2B in M&A Deals W/ Jimmy Tran | The Deal Table S1E16",
+      "channel": "The Deal Table",
+      "description": "Jimmy Tran blends business acumen with deep personal perspective. As the former VP of Corporate Strategy and M&A at CBRE,\u00a0...",
+      "view_count": 6282,
+      "duration_seconds": 4110.0,
+      "url": "https://www.youtube.com/watch?v=JTTOM09SoGQ"
+    },
+    {
+      "video_id": "lmoqA4bU4y0",
+      "title": "Watch CNBC's full interview with ServiceNow CEO Bill McDermott",
+      "channel": "CNBC Television",
+      "description": "ServiceNow CEO Bill McDermott joins 'Closing Bell Overtime' to talk ServiceNow's stock trajectory, growth strategy,\u00a0...",
+      "view_count": 6058,
+      "duration_seconds": 307.0,
+      "url": "https://www.youtube.com/watch?v=lmoqA4bU4y0"
+    },
+    {
+      "video_id": "sNcZ7hugRrY",
+      "title": "Micron Warns of Heavy Spending Amid Memory Crunch | Bloomberg Tech 3/19/2026",
+      "channel": "Bloomberg Technology",
+      "description": "Bloomberg's Caroline Hyde discusses Micron earnings as the memory maker plans heavy spending on production to meet\u00a0...",
+      "view_count": 6027,
+      "duration_seconds": 2688.0,
+      "url": "https://www.youtube.com/watch?v=sNcZ7hugRrY"
+    },
+    {
+      "video_id": "S29oX348J7o",
+      "title": "Corporate Finance Explained | Mastering Mergers & Acquisitions",
+      "channel": "Corporate Finance Institute",
+      "description": "Mergers & Acquisitions (M&A) shape the corporate landscape, but what makes a deal successful? In this episode of Corporate\u00a0...",
+      "view_count": 5735,
+      "duration_seconds": 1367.0,
+      "url": "https://www.youtube.com/watch?v=S29oX348J7o"
+    },
+    {
+      "video_id": "1ekx3DcLbZo",
+      "title": "Quick Overview of Morgan Stanley #privateequity #investmentbanking #interviewtips",
+      "channel": "Peak Frameworks",
+      "description": "Get the #1 Private Equity recruiting course, which comes with 3-statement LBO model tests, mega fund case studies, and\u00a0...",
+      "view_count": 5643,
+      "duration_seconds": 79.0,
+      "url": "https://www.youtube.com/watch?v=1ekx3DcLbZo"
+    },
+    {
+      "video_id": "1E4KU6cmfVo",
+      "title": "How Did Goldman Sachs Profit from the 2008 Financial Crisis? | Insider Info Economics Documentary",
+      "channel": "DISPATCH",
+      "description": "Did Goldman Sachs use insider information to profit from the financial crisis? How did a brokerage house, founded in 1869 by a\u00a0...",
+      "view_count": 5579,
+      "duration_seconds": 2928.0,
+      "url": "https://www.youtube.com/watch?v=1E4KU6cmfVo"
+    },
+    {
+      "video_id": "F7Lnt29hRIU",
+      "title": "SAP CEO Bill McDermott | Mad Money | CNBC",
+      "channel": "CNBC",
+      "description": "Wall Street's been flocking to old school tech plays, so why has SAP failed to fly and could it be ready to play catch up? Don't miss\u00a0...",
+      "view_count": 5305,
+      "duration_seconds": 463.0,
+      "url": "https://www.youtube.com/watch?v=F7Lnt29hRIU"
+    },
+    {
+      "video_id": "RiO9M0OqRtY",
+      "title": "JPMorgan Starts Program to Track Junior Banker Hours",
+      "channel": "Bloomberg Television",
+      "description": "JPMorgan has initiated a pilot program to monitor the work hours of junior bankers within its investment banking division.",
+      "view_count": 5025,
+      "duration_seconds": 274.0,
+      "url": "https://www.youtube.com/watch?v=RiO9M0OqRtY"
+    },
+    {
+      "video_id": "ceEep16g2js",
+      "title": "Industrials, Banks to Drive M&A: Morgan Stanley's Miles",
+      "channel": "Bloomberg Television",
+      "description": "Dealmakers are raking in billions in M&A despite lingering fears about trade wars and geopolitics. Transaction values are up\u00a0...",
+      "view_count": 4944,
+      "duration_seconds": 465.0,
+      "url": "https://www.youtube.com/watch?v=ceEep16g2js"
+    },
+    {
+      "video_id": "TRbHyURnPGw",
+      "title": "Meg Whitman defends HP split",
+      "channel": "CNN Business",
+      "description": "At Fortune's Most Powerful Women Summit, CEO Meg Whitman explains why splitting up Hewlett-Packard is good for customers,\u00a0...",
+      "view_count": 4857,
+      "duration_seconds": 224.0,
+      "url": "https://www.youtube.com/watch?v=TRbHyURnPGw"
+    },
+    {
+      "video_id": "Yi2ckhySDLs",
+      "title": "Inside the Biggest M&A Deals You Need To Know (Glencore, Schroders, Paramount, Anthropic)",
+      "channel": "AmplifyME",
+      "description": "A $200 billion mining merger collapses. A $108 billion hostile takeover battle intensifies. And an AI startup just hit a $350 billion\u00a0...",
+      "view_count": 4853,
+      "duration_seconds": 3700.0,
+      "url": "https://www.youtube.com/watch?v=Yi2ckhySDLs"
+    },
+    {
+      "video_id": "2r8kUgp81y8",
+      "title": "Disney CEO Bob Iger talks Steve Jobs, Pixar and Apple",
+      "channel": "CNBC Television",
+      "description": "The \"Squawk Box\" crew previews Disney CEO Bob Iger's interview with CNBC's Jim Cramer.",
+      "view_count": 4695,
+      "duration_seconds": 78.0,
+      "url": "https://www.youtube.com/watch?v=2r8kUgp81y8"
+    },
+    {
+      "video_id": "DLoIwYJPTA0",
+      "title": "Qualtrics CEO on Amazon deal: Every employee at Amazon now has access to Qualtrics",
+      "channel": "CNBC Television",
+      "description": "Zig Serafin, Qualtrics CEO, joins 'Closing Bell' to discuss its deal with Amazon and what its platform provides. He also talks about\u00a0...",
+      "view_count": 4583,
+      "duration_seconds": 301.0,
+      "url": "https://www.youtube.com/watch?v=DLoIwYJPTA0"
+    },
+    {
+      "video_id": "ipSwOBhOAw4",
+      "title": "Mergers And Acquisitions Explained For Dummies",
+      "channel": "Ben Kelly",
+      "description": "Mergers and Acquisitions for Beginners: Business Buying Made Easy Buy your first business in the next 6 months:\u00a0...",
+      "view_count": 4570,
+      "duration_seconds": 995.0,
+      "url": "https://www.youtube.com/watch?v=ipSwOBhOAw4"
+    },
+    {
+      "video_id": "LTQhzq0AeEc",
+      "title": "History of Silicon Valley Crash Course",
+      "channel": "IntroBooks Education",
+      "description": "Discover our eBooks and Audiobooks on Google Play Store https://play.google.com/store/books/author?id=IntroBooks Apple\u00a0...",
+      "view_count": 4523,
+      "duration_seconds": 313.0,
+      "url": "https://www.youtube.com/watch?v=LTQhzq0AeEc"
+    },
+    {
+      "video_id": "BSUtIsULm9Q",
+      "title": "How to Get to Scale & Profit - Ryan Smith + Ryan Sweeney",
+      "channel": "Startup Grind",
+      "description": "SUBSCRIBE: https://www.youtube.com/user/StartupGrind STARTUP GRIND GLOBAL: https://www.startupgrind.com/conference\u00a0...",
+      "view_count": 4497,
+      "duration_seconds": 1405.0,
+      "url": "https://www.youtube.com/watch?v=BSUtIsULm9Q"
+    },
+    {
+      "video_id": "aUNkhE0QqdU",
+      "title": "Salesforce CEO Questions Microsoft-LinkedIn Deal",
+      "channel": "The Wall Street Journal",
+      "description": "Salesforce chairman and CEO Marc Benioff talks to WSJ's Dennis Berman about his company's vision in the LinkedIn deal and\u00a0...",
+      "view_count": 4329,
+      "duration_seconds": 158.0,
+      "url": "https://www.youtube.com/watch?v=aUNkhE0QqdU"
+    },
+    {
+      "video_id": "XbqQSWCFEKk",
+      "title": "Google + Motorola = Googlerola",
+      "channel": "FRANCE 24 English",
+      "description": "Google's recent acquisition of mobile phone company Motorola is a bold step for the online search giant taking the company far\u00a0...",
+      "view_count": 4244,
+      "duration_seconds": 533.0,
+      "url": "https://www.youtube.com/watch?v=XbqQSWCFEKk"
+    },
+    {
+      "video_id": "nNXMQpK6q-I",
+      "title": "Dell: Public Companies Talk to Me About Going Private",
+      "channel": "Bloomberg Originals",
+      "description": "Dec. 4 (Bloomberg) -- Dell Chief Executive Officer and Founder Michael Dell discusses the benefits of being a private company\u00a0...",
+      "view_count": 4220,
+      "duration_seconds": 190.0,
+      "url": "https://www.youtube.com/watch?v=nNXMQpK6q-I"
+    },
+    {
+      "video_id": "iJz5kAOhu3A",
+      "title": "Michael Dell: AI demand is in excess of supply",
+      "channel": "CNBC Television",
+      "description": "Michael Dell, founder and CEO of Dell, joins 'Squawk on the Street' to discuss the impacts of artificial intelligence, geopolitics, and\u00a0...",
+      "view_count": 4125,
+      "duration_seconds": 208.0,
+      "url": "https://www.youtube.com/watch?v=iJz5kAOhu3A"
+    },
+    {
+      "video_id": "vettrubf5_k",
+      "title": "HPE CEO Meg Whitman On Leading HPE Through One Of The Biggest Breakups In Corporate History | CNBC",
+      "channel": "CNBC",
+      "description": "In an exclusive CNBC interview, Meg Whitman, Hewlett Packard Enterprise CEO, shares her thoughts on stepping down as chief\u00a0...",
+      "view_count": 4072,
+      "duration_seconds": 762.0,
+      "url": "https://www.youtube.com/watch?v=vettrubf5_k"
+    },
+    {
+      "video_id": "EtIVKxgOGeQ",
+      "title": "Netscape Communications Corporation, 1994-1999",
+      "channel": "Prometheus Music",
+      "description": "Retrospective video produced for Netscape employees upon the AOL acquisition featuring employees and executives.",
+      "view_count": 4068,
+      "duration_seconds": 1786.0,
+      "url": "https://www.youtube.com/watch?v=EtIVKxgOGeQ"
+    },
+    {
+      "video_id": "GxHuFgLTYsk",
+      "title": "Inside the Biggest M&A Deals You Need to Know (Warner Bros, GE Healthcare, Anglo American & KKR)",
+      "channel": "AmplifyME",
+      "description": "This week, we're diving into a flurry of major M&A activity from GE's $2.3B healthcare tech acquisition to Violia's $3B hazardous\u00a0...",
+      "view_count": 4039,
+      "duration_seconds": 2067.0,
+      "url": "https://www.youtube.com/watch?v=GxHuFgLTYsk"
+    },
+    {
+      "video_id": "uroler9kGJc",
+      "title": "The Bank that Almost Broke The World | Finance Documentary",
+      "channel": "Market Mayhem",
+      "description": "In 2008, one Wall Street giant collapsed so catastrophically, it nearly dragged the entire global economy down with it. Bear\u00a0...",
+      "view_count": 4032,
+      "duration_seconds": 2328.0,
+      "url": "https://www.youtube.com/watch?v=uroler9kGJc"
+    },
+    {
+      "video_id": "vtglpBgDNBw",
+      "title": "Microsoft to acquire LinkedIn in deal valued at $26.2B",
+      "channel": "Fox Business",
+      "description": "Recon Capital Partners' Kevin Kelly and FBN's Dagen McDowell on Microsoft's deal to acquire LinkedIn.",
+      "view_count": 3980,
+      "duration_seconds": 214.0,
+      "url": "https://www.youtube.com/watch?v=vtglpBgDNBw"
+    },
+    {
+      "video_id": "DyKk87C-C0U",
+      "title": "Michael Dell interview - 7/23/1991",
+      "channel": "Sir Mix-A-Lot Rare Music",
+      "description": "Michael Dell talks about IBM and their shortcomings,, Dell, printers, portable computers, and more.",
+      "view_count": 3884,
+      "duration_seconds": 814.0,
+      "url": "https://www.youtube.com/watch?v=DyKk87C-C0U"
+    },
+    {
+      "video_id": "qMkK0bym3xQ",
+      "title": "Billionaire HS Dropout Behind the Utah Jazz and Qualtrics",
+      "channel": "The Logan Bartlett Show",
+      "description": "Ryan Smith is the owner of the Utah Jazz, as well as the founder and former CEO of Qualtrics (recently acquired for $12B). In the\u00a0...",
+      "view_count": 3879,
+      "duration_seconds": 6210.0,
+      "url": "https://www.youtube.com/watch?v=qMkK0bym3xQ"
+    },
+    {
+      "video_id": "z7up14T2SqM",
+      "title": "Oracle's CIA & Israel Ties: Larry Ellison's $4B TikTok Stake Threatens Your Data",
+      "channel": "MintPress News",
+      "description": "Support independent watchdog journalism! https://www.patreon.com/MintPressNews In this explosive investigation, MintPress\u00a0...",
+      "view_count": 3839,
+      "duration_seconds": 559.0,
+      "url": "https://www.youtube.com/watch?v=z7up14T2SqM"
+    },
+    {
+      "video_id": "HKPcwXkvHTc",
+      "title": "Inside the Biggest M&A Deals You Need to Know (Goldman Sachs, AkzoNobel, Papa John, WPP)",
+      "channel": "AmplifyME",
+      "description": "This week on the Market Maker podcast, Anthony and Piers spotlight Goldman Sachs' standout year in M&A, exploring how the\u00a0...",
+      "view_count": 3817,
+      "duration_seconds": 2239.0,
+      "url": "https://www.youtube.com/watch?v=HKPcwXkvHTc"
+    },
+    {
+      "video_id": "HvPvBPyZyWY",
+      "title": "NXP Semiconductor CEO: Making Driving Safer | Mad Money | CNBC",
+      "channel": "CNBC Television",
+      "description": "NXP Semiconductors' CEO joins Jim Cramer for the first time since the company's planned acquisition of Qualcomm fell through.",
+      "view_count": 3791,
+      "duration_seconds": 407.0,
+      "url": "https://www.youtube.com/watch?v=HvPvBPyZyWY"
+    },
+    {
+      "video_id": "CG8Omn-oI5c",
+      "title": "Post-election rally boosts wealth for top billionaires",
+      "channel": "CNBC Television",
+      "description": "CNBC's Robert Frank joins 'Squawk on the Street' to report on the latest news.",
+      "view_count": 3675,
+      "duration_seconds": 181.0,
+      "url": "https://www.youtube.com/watch?v=CG8Omn-oI5c"
+    },
+    {
+      "video_id": "wPc3dNcBNuk",
+      "title": "GSO's Goodman on Retirement, Markets, the Next Cycle",
+      "channel": "Bloomberg Television",
+      "description": "Aug.29 -- Bennett Goodman, co-founder at GSO Capital Partners, discusses his reason for leaving the firm, his view of markets,\u00a0...",
+      "view_count": 3509,
+      "duration_seconds": 697.0,
+      "url": "https://www.youtube.com/watch?v=wPc3dNcBNuk"
+    },
+    {
+      "video_id": "f-ejPwjGJW0",
+      "title": "Breaking Down the Netflix / Warner Brothers $83bn M&A Deal",
+      "channel": "The Wall Street Skinny",
+      "description": "This week Kristen and Jen break down the blockbuster Netflix\u2013Warner Bros. deal. Netflix has agreed to acquire Warner Bros.",
+      "view_count": 3436,
+      "duration_seconds": 1043.0,
+      "url": "https://www.youtube.com/watch?v=f-ejPwjGJW0"
+    },
+    {
+      "video_id": "_RW9Xsiw5YA",
+      "title": "NXP CEO Blames Politics for Abandoned Qualcomm Deal",
+      "channel": "Bloomberg Television",
+      "description": "Jul.27 -- Rick Clemmer, NXP Semiconductors chief executive officer, discusses Qualcomm's decision to abandon its bid to acquire\u00a0...",
+      "view_count": 3352,
+      "duration_seconds": 428.0,
+      "url": "https://www.youtube.com/watch?v=_RW9Xsiw5YA"
+    },
+    {
+      "video_id": "alUQxEldEMM",
+      "title": "The Entire History of Silicon Valley",
+      "channel": "Michael Houck",
+      "description": "Join 75000+ founders: https://join.foundingjourney.com Let me build you a newsletter or LinkedIn + X audience:\u00a0...",
+      "view_count": 3266,
+      "duration_seconds": 920.0,
+      "url": "https://www.youtube.com/watch?v=alUQxEldEMM"
+    },
+    {
+      "video_id": "kN_uWyGoy8c",
+      "title": "Inside the Biggest M&A Deals You Need to Know (Pfizer, LVMH, Atl\u00e9tico Madrid, Parker Hannifin)",
+      "channel": "AmplifyME",
+      "description": "Inside the Biggest M&A Deals You Need to Know (Pfizer, LVMH, Atl\u00e9tico Madrid, Parker Hannifin) In this week's M&A episode of\u00a0...",
+      "view_count": 3242,
+      "duration_seconds": 1235.0,
+      "url": "https://www.youtube.com/watch?v=kN_uWyGoy8c"
+    },
+    {
+      "video_id": "82goDdNAsJU",
+      "title": "Inside the Biggest M&A Deals & AI News You Need To Know (Medline, Amazon, Nvidia, OpenAI)",
+      "channel": "AmplifyME",
+      "description": "In this M&A edition of Market Maker, Anthony and Piers break down Medline's potential $5 billion IPO, the biggest of the year, and\u00a0...",
+      "view_count": 3229,
+      "duration_seconds": 2181.0,
+      "url": "https://www.youtube.com/watch?v=82goDdNAsJU"
+    },
+    {
+      "video_id": "t-i9cWdw654",
+      "title": "Meg Whitman: HPE Will Make Deals In A Very Focused Way | CNBC",
+      "channel": "CNBC",
+      "description": "Hewlett Packard CEO Meg Whitman weighs in on HPE Micro Focus breakdown and the future of the company. \u00bb Subscribe to\u00a0...",
+      "view_count": 3035,
+      "duration_seconds": 298.0,
+      "url": "https://www.youtube.com/watch?v=t-i9cWdw654"
+    },
+    {
+      "video_id": "CWF7sdrJFWw",
+      "title": "News Wrap: Google Plans $12.5 Billion Takeover of Motorola Mobility",
+      "channel": "PBS NewsHour",
+      "description": "In other news Monday, Google announced its largest-ever acquisition with the planned purchase of Motorola Mobility for $12.5\u00a0...",
+      "view_count": 2989,
+      "duration_seconds": 257.0,
+      "url": "https://www.youtube.com/watch?v=CWF7sdrJFWw"
+    },
+    {
+      "video_id": "A4_OSkoJ4Pc",
+      "title": "Miller family to sell Utah Jazz to Qualtrics founder Ryan Smith",
+      "channel": "FOX 13 News Utah",
+      "description": "The Millers will sell the team to Qualtrics founder Ryan Smith, the co-creator of the \"5 For the Fight\" jersey patch the team wears on\u00a0...",
+      "view_count": 2954,
+      "duration_seconds": 171.0,
+      "url": "https://www.youtube.com/watch?v=A4_OSkoJ4Pc"
+    },
+    {
+      "video_id": "Vt5Nv7jCYaY",
+      "title": "Google-Motorola deal opens up 'the cloud'",
+      "channel": "On Demand News",
+      "description": "Google's $12.5 billion deal for Motorola Mobility opens the company up to specialist Android and \"cloud\" phones. Like us on\u00a0...",
+      "view_count": 2916,
+      "duration_seconds": 85.0,
+      "url": "https://www.youtube.com/watch?v=Vt5Nv7jCYaY"
+    },
+    {
+      "video_id": "E2wtXSO3cCo",
+      "title": "Mergers, Acquisitions, & Takeovers Are NOT the Same Thing. Do You Understand the Difference?",
+      "channel": "StrategyExplained",
+      "description": "What is the difference between a merger and an acquisition? Combining separate companies into one can result in a merger,\u00a0...",
+      "view_count": 2904,
+      "duration_seconds": 219.0,
+      "url": "https://www.youtube.com/watch?v=E2wtXSO3cCo"
+    },
+    {
+      "video_id": "dF7YBvmFf5Y",
+      "title": "Steve Ballmer: What Paul Allen meant to Microsoft",
+      "channel": "GeekWire",
+      "description": "Former Microsoft CEO Steve Ballmer pays tribute to Microsoft co-founder Paul Allen's contributions to the company during\u00a0...",
+      "view_count": 2877,
+      "duration_seconds": 178.0,
+      "url": "https://www.youtube.com/watch?v=dF7YBvmFf5Y"
+    },
+    {
+      "video_id": "-SJBDuO01cY",
+      "title": "LinkedIn's Co-Founder Says Company Has 'Natural Synergy' with Microsoft",
+      "channel": "Bloomberg Originals",
+      "description": "June 23 -- Reid Hoffman, LinkedIn's co-founder and executive chairman, comments on the Microsoft-LinkedIn deal during an\u00a0...",
+      "view_count": 2829,
+      "duration_seconds": 237.0,
+      "url": "https://www.youtube.com/watch?v=-SJBDuO01cY"
+    },
+    {
+      "video_id": "oFcinsUSQfg",
+      "title": "Qualtrics CEO Zig Serafin on the company's record year",
+      "channel": "CNBC Television",
+      "description": "Qualtrics founder and executive chairman Ryan Smith, and CEO Zig Serafin, join \"Squawk Alley\" to discuss the company's strong\u00a0...",
+      "view_count": 2727,
+      "duration_seconds": 274.0,
+      "url": "https://www.youtube.com/watch?v=oFcinsUSQfg"
+    },
+    {
+      "video_id": "pcvpYsVo-Ro",
+      "title": "Qualtrics founder Ryan Smith: We help organizations understand how people think and feel",
+      "channel": "CNBC Television",
+      "description": "Ryan Smith, Qualtrics founder and executive chairman, joins 'Squawk Box' to discuss the state of the company, how Qualtrics\u00a0...",
+      "view_count": 2708,
+      "duration_seconds": 380.0,
+      "url": "https://www.youtube.com/watch?v=pcvpYsVo-Ro"
+    },
+    {
+      "video_id": "5AcMo6RiNk0",
+      "title": "Michael Dell: Why It Makes Sense to Go Private | Inc. Magazine",
+      "channel": "Inc.",
+      "description": "Founder Michael Dell explains how the tedious process of going private will pay off in the long run of Dell's future. Click here for\u00a0...",
+      "view_count": 2696,
+      "duration_seconds": 77.0,
+      "url": "https://www.youtube.com/watch?v=5AcMo6RiNk0"
+    },
+    {
+      "video_id": "z9CZ3AvUYu0",
+      "title": "Centerview's Effron on large deals",
+      "channel": "TheDealVideo",
+      "description": "Centerview Partners' partner and co-founder Blair Effron spoke at The Deal Economy 2010. In this video Effron says that he\u00a0...",
+      "view_count": 2359,
+      "duration_seconds": 95.0,
+      "url": "https://www.youtube.com/watch?v=z9CZ3AvUYu0"
+    },
+    {
+      "video_id": "q_bns5z5AP8",
+      "title": "Meg Whitman Restructures Her Way to a Bigger Bonus",
+      "channel": "Bloomberg Originals",
+      "description": "June 13 (Bloomberg) -- Why does Hewlett Packard keep restructuring and laying off more people? And is it possible that Chief\u00a0...",
+      "view_count": 2317,
+      "duration_seconds": 149.0,
+      "url": "https://www.youtube.com/watch?v=q_bns5z5AP8"
+    },
+    {
+      "video_id": "E93eU4SM4PM",
+      "title": "Dell founder hoping to take company private",
+      "channel": "CNN",
+      "description": "Dell decides to go private, the latest move by Michael Dell to take the computer company he founded to new heights.",
+      "view_count": 2285,
+      "duration_seconds": 150.0,
+      "url": "https://www.youtube.com/watch?v=E93eU4SM4PM"
+    },
+    {
+      "video_id": "uJd3M5ySjHc",
+      "title": "Ryan Smith, Qualtrics // The Qualtrics Story // Data Driven NYC (FirstMark Capital)",
+      "channel": "The MAD Podcast with Matt Turck",
+      "description": "Ryan Smith, Founder and CEO of Qualtrics, sat down for a fireside chat at Data Driven NYC in March 2015 to discuss the story of\u00a0...",
+      "view_count": 2179,
+      "duration_seconds": 1982.0,
+      "url": "https://www.youtube.com/watch?v=uJd3M5ySjHc"
+    },
+    {
+      "video_id": "1qPEOQU-TDE",
+      "title": "Cable company founder convicted of fraud",
+      "channel": "AP Archive",
+      "description": "... pursuit of white-collar crime has landed them convictions of Martha Stewart and former star investment banker Frank Quattrone.",
+      "view_count": 1894,
+      "duration_seconds": 85.0,
+      "url": "https://www.youtube.com/watch?v=1qPEOQU-TDE"
+    },
+    {
+      "video_id": "DJEwNXSmEnw",
+      "title": "Dell Going Private in $24M Buyout",
+      "channel": "Newsy Tech",
+      "description": "Dell will be taken private in the biggest buyout since the Hilton Hotels deal in 2007.",
+      "view_count": 1849,
+      "duration_seconds": 140.0,
+      "url": "https://www.youtube.com/watch?v=DJEwNXSmEnw"
+    },
+    {
+      "video_id": "3FLIEUK2j_A",
+      "title": "Why Would Michael Dell Want to Sell His Company?",
+      "channel": "Bloomberg Originals",
+      "description": "Jan. 14 (Bloomberg) -- Bloomberg's Jeff McCracken discusses how a leveraged buyout of Dell Inc. would work. He speaks with\u00a0...",
+      "view_count": 1838,
+      "duration_seconds": 126.0,
+      "url": "https://www.youtube.com/watch?v=3FLIEUK2j_A"
+    },
+    {
+      "video_id": "QY7RWgdAe9s",
+      "title": "Craig Federighi: Steve Jobs 2.0  & Next Apple CEO?(Ep.1)",
+      "channel": "Tech History Channel",
+      "description": "This is a Biography/Documentary about Craig Federighi Over the past few months I have noticed a bit of meme community forming\u00a0...",
+      "view_count": 1763,
+      "duration_seconds": 563.0,
+      "url": "https://www.youtube.com/watch?v=QY7RWgdAe9s"
+    },
+    {
+      "video_id": "Bq6k5-UD6aA",
+      "title": "Steve Ballmer's Legacy At Microsoft | Flashback | NBC News",
+      "channel": "NBC News",
+      "description": "For the first time since 1980, Steve Ballmer no longer works at Microsoft. NBC's Matt Rivera takes a look back at Ballmer's years\u00a0...",
+      "view_count": 1748,
+      "duration_seconds": 200.0,
+      "url": "https://www.youtube.com/watch?v=Bq6k5-UD6aA"
+    },
+    {
+      "video_id": "c9yT64MkBEM",
+      "title": "M&A Masterclass: The Mistakes That Kill Deals | Mergers & Acquisitions Show |  Ep. 6",
+      "channel": "JT Foxx",
+      "description": "Become the Go-To Mergers & Acquisitions Deal-Maker: https://jtfoxxlive.com/dealmaker-gc Get JT's new books: Business Is\u00a0...",
+      "view_count": 1741,
+      "duration_seconds": 4863.0,
+      "url": "https://www.youtube.com/watch?v=c9yT64MkBEM"
+    },
+    {
+      "video_id": "u-J6XCgKmL4",
+      "title": "11 Biggest Merger And Acquisition Deals in History",
+      "channel": "Money Thinkers",
+      "description": "If you're a fan of business and finance, then you don't want to miss this video! We're taking a deep dive into the biggest merger\u00a0...",
+      "view_count": 1654,
+      "duration_seconds": 767.0,
+      "url": "https://www.youtube.com/watch?v=u-J6XCgKmL4"
+    },
+    {
+      "video_id": "eIYhgrjd5ME",
+      "title": "From IPOs to AI: Deep Dive on Tech Investment Banking I What\u2019s The Deal? | J.P. Morgan",
+      "channel": "jpmorgan",
+      "description": "technology #jpmorgan #jpmorganchase Join host Evan Junek as he catches up with Chris Grose, Co-Head of Technology\u00a0...",
+      "view_count": 1644,
+      "duration_seconds": 1295.0,
+      "url": "https://www.youtube.com/watch?v=eIYhgrjd5ME"
+    },
+    {
+      "video_id": "uZ-6MI9klMg",
+      "title": "How to Discuss SaaS Deals for Tech Investment Banking or Buyside Interviews",
+      "channel": "Wall Street Mastermind Case Studies",
+      "description": "In recent years, technology investment banking and buyside roles (tech PE, growth equity, venture capital) have become some of\u00a0...",
+      "view_count": 1639,
+      "duration_seconds": 441.0,
+      "url": "https://www.youtube.com/watch?v=uZ-6MI9klMg"
+    },
+    {
+      "video_id": "GXEDCvKebQg",
+      "title": "The Google Acquisition Playbook: The Secret Behind A Trillion-Dollar Empire",
+      "channel": "blimpp",
+      "description": "Discover the secrets behind Google's meteoric rise to dominance in the tech industry. This in-depth video explores the search\u00a0...",
+      "view_count": 1602,
+      "duration_seconds": 283.0,
+      "url": "https://www.youtube.com/watch?v=GXEDCvKebQg"
+    },
+    {
+      "video_id": "lGn6YcBSS6A",
+      "title": "Watch CNBC's exclusive interview with Qualcomm CEO on NXP deal",
+      "channel": "CNBC Television",
+      "description": "Qualcomm CEO Steve Mollenkopf speaks to CNBC's David Faber about the termination of the deal for NXP Semiconductors, the\u00a0...",
+      "view_count": 1579,
+      "duration_seconds": 729.0,
+      "url": "https://www.youtube.com/watch?v=lGn6YcBSS6A"
+    },
+    {
+      "video_id": "o9Zgni8ZLKk",
+      "title": "Google's Motorola Acquisition Ups Ante in Apple Competition",
+      "channel": "Slate",
+      "description": "Google and Motorola are together at last. American and European antitrust regulators approved the search engine giant's\u00a0...",
+      "view_count": 1560,
+      "duration_seconds": 70.0,
+      "url": "https://www.youtube.com/watch?v=o9Zgni8ZLKk"
+    },
+    {
+      "video_id": "_GoA9gs7Y44",
+      "title": "The Dot Com Bubble Burst 2000\u20132001",
+      "channel": "Mehmet Dicle, Ph.D.",
+      "description": "The Dot-Com Bubble Burst (2000\u20132001) | Tech Mania, Market Crash & Lasting Lessons Download all lecture notes:\u00a0...",
+      "view_count": 1437,
+      "duration_seconds": 265.0,
+      "url": "https://www.youtube.com/watch?v=_GoA9gs7Y44"
+    },
+    {
+      "video_id": "F2l1petA4NY",
+      "title": "How did YouTube become eToro's main acquisition channel?",
+      "channel": "Google Israel",
+      "description": "When eToro, the world's leading social trading platform, turned to YouTube to grow their business, the results were phenomenal.",
+      "view_count": 1431,
+      "duration_seconds": 182.0,
+      "url": "https://www.youtube.com/watch?v=F2l1petA4NY"
+    },
+    {
+      "video_id": "jnW7QRZ7eLA",
+      "title": "Microsoft connects with LinkedIn | FT Business",
+      "channel": "Financial Times",
+      "description": "Read \"Microsoft recruits help in strategy shift\": http:// on.ft.com/1ZNADyF \u25bb Subscribe to the Financial Times on YouTube:\u00a0...",
+      "view_count": 1389,
+      "duration_seconds": 124.0,
+      "url": "https://www.youtube.com/watch?v=jnW7QRZ7eLA"
+    },
+    {
+      "video_id": "gtemYIjOBZ4",
+      "title": "Meg Whitman to Step Down as HP Enterprise CEO",
+      "channel": "Bloomberg Television",
+      "description": "Nov.21 -- Hewlett Packard Enterprise Co. said CEO Meg Whitman is stepping down after six years at the company. Bloomberg's\u00a0...",
+      "view_count": 1352,
+      "duration_seconds": 215.0,
+      "url": "https://www.youtube.com/watch?v=gtemYIjOBZ4"
+    },
+    {
+      "video_id": "r8s-3Z7_pwY",
+      "title": "Inside Tech Banking: Innovation in Financial Services with Devon Thompson",
+      "channel": "Corporate Finance Institute",
+      "description": "In this episode of Net Learnings, Devon Thompson, the managing director at RBCx, shares her insights on the evolving landscape\u00a0...",
+      "view_count": 1278,
+      "duration_seconds": 2295.0,
+      "url": "https://www.youtube.com/watch?v=r8s-3Z7_pwY"
+    },
+    {
+      "video_id": "CeT5cPOJB_o",
+      "title": "Banking Sector M&A, Dealmaking For Regional Banks | Bloomberg Deals 3/18/2026",
+      "channel": "Bloomberg Television",
+      "description": "A weekly, midday program that delivers high-impact, editorially driven coverage of the most important corporate transactions\u00a0...",
+      "view_count": 1191,
+      "duration_seconds": 2684.0,
+      "url": "https://www.youtube.com/watch?v=CeT5cPOJB_o"
+    },
+    {
+      "video_id": "uhu_dJVQ2U0",
+      "title": "Garrity Says Meg Whitman as HP CEO Is `Crazy Idea'",
+      "channel": "Bloomberg Originals",
+      "description": "Sept. 21 (Bloomberg) -- David Garrity, principal at GVA Research LLC, talks about challenges facing Hewlett-Packard Co. and\u00a0...",
+      "view_count": 1172,
+      "duration_seconds": 204.0,
+      "url": "https://www.youtube.com/watch?v=uhu_dJVQ2U0"
+    },
+    {
+      "video_id": "JKZhrXjQFys",
+      "title": "Michael Dell, Academy Class of 1998, Full Interview",
+      "channel": "Academy of Achievement",
+      "description": "www.achievement.org Copyright: American Academy of Achievement.",
+      "view_count": 1171,
+      "duration_seconds": 2863.0,
+      "url": "https://www.youtube.com/watch?v=JKZhrXjQFys"
+    },
+    {
+      "video_id": "TGR65y1Lkt4",
+      "title": "The Dangers of Doing MASSIVE Acquisitions | LinkedIn\u2019s Lynda Acquisition Disaster",
+      "channel": "Chris Haroun",
+      "description": "Learn MUCH more about finance and investing by joining my online on demand Haroun Education MBA Degree Program\u00ae (start\u00a0...",
+      "view_count": 1166,
+      "duration_seconds": 176.0,
+      "url": "https://www.youtube.com/watch?v=TGR65y1Lkt4"
+    },
+    {
+      "video_id": "lQYm8fdTxo4",
+      "title": "Qualcomm-NXP Deal Said to Receive Chinese Regulatory Approval",
+      "channel": "Bloomberg Technology",
+      "description": "Jun.15 -- Qualcomm's $43 billion acquisition of NXP Semiconductors NV is said to have won the approval of Chinese regulators.",
+      "view_count": 1088,
+      "duration_seconds": 98.0,
+      "url": "https://www.youtube.com/watch?v=lQYm8fdTxo4"
+    },
+    {
+      "video_id": "5QYRSaRKUno",
+      "title": "M&A deals hit 20-year low in first half of 2025: Mergermarket",
+      "channel": "CNBC International Live",
+      "description": "M&A deals hit a 20-year low in the first half of this year with 16663 deals announced, according to Mergermarket. Despite that\u00a0...",
+      "view_count": 1083,
+      "duration_seconds": 444.0,
+      "url": "https://www.youtube.com/watch?v=5QYRSaRKUno"
+    },
+    {
+      "video_id": "VPczUEgDP-k",
+      "title": "What A $1 Billion Twitch Acquisition Could Mean For YouTube",
+      "channel": "Newsy Tech",
+      "description": "According to Venturebeat, Google has signed a deal to acquire video-game-streaming-service Twitch for an estimated $1 billion.",
+      "view_count": 1023,
+      "duration_seconds": 143.0,
+      "url": "https://www.youtube.com/watch?v=VPczUEgDP-k"
+    },
+    {
+      "video_id": "eCs4BXobcj0",
+      "title": "Qualcomm's Increased Bid for NXP Prompts Broadcom Rebuke",
+      "channel": "Bloomberg Technology",
+      "description": "Feb.20 -- Bloomberg's Ian King discusses how Qualcomm's offer for NXP Semiconductors will help the chipmaker in its efforts to\u00a0...",
+      "view_count": 1017,
+      "duration_seconds": 158.0,
+      "url": "https://www.youtube.com/watch?v=eCs4BXobcj0"
+    }
+  ]
+}

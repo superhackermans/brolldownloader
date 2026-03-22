@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Major Bank Stocks Since Solomon Became CEO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0e1a;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    overflow: hidden;
+  }
+
+  #bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    width: 1100px;
+    padding: 36px 50px 28px;
+    background: rgba(8, 10, 22, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+  }
+
+  .header { margin-bottom: 16px; }
+
+  .header h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+  }
+
+  .header .sub {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.55;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+  }
+
+  .legend {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    opacity: 0;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+
+  .legend-line {
+    width: 24px;
+    height: 3px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .chart-wrap { position: relative; }
+
+  #chartSvg { width: 100%; display: block; }
+
+  /* Scorecards */
+  .scorecards {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    opacity: 0;
+  }
+
+  .sc {
+    flex: 1;
+    background: rgba(8, 10, 22, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 13px 10px 10px;
+    text-align: center;
+  }
+
+  .sc.gs-sc {
+    border-color: rgba(247, 201, 72, 0.55);
+    background: rgba(247, 201, 72, 0.06);
+  }
+
+  .sc-ticker {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: #ffffff;
+  }
+
+  .sc.gs-sc .sc-ticker { color: #F7C948; }
+
+  .sc-pct {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1;
+    color: #5BAAFF;
+  }
+
+  .sc.gs-sc .sc-pct { color: #F7C948; }
+
+  .sc-price {
+    font-size: 11px;
+    color: #ffffff;
+    opacity: 0.4;
+    margin-top: 4px;
+    letter-spacing: 0.3px;
+  }
+
+  .footer {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    opacity: 0;
+  }
+
+  .footer-note {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.4;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+  <source src="Wavy Grid Background.mp4" type="video/mp4">
+</video>
+
+<div class="wrapper" id="wrapper">
+  <div class="header">
+    <h1>Major Bank Stocks Since David Solomon Became CEO</h1>
+    <div class="sub">Indexed to 100 on Oct 1, 2018 &nbsp;·&nbsp; Oct 2018 → Mar 2026 &nbsp;·&nbsp; Price return</div>
+  </div>
+  <div class="legend" id="legend"></div>
+  <div class="chart-wrap"><svg id="chartSvg"></svg></div>
+  <div class="scorecards" id="scorecards"></div>
+  <div class="footer" id="footer">
+    <div class="footer-note">Sources: Yahoo Finance, CompaniesMarketCap. Oct 1, 2018 – Mar 9, 2026. Price return only.</div>
+  </div>
+</div>
+
+<script>
+// === DATA ===
+// 31 quarterly data points: Oct 2018 → Mar 2026
+// Anchor prices from user: Oct 1, 2018 and Mar 9, 2026
+const RAW = [
+  { ticker:'GS',  name:'Goldman Sachs',   color:'#F7C948', isGS:true,
+    prices:[232,198,204,216,213,247,186,204,209,277,345,375,405,355,320,305,330,365,335,340,315,385,430,495,510,610,660,710,750,790,821] },
+  { ticker:'MS',  name:'Morgan Stanley',  color:'#4A9EF7', isGS:false,
+    prices:[47,42,46,44,48,54,38,49,52,73,81,91,101,97,84,78,83,95,85,86,75,88,93,105,116,130,140,148,154,157,160] },
+  { ticker:'JPM', name:'JP Morgan Chase',  color:'#5BAAFF', isGS:false,
+    prices:[114,100,114,114,125,138,96,99,101,133,155,155,168,157,132,116,128,140,136,152,148,175,195,212,221,250,260,270,275,280,285] },
+  { ticker:'BAC', name:'Bank of America', color:'#2DD4A8', isGS:false,
+    prices:[30,27,30,30,31,35,24,24,24,31,40,39,48,48,37,33,34,35,29,32,27,34,37,41,42,46,47,48,48,49,49] },
+  { ticker:'WFC', name:'Wells Fargo',     color:'#FF6B7A', isGS:false,
+    prices:[56,48,47,48,51,49,28,25,24,31,41,46,50,55,48,42,44,45,40,44,42,50,58,59,63,72,73,74,75,76,77] },
+  { ticker:'C',   name:'Citigroup',       color:'rgba(255,255,255,0.5)', isGS:false,
+    prices:[73,63,67,72,74,80,50,51,44,63,72,70,68,66,52,47,44,49,47,48,42,54,61,63,65,74,82,89,94,99,103] },
+];
+
+// Index to 100 at t=0
+const BANKS = RAW.map(b => ({
+  ...b,
+  rawPrices: b.prices,
+  prices: b.prices.map(p => parseFloat((p / b.prices[0] * 100).toFixed(2)))
+}));
+
+const X_LABELS = [
+  "Oct '18","Jan '19","Apr '19","Jul '19","Oct '19",
+  "Jan '20","Apr '20","Jul '20","Oct '20",
+  "Jan '21","Apr '21","Jul '21","Oct '21",
+  "Jan '22","Apr '22","Jul '22","Oct '22",
+  "Jan '23","Apr '23","Jul '23","Oct '23",
+  "Jan '24","Apr '24","Jul '24","Oct '24",
+  "Jan '25","Apr '25","Jul '25","Oct '25",
+  "Jan '26","Mar '26"
+];
+
+const W=980, H=360, PAD={top:18,right:180,bottom:40,left:56};
+const CW=W-PAD.left-PAD.right, CH=H-PAD.top-PAD.bottom;
+const N=31;
+
+const allPrices = BANKS.flatMap(b=>b.prices);
+const minP = Math.floor(Math.min(...allPrices)/50)*50;
+const maxP = Math.ceil(Math.max(...allPrices)/100)*100 + 50;
+
+const svg = document.getElementById('chartSvg');
+svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+
+function xp(i){ return PAD.left + (i/(N-1))*CW; }
+function yp(v){ return PAD.top + CH - ((v-minP)/(maxP-minP))*CH; }
+
+function svgEl(tag, attrs={}){
+  const el=document.createElementNS('http://www.w3.org/2000/svg',tag);
+  Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,v));
+  return el;
+}
+
+// Grid lines
+const yTicks = [];
+for(let v=0; v<=maxP; v+=100){ if(v>=minP) yTicks.push(v); }
+
+yTicks.forEach(v=>{
+  const y=yp(v);
+  const gl=svgEl('line',{x1:PAD.left,x2:PAD.left+CW,y1:y,y2:y,
+    stroke:v===100?'rgba(255,255,255,0.35)':'rgba(255,255,255,0.15)',
+    'stroke-width':'1','stroke-dasharray':v?'4,8':'0'});
+  svg.appendChild(gl);
+  const lbl=svgEl('text',{x:PAD.left-8,y:y+4,'text-anchor':'end',
+    fill:'#ffffff','font-size':'11','font-family':'DM Sans,sans-serif'});
+  lbl.textContent = v===100?'100':v.toLocaleString();
+  svg.appendChild(lbl);
+});
+
+// X-axis labels
+const xTickIndices = [0,4,8,12,16,20,24,28,30];
+xTickIndices.forEach(idx=>{
+  if(idx>=N) return;
+  const x=xp(idx);
+  const tick=svgEl('line',{x1:x,x2:x,y1:PAD.top+CH,y2:PAD.top+CH+4,
+    stroke:'rgba(255,255,255,0.3)','stroke-width':'1'});
+  svg.appendChild(tick);
+  const lbl=svgEl('text',{x,y:PAD.top+CH+16,'text-anchor':'middle',
+    fill:'#ffffff','font-size':'10','font-family':'DM Sans,sans-serif'});
+  lbl.textContent=X_LABELS[idx]||'';
+  svg.appendChild(lbl);
+});
+
+// COVID annotation
+const covidX=xp(6);
+const covidG=svgEl('g',{opacity:'0'});
+covidG.id='covidG';
+const covidLine=svgEl('line',{x1:covidX,x2:covidX,y1:PAD.top+20,y2:PAD.top+CH,
+  stroke:'rgba(255,107,122,0.3)','stroke-width':'1','stroke-dasharray':'3,5'});
+const covidTxt=svgEl('text',{x:covidX-4,y:PAD.top+16,'text-anchor':'middle',
+  fill:'rgba(255,107,122,0.6)','font-size':'9','font-family':'DM Sans,sans-serif',
+  'letter-spacing':'0.8'});
+covidTxt.textContent='COVID';
+covidG.appendChild(covidLine);
+covidG.appendChild(covidTxt);
+svg.appendChild(covidG);
+
+// Build paths: non-GS first, GS on top
+const drawOrder = [...BANKS].sort((a,b)=> a.isGS?1:-1);
+const pathEls = {};
+const TOTAL_PATH_LEN = 1800;
+
+drawOrder.forEach((bank,bi)=>{
+  const pts = bank.prices.map((v,i)=>`${i===0?'M':'L'}${xp(i).toFixed(1)},${yp(v).toFixed(1)}`).join(' ');
+  const isGS = bank.isGS;
+
+  if(isGS){
+    // Gold glow layers — fully hidden until line draws
+    const glow=svgEl('path',{d:pts,fill:'none',stroke:'#F7C948','stroke-width':'10','stroke-opacity':'0.06','stroke-linecap':'round','stroke-linejoin':'round'});
+    glow.style.opacity = '0';
+    svg.appendChild(glow);
+    const glow2=svgEl('path',{d:pts,fill:'none',stroke:'#F7C948','stroke-width':'5','stroke-opacity':'0.1','stroke-linecap':'round','stroke-linejoin':'round'});
+    glow2.style.opacity = '0';
+    svg.appendChild(glow2);
+    bank._glowEls = [glow, glow2];
+  }
+
+  const path=svgEl('path',{d:pts,fill:'none',stroke:bank.color,
+    'stroke-width':isGS?'2.8':'1.6',
+    'stroke-opacity':isGS?'1':'0.7',
+    'stroke-linecap':'round','stroke-linejoin':'round',
+    'stroke-dasharray':String(TOTAL_PATH_LEN),
+    'stroke-dashoffset':String(TOTAL_PATH_LEN)
+  });
+  svg.appendChild(path);
+  pathEls[bank.ticker] = { path, bank, bi };
+  bank._endY = yp(bank.prices[N-1]);
+  bank._bi = bi;
+});
+
+// End labels with collision avoidance
+const LH = 14;
+const labelData = drawOrder.map(bank => ({
+  bank, naturalY: bank._endY, y: bank._endY
+})).sort((a,b)=>a.naturalY-b.naturalY);
+
+for(let pass=0; pass<20; pass++){
+  let moved=false;
+  for(let i=1;i<labelData.length;i++){
+    const prev=labelData[i-1],curr=labelData[i];
+    if(curr.y-prev.y<LH){
+      const mid=(prev.y+curr.y)/2;
+      prev.y=mid-LH/2; curr.y=mid+LH/2; moved=true;
+    }
+  }
+  if(!moved) break;
+}
+
+const endLabelEls = [];
+const lx=xp(N-1)+8;
+labelData.forEach(({bank,y})=>{
+  const pct=Math.round(bank.prices[N-1]-100);
+  const sign=pct>=0?'+':'';
+
+  if(Math.abs(y-bank._endY)>3){
+    const tick=svgEl('line',{x1:lx-3,y1:bank._endY,x2:lx-3,y2:y+1,
+      stroke:bank.color,'stroke-width':'0.8','stroke-opacity':'0.35'});
+    tick.style.opacity='0';
+    tick.id='etick_'+bank.ticker;
+    svg.appendChild(tick);
+    endLabelEls.push(tick);
+  }
+
+  const elbl=svgEl('text',{x:lx,y:y+4,fill:bank.color,
+    'font-size':bank.isGS?'12':'10','font-weight':bank.isGS?'700':'500',
+    'font-family':'DM Sans,sans-serif',opacity:'0'});
+  elbl.textContent=`${bank.name} ${sign}${pct}%`;
+  elbl.id='elbl_'+bank.ticker;
+  svg.appendChild(elbl);
+  endLabelEls.push(elbl);
+});
+
+// === ANIMATION HELPERS ===
+
+function jsFadeIn(el, duration, translateFrom) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.opacity = String(e);
+    if (translateFrom !== undefined) {
+      el.style.transform = 'translateY(' + (translateFrom * (1 - e)) + 'px)';
+    }
+    if (p >= 1) {
+      clearInterval(iv);
+      el.style.opacity = '1';
+      if (translateFrom !== undefined) el.style.transform = 'translateY(0)';
+    }
+  }, 16);
+}
+
+function jsFadeOpacity(el, duration, fromVal, toVal) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.opacity = String(fromVal + (toVal - fromVal) * e);
+    if (p >= 1) { clearInterval(iv); el.style.opacity = String(toVal); }
+  }, 16);
+}
+
+function jsStrokeDash(el, duration, fromVal, toVal) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.strokeDashoffset = String(fromVal + (toVal - fromVal) * e);
+    if (p >= 1) { clearInterval(iv); el.style.strokeDashoffset = String(toVal); }
+  }, 16);
+}
+
+// === ANIMATION TIMELINE ===
+// 100ms:   wrapper fades in
+// 700ms:   legend fades in
+// 900ms:   lines draw (2s each, staggered by 150ms)
+// ~3100ms: end labels appear
+// ~3300ms: COVID annotation
+// ~3400ms: scorecards fade in
+// ~3600ms: footer
+// Hold until 15s
+
+setTimeout(() => jsFadeIn(document.getElementById('wrapper'), 700, 20), 100);
+setTimeout(() => jsFadeOpacity(document.getElementById('legend'), 500, 0, 1), 700);
+
+// Draw lines (GS glow fades in after line finishes drawing)
+drawOrder.forEach((bank, bi) => {
+  const { path } = pathEls[bank.ticker];
+  const t = 900 + bi * 100;
+  setTimeout(() => jsStrokeDash(path, 1200, TOTAL_PATH_LEN, 0), t);
+  if (bank._glowEls) {
+    setTimeout(() => {
+      bank._glowEls.forEach(g => jsFadeOpacity(g, 400, 0, 1));
+    }, t + 1200);
+  }
+});
+
+const linesDoneAt = 900 + (drawOrder.length - 1) * 100 + 1200;
+
+// End labels + ticks + COVID + scorecards — all appear right when lines finish
+setTimeout(() => {
+  endLabelEls.forEach((el, i) => {
+    setTimeout(() => jsFadeOpacity(el, 300, 0, 1), i * 30);
+  });
+}, linesDoneAt);
+
+setTimeout(() => jsFadeOpacity(document.getElementById('covidG'), 300, 0, 1), linesDoneAt);
+
+// Build scorecards and legend
+const legendEl = document.getElementById('legend');
+BANKS.forEach(b => {
+  const item = document.createElement('div');
+  item.className = 'legend-item';
+  item.style.color = b.isGS ? '#F7C948' : '#ffffff';
+  item.innerHTML = `<div class="legend-line" style="background:${b.color};opacity:${b.isGS?1:0.7}"></div><span>${b.name}</span>`;
+  legendEl.appendChild(item);
+});
+
+const scRow = document.getElementById('scorecards');
+[...BANKS].sort((a,b)=>b.prices[N-1]-a.prices[N-1]).forEach(b => {
+  const pct = Math.round(b.prices[N-1]-100);
+  const sign = pct >= 0 ? '+' : '';
+  const card = document.createElement('div');
+  card.className = 'sc' + (b.isGS ? ' gs-sc' : '');
+  card.innerHTML = `<div class="sc-ticker">${b.name}</div><div class="sc-pct">${sign}${pct}%</div><div class="sc-price">$${b.rawPrices[0].toFixed(0)} → $${b.rawPrices[N-1].toFixed(0)}</div>`;
+  scRow.appendChild(card);
+});
+
+// Scorecards and footer — simultaneous with end labels
+setTimeout(() => jsFadeIn(document.getElementById('scorecards'), 400, 10), linesDoneAt);
+setTimeout(() => jsFadeOpacity(document.getElementById('footer'), 300, 0, 1), linesDoneAt);
+</script>
+</body>
+</html>

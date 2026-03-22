@@ -1,0 +1,488 @@
+[
+  {
+    "name": "Qatalyst Partners",
+    "type": "company",
+    "era": "2008-present",
+    "script_lines": [4, 6, 9, 13, 46, 50, 51, 52, 53, 54, 56, 57, 60, 61, 62, 63, 66, 67, 73, 74, 76, 77, 78, 80, 81, 82, 84, 88, 89, 90, 92, 95, 97, 100],
+    "youtube_queries": ["Qatalyst Partners documentary", "Qatalyst Partners tech M&A", "Qatalyst Partners Silicon Valley bank", "Qatalyst Partners deals CNBC"],
+    "image_queries": ["Qatalyst Partners logo", "Qatalyst Partners office San Francisco"],
+    "notes": "Main subject - the boutique investment bank"
+  },
+  {
+    "name": "Frank Quattrone - early career",
+    "type": "person",
+    "era": "1977-2000",
+    "script_lines": [6, 9, 13, 14, 15, 16, 17, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+    "youtube_queries": ["Frank Quattrone interview", "Frank Quattrone Harry Stebbings interview", "Frank Quattrone Silicon Valley banker", "Frank Quattrone CNBC interview", "Frank Quattrone 20VC podcast"],
+    "image_queries": ["Frank Quattrone banker photo", "Frank Quattrone portrait", "Frank Quattrone Silicon Valley 1990s"],
+    "notes": "Central figure - early rise through Morgan Stanley, Deutsche Bank, CSFB"
+  },
+  {
+    "name": "Frank Quattrone - trial and fall",
+    "type": "person",
+    "era": "2000-2007",
+    "script_lines": [34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+    "youtube_queries": ["Frank Quattrone trial", "Frank Quattrone arrested", "Frank Quattrone CSFB scandal", "Frank Quattrone obstruction justice", "Frank Quattrone SEC investigation"],
+    "image_queries": ["Frank Quattrone trial courthouse", "Frank Quattrone arrested FBI"],
+    "notes": "Trial, conviction, appeal, charges dropped"
+  },
+  {
+    "name": "Frank Quattrone - comeback",
+    "type": "person",
+    "era": "2008-present",
+    "script_lines": [46, 50, 51, 59, 60, 62, 63, 69, 71, 78, 79, 90, 92, 101],
+    "youtube_queries": ["Frank Quattrone Qatalyst comeback", "Frank Quattrone Qatalyst founding", "Frank Quattrone interview 2020s", "Frank Quattrone Pebble Beach"],
+    "image_queries": ["Frank Quattrone Qatalyst Partners", "Frank Quattrone recent photo"],
+    "notes": "Founding Qatalyst and rebuilding his empire"
+  },
+  {
+    "name": "George Boutros",
+    "type": "person",
+    "era": "2010-present",
+    "script_lines": [56, 57, 58, 59, 60, 63, 70, 87, 90, 95],
+    "youtube_queries": ["George Boutros Qatalyst", "George Boutros interview", "George Boutros investment banker", "George Boutros Credit Suisse tech"],
+    "image_queries": ["George Boutros Qatalyst Partners", "George Boutros banker photo"],
+    "notes": "2nd most important person - aggressive dealmaker, CEO of Qatalyst"
+  },
+  {
+    "name": "NXP Qualcomm deal",
+    "type": "event",
+    "era": "2016-2018",
+    "script_lines": [5],
+    "youtube_queries": ["NXP Qualcomm acquisition CNBC", "Qualcomm NXP $47 billion deal"],
+    "image_queries": ["NXP Qualcomm merger", "Qualcomm NXP deal"],
+    "notes": "$47 billion deal"
+  },
+  {
+    "name": "Ansys Synopsys deal",
+    "type": "event",
+    "era": "2024",
+    "script_lines": [5],
+    "youtube_queries": ["Ansys Synopsys acquisition CNBC", "Synopsys Ansys $32 billion deal"],
+    "image_queries": ["Ansys Synopsys merger announcement", "Synopsys Ansys deal"],
+    "notes": "$32 billion deal"
+  },
+  {
+    "name": "LinkedIn Microsoft deal",
+    "type": "event",
+    "era": "2016",
+    "script_lines": [5, 67, 68, 71],
+    "youtube_queries": ["LinkedIn Microsoft acquisition CNBC", "Microsoft LinkedIn $26 billion deal", "LinkedIn Microsoft deal announcement"],
+    "image_queries": ["LinkedIn Microsoft acquisition", "Microsoft LinkedIn deal announcement"],
+    "notes": "$26 billion deal - Qatalyst's defining deal"
+  },
+  {
+    "name": "Goldman Sachs",
+    "type": "company",
+    "era": "general",
+    "script_lines": [6, 29, 72, 80, 97],
+    "youtube_queries": ["Goldman Sachs tech banking", "Goldman Sachs investment banking documentary"],
+    "image_queries": ["Goldman Sachs logo", "Goldman Sachs headquarters"],
+    "notes": "Competitor referenced throughout"
+  },
+  {
+    "name": "Morgan Stanley",
+    "type": "company",
+    "era": "1977-1996",
+    "script_lines": [6, 15, 21, 25, 26, 29, 72, 77, 80],
+    "youtube_queries": ["Morgan Stanley investment banking 1990s", "Morgan Stanley tech banking Silicon Valley"],
+    "image_queries": ["Morgan Stanley logo", "Morgan Stanley office 1990s"],
+    "notes": "Quattrone's first firm, later a competitor"
+  },
+  {
+    "name": "Steve Jobs",
+    "type": "person",
+    "era": "1981-1997",
+    "script_lines": [10, 19, 25],
+    "youtube_queries": ["Steve Jobs Stanford class 1981", "Steve Jobs Apple presentation young", "Steve Jobs NeXT Apple acquisition 1997"],
+    "image_queries": ["Steve Jobs young 1980s", "Steve Jobs NeXT return Apple"],
+    "notes": "Met Quattrone at Stanford, later NeXT/Apple deal"
+  },
+  {
+    "name": "Netscape IPO",
+    "type": "event",
+    "era": "1995",
+    "script_lines": [24],
+    "youtube_queries": ["Netscape IPO 1995 documentary", "Netscape IPO dot com bubble", "Netscape Marc Andreessen IPO 1995", "Netscape opening bell"],
+    "image_queries": ["Netscape IPO 1995 stock", "Netscape browser logo"],
+    "notes": "Landmark IPO - $14 to $71 on first day"
+  },
+  {
+    "name": "Dot-com bubble",
+    "type": "event",
+    "era": "1995-2001",
+    "script_lines": [24, 31, 34, 35],
+    "youtube_queries": ["dot com bubble documentary", "dot com bubble burst 2000", "dot com crash Wall Street"],
+    "image_queries": ["dot com bubble stock chart", "dot com bubble burst 2000"],
+    "notes": "The era that made and then broke Quattrone"
+  },
+  {
+    "name": "Credit Suisse First Boston (CSFB)",
+    "type": "company",
+    "era": "1998-2003",
+    "script_lines": [27, 28, 29, 37, 38, 39, 42, 45, 69, 70, 71],
+    "youtube_queries": ["Credit Suisse First Boston tech banking", "CSFB IPO 1990s Silicon Valley", "Credit Suisse First Boston scandal"],
+    "image_queries": ["Credit Suisse First Boston logo", "CSFB office Silicon Valley"],
+    "notes": "Where Quattrone built his kingdom, then was prosecuted"
+  },
+  {
+    "name": "VA Linux IPO",
+    "type": "event",
+    "era": "1999",
+    "script_lines": [30],
+    "youtube_queries": ["VA Linux IPO 1999 700 percent", "VA Linux Systems IPO dot com", "most insane IPO ever dot com"],
+    "image_queries": ["VA Linux IPO stock chart", "VA Linux Systems logo"],
+    "notes": "Most insane IPO - 700% first day jump"
+  },
+  {
+    "name": "Deutsche Bank",
+    "type": "company",
+    "era": "1996-1998",
+    "script_lines": [26, 27, 28],
+    "youtube_queries": ["Deutsche Bank Silicon Valley 1990s", "Deutsche Bank investment banking tech"],
+    "image_queries": ["Deutsche Bank logo", "Deutsche Bank office 1990s"],
+    "notes": "Quattrone's brief stint before CSFB"
+  },
+  {
+    "name": "Amazon IPO",
+    "type": "event",
+    "era": "1997",
+    "script_lines": [26],
+    "youtube_queries": ["Amazon IPO 1997 CNBC", "Amazon IPO Jeff Bezos 1997", "Amazon public offering 1997"],
+    "image_queries": ["Amazon IPO 1997", "Amazon early logo 1990s"],
+    "notes": "Taken public by Quattrone at Deutsche Bank"
+  },
+  {
+    "name": "Cisco IPO",
+    "type": "event",
+    "era": "1990",
+    "script_lines": [23],
+    "youtube_queries": ["Cisco Systems IPO 1990", "Cisco public offering early days"],
+    "image_queries": ["Cisco Systems 1990 logo", "Cisco Systems IPO"],
+    "notes": "First notable Quattrone deal"
+  },
+  {
+    "name": "Apple acquisition of NeXT",
+    "type": "event",
+    "era": "1996-1997",
+    "script_lines": [25, 92],
+    "youtube_queries": ["Apple NeXT acquisition 1997", "Steve Jobs return Apple NeXT deal", "Apple buys NeXT documentary"],
+    "image_queries": ["Apple NeXT acquisition", "Steve Jobs NeXT Apple return"],
+    "notes": "Deal advised by Quattrone that brought Jobs back"
+  },
+  {
+    "name": "Wharton School",
+    "type": "company",
+    "era": "1970s",
+    "script_lines": [14],
+    "youtube_queries": ["Wharton School University Pennsylvania campus", "Wharton business school"],
+    "image_queries": ["Wharton School campus", "Wharton School logo"],
+    "notes": "Quattrone's undergrad"
+  },
+  {
+    "name": "Stanford Business School",
+    "type": "company",
+    "era": "1979-1981",
+    "script_lines": [16, 17, 19],
+    "youtube_queries": ["Stanford Graduate School of Business", "Stanford Silicon Valley pipeline", "Stanford business school 1980s"],
+    "image_queries": ["Stanford business school campus", "Stanford University 1980s"],
+    "notes": "Quattrone's MBA, where he met Steve Jobs"
+  },
+  {
+    "name": "Apple II personal computer",
+    "type": "product",
+    "era": "1977-1981",
+    "script_lines": [17],
+    "youtube_queries": ["Apple II computer demo vintage", "Apple II personal computer commercial"],
+    "image_queries": ["Apple II computer", "Apple II personal computer vintage"],
+    "notes": "The computer Quattrone picked up at Stanford"
+  },
+  {
+    "name": "Friends of Frank scandal",
+    "type": "event",
+    "era": "2000-2003",
+    "script_lines": [36, 37, 38, 39, 40, 41],
+    "youtube_queries": ["Friends of Frank IPO allocation", "Frank Quattrone IPO scandal CSFB", "Frank Quattrone email obstruction"],
+    "image_queries": ["Frank Quattrone trial", "CSFB IPO scandal"],
+    "notes": "The IPO allocation scandal and the email that led to prosecution"
+  },
+  {
+    "name": "Jim Comey",
+    "type": "person",
+    "era": "2003",
+    "script_lines": [43],
+    "youtube_queries": ["Jim Comey US Attorney 2003", "Jim Comey prosecutor early career", "James Comey before FBI director"],
+    "image_queries": ["Jim Comey 2003 US Attorney", "Jim Comey young prosecutor"],
+    "notes": "US Attorney who brought charges against Quattrone"
+  },
+  {
+    "name": "2008 Financial Crisis / Great Recession",
+    "type": "event",
+    "era": "2008",
+    "script_lines": [6, 46, 49],
+    "youtube_queries": ["2008 financial crisis documentary", "Lehman Brothers collapse 2008", "Bear Stearns JPMorgan 2008", "Great Recession Wall Street"],
+    "image_queries": ["2008 financial crisis Wall Street", "Lehman Brothers collapse", "Bear Stearns JPMorgan"],
+    "notes": "Context for Qatalyst founding - the crash"
+  },
+  {
+    "name": "Bear Stearns collapse",
+    "type": "event",
+    "era": "2008",
+    "script_lines": [49],
+    "youtube_queries": ["Bear Stearns JPMorgan $2 share 2008", "Bear Stearns collapse documentary"],
+    "image_queries": ["Bear Stearns collapse 2008", "Bear Stearns JPMorgan deal"],
+    "notes": "Bear Stearns sold to JPMorgan for $2/share"
+  },
+  {
+    "name": "Google - Yahoo hostile bid",
+    "type": "event",
+    "era": "2008",
+    "script_lines": [46, 50],
+    "youtube_queries": ["Microsoft Yahoo hostile bid 2008", "Google Yahoo alternative Microsoft bid", "Microsoft Yahoo $45 billion takeover"],
+    "image_queries": ["Microsoft Yahoo hostile bid 2008", "Yahoo Microsoft takeover bid"],
+    "notes": "Google reached out to Qatalyst re: Microsoft's $45B bid for Yahoo"
+  },
+  {
+    "name": "Data Domain sale to EMC",
+    "type": "event",
+    "era": "2009",
+    "script_lines": [52],
+    "youtube_queries": ["Data Domain EMC acquisition 2009", "Data Domain NetApp EMC bidding war"],
+    "image_queries": ["Data Domain EMC acquisition", "Data Domain logo"],
+    "notes": "Qatalyst's first breakout deal - doubled price from $1.5B to $2.4B"
+  },
+  {
+    "name": "3PAR bidding war",
+    "type": "event",
+    "era": "2010",
+    "script_lines": [53],
+    "youtube_queries": ["3PAR Dell HP bidding war 2010", "3PAR acquisition HP Dell CNBC", "3PAR storage bidding war"],
+    "image_queries": ["3PAR HP Dell bidding war", "3PAR acquisition 2010"],
+    "notes": "Dell bid $1.15B, Qatalyst drove it to $2.4B from HP"
+  },
+  {
+    "name": "Autonomy HP deal",
+    "type": "event",
+    "era": "2011",
+    "script_lines": [54, 55, 61],
+    "youtube_queries": ["Autonomy HP acquisition scandal", "HP Autonomy $10 billion writedown", "Autonomy HP accounting fraud CNBC"],
+    "image_queries": ["Autonomy HP acquisition", "HP Autonomy writedown scandal"],
+    "notes": "$10.3B deal, then $8.8B writedown - Whitman blamed Qatalyst"
+  },
+  {
+    "name": "Meg Whitman",
+    "type": "person",
+    "era": "2011-2015",
+    "script_lines": [54, 55, 56],
+    "youtube_queries": ["Meg Whitman HP CEO", "Meg Whitman Autonomy writedown", "Meg Whitman HP interview"],
+    "image_queries": ["Meg Whitman HP CEO", "Meg Whitman photo"],
+    "notes": "HP CEO who turned on Qatalyst after Autonomy disaster"
+  },
+  {
+    "name": "Aruba Networks sale to HP",
+    "type": "event",
+    "era": "2015",
+    "script_lines": [56],
+    "youtube_queries": ["Aruba Networks HP acquisition 2015", "HP Aruba Networks deal"],
+    "image_queries": ["Aruba Networks HP acquisition", "Aruba Networks logo"],
+    "notes": "$2.7B deal - Whitman used buffer person to avoid facing Qatalyst"
+  },
+  {
+    "name": "Motorola Google deal",
+    "type": "event",
+    "era": "2011",
+    "script_lines": [61],
+    "youtube_queries": ["Motorola Mobility Google acquisition 2011", "Google Motorola $12.5 billion CNBC"],
+    "image_queries": ["Motorola Google acquisition 2011", "Google Motorola deal"],
+    "notes": "$12.5 billion - part of Qatalyst's breakout 2011"
+  },
+  {
+    "name": "Dell take-private",
+    "type": "event",
+    "era": "2013",
+    "script_lines": [62],
+    "youtube_queries": ["Dell take private 2013", "Dell $24 billion buyout Michael Dell", "Dell going private CNBC"],
+    "image_queries": ["Dell take private 2013", "Michael Dell buyout"],
+    "notes": "$24.4 billion take-private advised by Qatalyst"
+  },
+  {
+    "name": "AppDynamics Cisco deal",
+    "type": "event",
+    "era": "2017",
+    "script_lines": [72, 73, 74, 75, 76],
+    "youtube_queries": ["AppDynamics Cisco acquisition 2017", "AppDynamics IPO cancelled Cisco", "AppDynamics sold before IPO CNBC"],
+    "image_queries": ["AppDynamics Cisco acquisition", "AppDynamics logo"],
+    "notes": "Sold to Cisco for $3.7B just hours before IPO - legendary Qatalyst move"
+  },
+  {
+    "name": "Qualtrics SAP deal",
+    "type": "event",
+    "era": "2018",
+    "script_lines": [78, 79, 80],
+    "youtube_queries": ["Qualtrics SAP acquisition 2018", "Qualtrics SAP $8 billion deal CNBC", "Ryan Smith Bill McDermott Qualtrics"],
+    "image_queries": ["Qualtrics SAP acquisition", "Ryan Smith Qualtrics"],
+    "notes": "$8B deal born on a cocktail napkin at Pebble Beach retreat"
+  },
+  {
+    "name": "Ryan Smith",
+    "type": "person",
+    "era": "2018",
+    "script_lines": [78, 79],
+    "youtube_queries": ["Ryan Smith Qualtrics CEO interview", "Ryan Smith SAP deal"],
+    "image_queries": ["Ryan Smith Qualtrics CEO", "Ryan Smith photo"],
+    "notes": "CEO of Qualtrics"
+  },
+  {
+    "name": "Bill McDermott",
+    "type": "person",
+    "era": "2018",
+    "script_lines": [78, 79],
+    "youtube_queries": ["Bill McDermott SAP CEO interview", "Bill McDermott Qualtrics acquisition"],
+    "image_queries": ["Bill McDermott SAP CEO", "Bill McDermott photo"],
+    "notes": "CEO of SAP"
+  },
+  {
+    "name": "Riot Games Tencent deal",
+    "type": "event",
+    "era": "2011",
+    "script_lines": [61],
+    "youtube_queries": ["Riot Games Tencent acquisition", "Tencent Riot Games deal"],
+    "image_queries": ["Riot Games Tencent acquisition", "Riot Games logo"],
+    "notes": "Part of Qatalyst's breakout 2011 deals"
+  },
+  {
+    "name": "YouTube Google deal",
+    "type": "event",
+    "era": "2006",
+    "script_lines": [58],
+    "youtube_queries": ["YouTube Google acquisition 2006", "Google buys YouTube CNBC"],
+    "image_queries": ["YouTube Google acquisition 2006", "Google YouTube deal"],
+    "notes": "Boutros led this deal at Credit Suisse before joining Qatalyst"
+  },
+  {
+    "name": "Pixar Disney deal",
+    "type": "event",
+    "era": "2006",
+    "script_lines": [58],
+    "youtube_queries": ["Pixar Disney acquisition 2006", "Disney buys Pixar CNBC Steve Jobs"],
+    "image_queries": ["Pixar Disney acquisition", "Disney Pixar deal 2006"],
+    "notes": "Another Boutros deal at Credit Suisse"
+  },
+  {
+    "name": "South Philadelphia blue-collar",
+    "type": "location",
+    "era": "1960s-1970s",
+    "script_lines": [14],
+    "youtube_queries": ["South Philadelphia 1970s neighborhood", "South Philadelphia working class"],
+    "image_queries": ["South Philadelphia row houses vintage", "South Philadelphia 1970s"],
+    "notes": "Quattrone's origins"
+  },
+  {
+    "name": "Prince of Silicon Valley metaphor",
+    "type": "metaphor",
+    "era": "2000",
+    "script_lines": [12, 31],
+    "youtube_queries": ["Silicon Valley tech banker 2000 excess", "dot com era tech bankers parties"],
+    "image_queries": ["Silicon Valley tech banker 2000 era", "dot com era excess"],
+    "notes": "Quattrone crowned the Prince of Silicon Valley"
+  },
+  {
+    "name": "Career suicide to generational bet metaphor",
+    "type": "metaphor",
+    "era": "1981",
+    "script_lines": [21, 22],
+    "youtube_queries": ["Silicon Valley 1981 early days", "San Francisco financial district 1980s"],
+    "image_queries": ["San Francisco financial district 1980s", "Silicon Valley early 1980s"],
+    "notes": "Moving to SF office with zero revenue"
+  },
+  {
+    "name": "Bruce Lee one kick metaphor",
+    "type": "metaphor",
+    "era": "general",
+    "script_lines": [85, 88, 100],
+    "youtube_queries": ["Bruce Lee 10000 kicks quote", "Bruce Lee practice one kick quote"],
+    "image_queries": ["Bruce Lee quote 10000 kicks", "Bruce Lee martial arts"],
+    "notes": "Metaphor for Qatalyst's focus on one thing"
+  },
+  {
+    "name": "Michael Jordan retirement metaphor",
+    "type": "metaphor",
+    "era": "2016",
+    "script_lines": [63],
+    "youtube_queries": ["Michael Jordan retirement peak documentary"],
+    "image_queries": ["Michael Jordan retirement peak"],
+    "notes": "Quattrone stepping down at peak like Jordan"
+  },
+  {
+    "name": "Pebble Beach retreat",
+    "type": "event",
+    "era": "2018",
+    "script_lines": [78, 79],
+    "youtube_queries": ["Qatalyst Pebble Beach retreat annual", "tech banker Pebble Beach conference"],
+    "image_queries": ["Pebble Beach golf resort", "Pebble Beach conference venue"],
+    "notes": "Where Quattrone engineered the Qualtrics-SAP meeting"
+  },
+  {
+    "name": "Cocktail napkin deal terms",
+    "type": "metaphor",
+    "era": "2018",
+    "script_lines": [79],
+    "youtube_queries": [],
+    "image_queries": [],
+    "notes": "Custom visual candidate - deal terms on a napkin"
+  },
+  {
+    "name": "National Semiconductor to TI",
+    "type": "event",
+    "era": "2011",
+    "script_lines": [61],
+    "youtube_queries": ["National Semiconductor Texas Instruments acquisition 2011", "TI National Semiconductor deal"],
+    "image_queries": ["National Semiconductor TI acquisition", "Texas Instruments National Semiconductor"],
+    "notes": "$6.5 billion deal in Qatalyst's breakout year"
+  },
+  {
+    "name": "David Brodsky CSFB general counsel",
+    "type": "person",
+    "era": "2000",
+    "script_lines": [38],
+    "youtube_queries": ["CSFB general counsel SEC investigation 2000"],
+    "image_queries": [],
+    "notes": "Emailed Quattrone about SEC investigation"
+  },
+  {
+    "name": "Richard Char - file cleaning email",
+    "type": "person",
+    "era": "2000",
+    "script_lines": [39],
+    "youtube_queries": ["CSFB file cleaning email Quattrone trial"],
+    "image_queries": [],
+    "notes": "Sent the 'file cleaning' email"
+  },
+  {
+    "name": "Bill Murray and Kevin Costner golf",
+    "type": "event",
+    "era": "2003",
+    "script_lines": [42],
+    "youtube_queries": ["Bill Murray Kevin Costner golf celebrity", "AT&T Pebble Beach Pro-Am celebrity golf"],
+    "image_queries": ["Bill Murray Kevin Costner golf"],
+    "notes": "Quattrone played golf with them days after CSFB suspension"
+  },
+  {
+    "name": "Qatalyst deal volume stats",
+    "type": "concept",
+    "era": "2023-2024",
+    "script_lines": [97],
+    "youtube_queries": [],
+    "image_queries": [],
+    "notes": "Custom visual candidate - $61B/9 deals in 2023, $95B/14 deals in 2024, $6.8B avg vs Goldman $3B"
+  },
+  {
+    "name": "Most dangerous person in the room",
+    "type": "metaphor",
+    "era": "general",
+    "script_lines": [10],
+    "youtube_queries": [],
+    "image_queries": [],
+    "notes": "Thematic metaphor about deep specialization - custom visual candidate"
+  }
+]

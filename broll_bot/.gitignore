@@ -1,0 +1,24 @@
+# Environment / secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+
+# Output media (large files)
+output/videos/
+output/pictures/
+*.mov
+*.mp4
+
+# html_to_video build artifacts
+html_to_video/node_modules/
+html_to_video/.playwright-browsers/
+html_to_video/HTML Files/Output/
+html_to_video/frames_*/
+html_to_video/Wavy Grid Background.mp4

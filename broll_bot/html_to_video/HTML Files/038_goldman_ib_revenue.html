@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goldman Sachs Investment Banking Revenue 2006–2016</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0e1a;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    overflow: hidden;
+  }
+
+  #bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    width: 1040px;
+    padding: 40px 52px 36px;
+    background: rgba(8, 10, 22, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+  }
+
+  .header { margin-bottom: 30px; }
+
+  .header h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+  }
+
+  .header .sub {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 6px;
+  }
+
+  /* Chart structure */
+  .chart-outer {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .y-axis {
+    width: 52px;
+    flex-shrink: 0;
+    position: relative;
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+
+  .y-tick {
+    position: absolute;
+    right: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.5;
+    transform: translateY(50%);
+    text-align: right;
+  }
+
+  .chart-area {
+    flex: 1;
+    height: 370px; /* 300px bar + 40px x-labels + 30px top pad */
+    position: relative;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+    padding: 30px 0 40px 0;
+  }
+
+  .grid-line {
+    position: absolute;
+    left: 0; right: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.06);
+    pointer-events: none;
+  }
+
+  .bar-col {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .bar {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+
+  .bar-value {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .bar-label {
+    position: absolute;
+    bottom: -32px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.6;
+    letter-spacing: 0.3px;
+  }
+
+  /* Crisis annotation */
+  .crisis-annotation {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    left: 0; right: 0;
+  }
+
+  .crisis-text {
+    font-size: 11px;
+    font-weight: 600;
+    color: #FF6B7A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .crisis-line {
+    width: 1px;
+    background: rgba(255, 107, 122, 0.45);
+  }
+
+  .footer {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    opacity: 0;
+  }
+
+  .footer-note {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.5;
+    letter-spacing: 0.3px;
+  }
+</style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+  <source src="Wavy Grid Background.mp4" type="video/mp4">
+</video>
+
+<div class="wrapper" id="wrapper">
+  <div class="header">
+    <h1>Goldman Sachs — Investment Banking Net Revenue</h1>
+    <div class="sub">2006 – 2016 &nbsp;·&nbsp; Annual &nbsp;·&nbsp; USD Billions &nbsp;·&nbsp; Solomon as Head of IB Division</div>
+  </div>
+
+  <div class="chart-outer">
+    <div class="y-axis" id="yAxis"></div>
+    <div class="chart-area" id="chartArea"></div>
+  </div>
+
+  <div class="footer" id="footer">
+    <div class="footer-note">Source: Goldman Sachs Group, Inc. Annual Reports on Form 10-K (SEC EDGAR)</div>
+  </div>
+</div>
+
+<script>
+const years  = [2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016];
+const values = [5.63,7.56,5.19,4.80,4.81,4.36,4.93,6.00,6.46,7.03,6.27];
+const labels = ['$5.6B','$7.6B','$5.2B','$4.8B','$4.8B','$4.4B','$4.9B','$6.0B','$6.5B','$7.0B','$6.3B'];
+
+// Crisis years get coral, others get blue (primary bar = 2016, highest non-crisis = 2007)
+const isCrisis = [false,false,true,true,false,false,false,false,false,false,false];
+// Use solid blue for the leading years, dimmed blue for others
+const barColors = values.map((v, i) => {
+  if (isCrisis[i]) return '#FF6B7A';
+  // Highlight 2007 and 2015 as top performers
+  if (i === 1 || i === 9) return '#4A9EF7';
+  return 'rgba(74, 158, 247, 0.45)';
+});
+
+const MAX_VAL  = 9;
+const BAR_H    = 300;
+const Y_TICKS  = [2, 4, 6, 8];
+const chartArea = document.getElementById('chartArea');
+const yAxis     = document.getElementById('yAxis');
+
+// Y-axis total height = 370, padding-top=30, padding-bottom=40 → bar area = 300px
+const yAxisH = 370;
+
+Y_TICKS.forEach(v => {
+  const pxFromBottom = (v / MAX_VAL) * BAR_H;
+  const pxFromTop = (yAxisH - 40) - pxFromBottom;
+  const tick = document.createElement('div');
+  tick.className = 'y-tick';
+  tick.textContent = '$' + v + 'B';
+  tick.style.top = pxFromTop + 'px';
+  yAxis.appendChild(tick);
+});
+
+Y_TICKS.forEach(v => {
+  const pxFromBottom = (v / MAX_VAL) * BAR_H;
+  const gl = document.createElement('div');
+  gl.className = 'grid-line';
+  gl.style.bottom = (40 + pxFromBottom) + 'px';
+  chartArea.appendChild(gl);
+});
+
+// Build bar columns
+const barEls = [];
+const valueEls = [];
+const crisisEl = { el: null, col: null };
+
+years.forEach((yr, i) => {
+  const barHeightPx = (values[i] / MAX_VAL) * BAR_H;
+
+  const col = document.createElement('div');
+  col.className = 'bar-col';
+
+  const bar = document.createElement('div');
+  bar.className = 'bar';
+  bar.style.background = barColors[i];
+  bar.style.height = barHeightPx + 'px';
+  col.appendChild(bar);
+  barEls.push(bar);
+
+  const val = document.createElement('div');
+  val.className = 'bar-value';
+  val.textContent = labels[i];
+  val.style.bottom = (40 + barHeightPx + 6) + 'px';
+  col.appendChild(val);
+  valueEls.push(val);
+
+  const lbl = document.createElement('div');
+  lbl.className = 'bar-label';
+  lbl.textContent = yr;
+  col.appendChild(lbl);
+
+  // Crisis annotation on 2008 bar
+  if (yr === 2008) {
+    const ann = document.createElement('div');
+    ann.className = 'crisis-annotation';
+    ann.style.bottom = (40 + barHeightPx + 26) + 'px';
+    ann.innerHTML = `<div class="crisis-text">Financial<br>Crisis</div><div class="crisis-line" style="height:32px"></div>`;
+    col.appendChild(ann);
+    crisisEl.el = ann;
+  }
+
+  chartArea.appendChild(col);
+});
+
+// === ANIMATION HELPERS ===
+
+function jsFadeIn(el, duration, translateFrom) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.opacity = String(e);
+    if (translateFrom !== undefined) {
+      el.style.transform = 'translateY(' + (translateFrom * (1 - e)) + 'px)';
+    }
+    if (p >= 1) {
+      clearInterval(iv);
+      el.style.opacity = '1';
+      if (translateFrom !== undefined) el.style.transform = 'translateY(0)';
+    }
+  }, 16);
+}
+
+function jsFadeOpacity(el, duration, fromVal, toVal) {
+  if (!el) return;
+  let step = 0;
+  const steps = Math.round(duration / 16);
+  const iv = setInterval(() => {
+    step++;
+    const p = Math.min(step / steps, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.style.opacity = String(fromVal + (toVal - fromVal) * e);
+    if (p >= 1) { clearInterval(iv); el.style.opacity = String(toVal); }
+  }, 16);
+}
+
+// Animate a single bar from scaleY(0) to scaleY(1) via JS
+function animateSingleBar(barEl, duration, delay) {
+  setTimeout(() => {
+    const steps = Math.round(duration / 16);
+    let step = 0;
+    const iv = setInterval(() => {
+      step++;
+      const p = Math.min(step / steps, 1);
+      const e = 1 - Math.pow(1 - p, 3);
+      barEl.style.transform = `scaleY(${e})`;
+      if (p >= 1) { clearInterval(iv); barEl.style.transform = 'scaleY(1)'; }
+    }, 16);
+  }, delay);
+}
+
+// === ANIMATION TIMELINE ===
+// 100ms:  wrapper fades in
+// 700ms:  bars animate in one by one (160ms per bar)
+// 2600ms: value labels appear
+// 2900ms: crisis annotation appears
+// 3100ms: footer fades in
+// 3500ms: all visible — hold until 15s
+
+setTimeout(() => jsFadeIn(document.getElementById('wrapper'), 700, 20), 100);
+
+// Stagger bars left-to-right: 160ms per bar starting at 700ms
+years.forEach((yr, i) => {
+  const delay = 700 + i * 160;
+  animateSingleBar(barEls[i], 400, delay);
+  // Value label appears after bar finishes
+  setTimeout(() => jsFadeOpacity(valueEls[i], 300, 0, 1), delay + 420);
+});
+
+// Crisis annotation after bars 2008-2009 finish
+if (crisisEl.el) {
+  setTimeout(() => jsFadeOpacity(crisisEl.el, 400, 0, 1), 700 + 2 * 160 + 500);
+}
+
+// Footer
+setTimeout(() => jsFadeOpacity(document.getElementById('footer'), 500, 0, 1), 3200);
+</script>
+</body>
+</html>

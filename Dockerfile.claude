@@ -1,0 +1,42 @@
+FROM debian:bookworm-slim
+
+# ── System packages ──────────────────────────────────────────────────────────
+# Minimal set needed for Claude Code to operate on a codebase.
+# Add project-specific deps below this block if agents need them (e.g., cargo, node).
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git bash curl ca-certificates build-essential \
+    jq tree ripgrep less vim-tiny \
+    python3 python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+# ── Non-root user ────────────────────────────────────────────────────────────
+RUN groupadd -r claude && useradd -r -g claude -m -s /bin/bash claude
+
+# ── Install Claude Code (NATIVE — not npm) ───────────────────────────────────
+# npm install is DEPRECATED and causes auth/PATH corruption.
+# The native installer is Anthropic's official method. No Node.js needed.
+USER claude
+WORKDIR /home/claude
+RUN curl -fsSL https://claude.ai/install.sh | bash
+ENV PATH="/home/claude/.local/bin:/home/claude/.claude/bin:${PATH}"
+
+# ── Auth & settings pre-configuration ────────────────────────────────────────
+# Claude Code requires TWO files to skip all interactive prompts:
+#
+#   1. ~/.claude/.claude.json (symlinked to ~/.claude.json)
+#      → Marks onboarding as complete so the wizard never appears
+#      → Symlink is required because different versions check different paths
+#
+#   2. ~/.claude/settings.json
+#      → Auto-accepts all tool permissions (equivalent to --dangerously-skip-permissions)
+#      → Disables telemetry that can hang in containers
+#
+# The actual OAuth token comes in at runtime via CLAUDE_CODE_OAUTH_TOKEN env var.
+# It is NEVER baked into the image.
+RUN mkdir -p /home/claude/.claude && \
+    echo '{"hasCompletedOnboarding":true,"installMethod":"native"}' > /home/claude/.claude/.claude.json && \
+    ln -sf /home/claude/.claude/.claude.json /home/claude/.claude.json && \
+    echo '{"permissions":{"allow":["*"],"deny":[]},"env":{"CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC":"1"}}' > /home/claude/.claude/settings.json
+
+WORKDIR /workspace
+CMD ["sleep", "infinity"]

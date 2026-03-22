@@ -1,0 +1,15 @@
+{
+  "metrics": {
+    "unique_broll_sources": 42,
+    "unique_still_images": 14,
+    "total_broll_placements": 59,
+    "total_image_placements": 23,
+    "broll_with_audio": 20,
+    "custom_visuals_generated": 3,
+    "lines_with_no_visual": 0,
+    "coverage_percentage": 100.0,
+    "avg_relevance_score": 8.2,
+    "era_mismatches": 0
+  },
+  "verdict": "PASS"
+}

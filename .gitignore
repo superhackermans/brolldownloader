@@ -1,0 +1,22 @@
+.env
+!.env.example
+
+# Large binary files
+broll_bot/output/videos/*.mp4
+broll_bot/output/videos/*.webm
+broll_bot/output/videos/*.mkv
+broll_bot/output/pictures/*.jpg
+broll_bot/output/pictures/*.jpeg
+broll_bot/output/pictures/*.png
+broll_bot/output/pictures/*.gif
+broll_bot/output/pictures/*.webp
+
+# Cookies (sensitive)
+broll_bot/config/www.youtube.com_cookies.txt
+
+# Temp/cache
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+*.m4a
