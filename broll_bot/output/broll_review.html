@@ -7,8 +7,6 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;line-height:1.6}
-
-/* HEADER */
 .sticky-header{position:sticky;top:0;z-index:100;background:rgba(10,10,26,0.97);border-bottom:2px solid #1e293b;padding:12px 20px;backdrop-filter:blur(12px)}
 .title{font-size:22px;font-weight:800;color:#f8fafc;margin-bottom:8px}
 .title span{color:#38bdf8}
@@ -26,41 +24,41 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
 .fbtn:hover{border-color:#475569}
 .fbtn.active{background:#3b82f6;color:#fff;border-color:#3b82f6}
 .lcount{color:#475569;font-size:12px;margin-left:auto}
-
 .container{padding:16px 20px;max-width:1800px;margin:0 auto}
+.note{background:#172554;border:1px solid #1e3a5f;border-radius:8px;padding:12px 16px;margin-bottom:20px;color:#93c5fd;font-size:13px}
+.note strong{color:#60a5fa}
 
-/* FULL SCRIPT */
-.script-section{background:#111827;border:1px solid #1e293b;border-radius:12px;padding:20px;margin-bottom:24px}
-.script-section h2{color:#38bdf8;font-size:16px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
-.script-section h2::before{content:'';display:inline-block;width:4px;height:18px;background:#3b82f6;border-radius:2px}
+/* FULL SCRIPT - collapsible */
+.script-section{background:#111827;border:1px solid #1e293b;border-radius:12px;margin-bottom:24px;overflow:hidden}
+.script-toggle{display:flex;align-items:center;gap:10px;padding:16px 20px;cursor:pointer;user-select:none;transition:background 0.15s}
+.script-toggle:hover{background:#1e293b}
+.script-toggle h2{color:#38bdf8;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;margin:0}
+.script-toggle h2::before{content:'';display:inline-block;width:4px;height:18px;background:#3b82f6;border-radius:2px}
+.script-toggle .arrow{color:#64748b;font-size:18px;margin-left:auto;transition:transform 0.3s}
+.script-toggle.open .arrow{transform:rotate(180deg)}
+.script-body{max-height:0;overflow:hidden;transition:max-height 0.4s ease;padding:0 20px}
+.script-body.open{max-height:8000px;padding:0 20px 20px}
 .script-block{font-size:13px;line-height:1.8;color:#94a3b8;white-space:pre-wrap;font-family:'SF Mono',Consolas,monospace}
 .sline{display:block;padding:2px 8px;border-radius:4px;cursor:pointer;transition:all 0.15s}
 .sline:hover{background:#1e293b;color:#e2e8f0}
 .section-head{display:block;color:#f59e0b;font-weight:700;font-size:14px;margin-top:14px;font-family:-apple-system,sans-serif;padding:4px 8px}
 
-/* LINE CARDS — two-column: script left, assets right */
+/* LINE CARDS */
 .line-card{background:#111827;border:1px solid #1e293b;border-radius:10px;margin-bottom:14px;overflow:hidden;transition:border-color 0.3s}
 .line-card:hover{border-color:#334155}
 .line-split{display:grid;grid-template-columns:1fr 1.4fr;min-height:100px}
 @media(max-width:900px){.line-split{grid-template-columns:1fr}}
-
-/* Left: script text */
 .line-left{padding:16px 20px;border-right:1px solid #1e293b;display:flex;flex-direction:column;gap:8px}
 .lnum{display:inline-block;background:#3b82f6;color:#fff;font-weight:700;font-size:11px;border-radius:5px;padding:2px 8px;margin-bottom:4px;width:fit-content}
 .ltxt{font-size:14px;line-height:1.75;color:#e2e8f0;font-weight:500}
-
-/* Right: assets */
 .line-right{padding:0}
 .asset-cell{padding:14px 18px;border-bottom:1px solid #1e293b}
 .asset-cell:last-child{border-bottom:0}
-
-/* Badges */
 .abadge{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;letter-spacing:0.5px;text-transform:uppercase}
 .ab-broll{background:#172554;color:#60a5fa}
 .ab-audio{background:#3b0764;color:#c084fc}
 .ab-image{background:#052e16;color:#4ade80}
 .ab-src{background:#1e293b;color:#64748b;font-size:9px;padding:2px 6px;border-radius:3px;margin-left:6px;text-transform:capitalize}
-
 .vtitle{font-size:13px;font-weight:600;color:#e2e8f0;margin-bottom:2px}
 .vchan{font-size:11px;color:#475569;margin-bottom:6px}
 .meta-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
@@ -68,9 +66,9 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
 .vlink:hover{text-decoration:underline}
 .tstamp{font-family:'SF Mono',Consolas,monospace;font-size:11px;color:#64748b;background:#0a0a1a;padding:2px 6px;border-radius:3px}
 
-/* YouTube embed */
-.yt-embed{position:relative;width:100%;padding-bottom:56.25%;margin-top:8px;border-radius:8px;overflow:hidden;background:#000}
-.yt-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+/* YouTube player container - compact */
+.yt-player-wrap{position:relative;width:100%;max-width:380px;padding-bottom:min(56.25%, 214px);margin-top:8px;border-radius:8px;overflow:hidden;background:#000}
+.yt-player-wrap>div{position:absolute;top:0;left:0;width:100%;height:100%}
 
 /* Relevance */
 .rel-row{display:flex;align-items:center;gap:6px;margin-top:8px}
@@ -82,15 +80,10 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
 .rel-n{font-size:11px;color:#94a3b8;font-weight:600}
 .era-ok{font-size:9px;padding:1px 6px;border-radius:3px;background:#052e16;color:#4ade80}
 .era-bad{font-size:9px;padding:1px 6px;border-radius:3px;background:#450a0a;color:#f87171}
-
-/* Transcript */
 .tx-label{font-size:10px;color:#475569;font-weight:700;margin-top:10px;text-transform:uppercase;letter-spacing:0.5px}
 .tx-box{background:#0a0a1a;border:1px solid #1e293b;border-radius:6px;padding:8px 12px;margin-top:4px;font-family:'SF Mono',Consolas,monospace;font-size:12px;color:#94a3b8;line-height:1.6}
-
-/* REASONING — prominent */
 .reason-label{font-size:10px;color:#f59e0b;font-weight:700;margin-top:10px;text-transform:uppercase;letter-spacing:0.5px}
 .reason-box{background:#1a1700;border:1px solid #422006;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 12px;margin-top:4px;font-size:12px;color:#fbbf24;line-height:1.5}
-
 .img-prev{max-width:100%;max-height:220px;border-radius:8px;margin-top:8px;border:1px solid #1e293b}
 .section-div{background:linear-gradient(90deg,#111827,#1e293b);color:#f8fafc;font-size:16px;font-weight:700;padding:12px 20px;margin:24px 0 12px;border-radius:8px;letter-spacing:0.3px;border-left:4px solid #f59e0b}
 </style>
@@ -120,113 +113,114 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
   </div>
 </div>
 <div class="container">
+<div class="note"><strong>How to use:</strong> Open this file in Chrome/Safari/Firefox. Each video player starts at the assigned timestamp. Click the script lines at the top to jump to that assignment. Click "Open in YouTube" for full-screen viewing.</div>
 
-<div class="script-section"><h2>FULL SCRIPT</h2><div class="script-block">
-<span class="sline" data-line="1" onclick="scrollToLine(1)">rareliquid – Qatalyst Partners: The Most Dominant Tech Bank You’ve Never Heard of – Script - 3.9.2026</span>
+<div class="script-section"><div class="script-toggle" onclick="toggleScript(this)"><h2>FULL SCRIPT</h2><span class="arrow">&#9660;</span></div><div class="script-body" id="scriptBody"><div class="script-block">
+<span class="sline" onclick="scrollToLine(1)">rareliquid – Qatalyst Partners: The Most Dominant Tech Bank You’ve Never Heard of – Script - 3.9.2026</span>
 <br>
 <span class="section-head">HOOK</span>
-<span class="sline" data-line="4" onclick="scrollToLine(4)">Would you believe me if I said that the LARGEST and most FAMOUS tech M&amp;A deals of the past 2 decades were done by a team of less than 100 bankers?</span>
-<span class="sline" data-line="5" onclick="scrollToLine(5)">NXP to Qualcomm - $47 billion. Ansys to Synopsys - $32 billion. LinkedIn to Microsoft - $26 billion.</span>
-<span class="sline" data-line="6" onclick="scrollToLine(6)">What all these deals have in common is that the sellers weren’t advised by Goldman Sachs, Morgan Stanley, or JP Morgan. These global banks lost some of the largest tech M&amp;A mandates to a small but mighty elite boutique investment bank founded by the legendary Frank Quattrone at the height of the 2008 financial crisis. This is the story of Qatalyst Partners - The Most Feared Bank in Silicon Valley</span>
+<span class="sline" onclick="scrollToLine(4)">Would you believe me if I said that the LARGEST and most FAMOUS tech M&amp;A deals of the past 2 decades were done by a team of less than 100 bankers?</span>
+<span class="sline" onclick="scrollToLine(5)">NXP to Qualcomm - $47 billion. Ansys to Synopsys - $32 billion. LinkedIn to Microsoft - $26 billion.</span>
+<span class="sline" onclick="scrollToLine(6)">What all these deals have in common is that the sellers weren’t advised by Goldman Sachs, Morgan Stanley, or JP Morgan. These global banks lost some of the largest tech M&amp;A mandates to a small but mighty elite boutique investment bank founded by the legendary Frank Quattrone at the height of the 2008 financial crisis. This is the story of Qatalyst Partners - The Most Feared Bank in Silicon Valley</span>
 <br>
 <span class="section-head">PROMISE</span>
-<span class="sline" data-line="9" onclick="scrollToLine(9)">Today, we&#x27;ll be going into how one man made a generational bet that catapulted him to tech banking royalty and how he came back after being banned on Wall Street to building the most dominant tech M&amp;A firm on the planet.</span>
-<span class="sline" data-line="10" onclick="scrollToLine(10)">It’s a story that involves Steve Jobs, a prison sentence, and lots and lots of sly deal making and what you’ll learn is that the most dangerous person in the room isn’t the one who knows a little about everything - it’s the one who has gone so deep on one thing that there’s simply no one else to call</span>
+<span class="sline" onclick="scrollToLine(9)">Today, we&#x27;ll be going into how one man made a generational bet that catapulted him to tech banking royalty and how he came back after being banned on Wall Street to building the most dominant tech M&amp;A firm on the planet.</span>
+<span class="sline" onclick="scrollToLine(10)">It’s a story that involves Steve Jobs, a prison sentence, and lots and lots of sly deal making and what you’ll learn is that the most dangerous person in the room isn’t the one who knows a little about everything - it’s the one who has gone so deep on one thing that there’s simply no one else to call</span>
 <br>
 <span class="section-head">SECTION 1: The Rise of the Silicon Prince</span>
-<span class="sline" data-line="13" onclick="scrollToLine(13)">To understand how Qatalyst rose, we first need to talk about Frank Quattrone,the most powerful banker in Silicon Valley who had it all taken away before making a generational comeback</span>
-<span class="sline" data-line="14" onclick="scrollToLine(14)">Quattrone grew up in a blue-collar neighborhood in South Philadelphia and earned a scholarship to Wharton for undergrad</span>
-<span class="sline" data-line="15" onclick="scrollToLine(15)">Upon graduating in 1977, his first job out of school is at Morgan Stanley in New York and back then, Morgan Stanley ran a different version of the 2+2 where you work for two years, get an MBA, and then come back.</span>
-<span class="sline" data-line="16" onclick="scrollToLine(16)">Quattrone takes the deal, goes to Stanford for business school, and that Stanford-to-Silicon Valley pipeline defines the rest of his career.</span>
-<span class="sline" data-line="17" onclick="scrollToLine(17)">During one of his assignments as a Teaching Assistant at Stanford, Quattrone was sent to pick up an Apple II personal computer and load a financial software program onto it.</span>
-<span class="sline" data-line="18" onclick="scrollToLine(18)">[add b-roll from frank quattrone interview with harry stebbings around 3 min mark]</span>
-<span class="sline" data-line="19" onclick="scrollToLine(19)">A year later, a 25-year-old Steve Jobs walks into Jack McDonald&#x27;s Stanford investment class. Quattrone is in the room and basically gets a glimpse into the future when Steve Jobs pitches the future of personal computing andQuattrone is hooked. So much so that he bets his entire career on it.</span>
-<span class="sline" data-line="20" onclick="scrollToLine(20)">[add b-roll from frank quattrone interview with harry stebbings around 5 min mark]</span>
-<span class="sline" data-line="21" onclick="scrollToLine(21)">After graduating from Stanford, in 1981 Quattrone returns to Morgan Stanley and practically begs to join its San Francisco office which his New York colleagues thought was career suicide given the SF office had just opened up and had literally zero revenue </span>
-<span class="sline" data-line="22" onclick="scrollToLine(22)">But as we know now, Quattrone’s move wasn’t a foolish but a generational bet as he wouldn’t just predict Silicon&#x27;s Valley’s rise - he would help cause it</span>
-<span class="sline" data-line="23" onclick="scrollToLine(23)">In some sense though, Quattrone was 9 years too early because his first notable deal came when he took Cisco public in 1990 and then Intuit in 1993</span>
-<span class="sline" data-line="24" onclick="scrollToLine(24)">But the world would change forever in 1995 when Quattrone led Netscape’s IPO, which was originally set to be offered at $14 per share and opened at $71, becoming a $2.9 billion company with zero profits and kicking off the dot.com bubble that would burst 5 years later. The Internet had arrived, and Quattrone was the one who rang the bell </span>
-<span class="sline" data-line="25" onclick="scrollToLine(25)">By 1996, Quattrone had built Morgan Stanley’s tech group from nothing to its largest industry group at the firm even advising on Apple’s iconic acquisition of NeXT which brought Steve Jobs back to Apple. </span>
-<span class="sline" data-line="26" onclick="scrollToLine(26)">But Quattrone felt he wasn’t being compensated fairly despite making $1 million more than Morgan Stanley’s chairman and so lured by a 3 year $20 million deal plus incentives, Quattrone decided to take his talents to Deutsche Bank, creating a mass exodus of bankers - a trend that you’ll see happen continuously - and took Amazon public in 1997 but the joyous marriage doesn’t last long</span>
-<span class="sline" data-line="27" onclick="scrollToLine(27)">While Deutsche Bank pulled back its Sillicon Valley ambitions, Credit Suisse First Boston gave Quattrone an offer he couldn’t refuse: a shot at building his own kingdom. </span>
-<span class="sline" data-line="28" onclick="scrollToLine(28)">So in 1998, Quattrone joins CSFB, bringing along with him over 150 bankers and support staff, gutting Deutsche Bank’s entire tech practice so fast that Deutsche Bank simply sold its building to CSFB so Quattrone and his team didn’t even need to move offices</span>
-<span class="sline" data-line="29" onclick="scrollToLine(29)">From 1998 to 2000, Quattrone almost single-handedly helps boost CSFB’s underwriting rank in IPOs from 8 in 1998 to number 1 in 2000 and tripling fees from $203 million to $686 million, and CSFB leads more tech IPOs than Goldman or Morgan Stanley combined. </span>
-<span class="sline" data-line="30" onclick="scrollToLine(30)">Among them is the most insane IPO in history - the VA Linux IPO, which jumped from $30 to over $200 within minutes, a 700% increase. </span>
-<span class="sline" data-line="31" onclick="scrollToLine(31)">In the year 2000, Quattrone earns $120 million in a single year and he reportedly threw some crazy all-night parties and is crowned the Prince of Sillicon Valley, a gatekeeper to the world’s top tech IPOs and riding this high is exactly what gets him into trouble when the dot-com bubble bursts </span>
+<span class="sline" onclick="scrollToLine(13)">To understand how Qatalyst rose, we first need to talk about Frank Quattrone,the most powerful banker in Silicon Valley who had it all taken away before making a generational comeback</span>
+<span class="sline" onclick="scrollToLine(14)">Quattrone grew up in a blue-collar neighborhood in South Philadelphia and earned a scholarship to Wharton for undergrad</span>
+<span class="sline" onclick="scrollToLine(15)">Upon graduating in 1977, his first job out of school is at Morgan Stanley in New York and back then, Morgan Stanley ran a different version of the 2+2 where you work for two years, get an MBA, and then come back.</span>
+<span class="sline" onclick="scrollToLine(16)">Quattrone takes the deal, goes to Stanford for business school, and that Stanford-to-Silicon Valley pipeline defines the rest of his career.</span>
+<span class="sline" onclick="scrollToLine(17)">During one of his assignments as a Teaching Assistant at Stanford, Quattrone was sent to pick up an Apple II personal computer and load a financial software program onto it.</span>
+<span class="sline" onclick="scrollToLine(18)">[add b-roll from frank quattrone interview with harry stebbings around 3 min mark]</span>
+<span class="sline" onclick="scrollToLine(19)">A year later, a 25-year-old Steve Jobs walks into Jack McDonald&#x27;s Stanford investment class. Quattrone is in the room and basically gets a glimpse into the future when Steve Jobs pitches the future of personal computing andQuattrone is hooked. So much so that he bets his entire career on it.</span>
+<span class="sline" onclick="scrollToLine(20)">[add b-roll from frank quattrone interview with harry stebbings around 5 min mark]</span>
+<span class="sline" onclick="scrollToLine(21)">After graduating from Stanford, in 1981 Quattrone returns to Morgan Stanley and practically begs to join its San Francisco office which his New York colleagues thought was career suicide given the SF office had just opened up and had literally zero revenue </span>
+<span class="sline" onclick="scrollToLine(22)">But as we know now, Quattrone’s move wasn’t a foolish but a generational bet as he wouldn’t just predict Silicon&#x27;s Valley’s rise - he would help cause it</span>
+<span class="sline" onclick="scrollToLine(23)">In some sense though, Quattrone was 9 years too early because his first notable deal came when he took Cisco public in 1990 and then Intuit in 1993</span>
+<span class="sline" onclick="scrollToLine(24)">But the world would change forever in 1995 when Quattrone led Netscape’s IPO, which was originally set to be offered at $14 per share and opened at $71, becoming a $2.9 billion company with zero profits and kicking off the dot.com bubble that would burst 5 years later. The Internet had arrived, and Quattrone was the one who rang the bell </span>
+<span class="sline" onclick="scrollToLine(25)">By 1996, Quattrone had built Morgan Stanley’s tech group from nothing to its largest industry group at the firm even advising on Apple’s iconic acquisition of NeXT which brought Steve Jobs back to Apple. </span>
+<span class="sline" onclick="scrollToLine(26)">But Quattrone felt he wasn’t being compensated fairly despite making $1 million more than Morgan Stanley’s chairman and so lured by a 3 year $20 million deal plus incentives, Quattrone decided to take his talents to Deutsche Bank, creating a mass exodus of bankers - a trend that you’ll see happen continuously - and took Amazon public in 1997 but the joyous marriage doesn’t last long</span>
+<span class="sline" onclick="scrollToLine(27)">While Deutsche Bank pulled back its Sillicon Valley ambitions, Credit Suisse First Boston gave Quattrone an offer he couldn’t refuse: a shot at building his own kingdom. </span>
+<span class="sline" onclick="scrollToLine(28)">So in 1998, Quattrone joins CSFB, bringing along with him over 150 bankers and support staff, gutting Deutsche Bank’s entire tech practice so fast that Deutsche Bank simply sold its building to CSFB so Quattrone and his team didn’t even need to move offices</span>
+<span class="sline" onclick="scrollToLine(29)">From 1998 to 2000, Quattrone almost single-handedly helps boost CSFB’s underwriting rank in IPOs from 8 in 1998 to number 1 in 2000 and tripling fees from $203 million to $686 million, and CSFB leads more tech IPOs than Goldman or Morgan Stanley combined. </span>
+<span class="sline" onclick="scrollToLine(30)">Among them is the most insane IPO in history - the VA Linux IPO, which jumped from $30 to over $200 within minutes, a 700% increase. </span>
+<span class="sline" onclick="scrollToLine(31)">In the year 2000, Quattrone earns $120 million in a single year and he reportedly threw some crazy all-night parties and is crowned the Prince of Sillicon Valley, a gatekeeper to the world’s top tech IPOs and riding this high is exactly what gets him into trouble when the dot-com bubble bursts </span>
 <br>
 <span class="section-head">Transition: SECTION 2: From Tech Royalty to Prison Time</span>
-<span class="sline" data-line="34" onclick="scrollToLine(34)">Suddenly, the same practices that made Quattrone rich are under attack in the press, causing him to go from his absolute peak to a prison sentence</span>
-<span class="sline" data-line="35" onclick="scrollToLine(35)">After the dot com bubble bursts, companies go from billions to near zero, and everyone is trying to look for someone to blame and who better than the prince of Silicon Valley</span>
-<span class="sline" data-line="36" onclick="scrollToLine(36)">It’s a well known secret that Quattrone had been handing out hot tech IPO share allocations that were guaranteed to make money on day one to key executives who could help sway their company’s decision to use CSFB as their investment bank and this group was known as “Friends of Frank”</span>
-<span class="sline" data-line="37" onclick="scrollToLine(37)">Interestingly, Quattrone is never charged for that shady conduct, and CSFB pays $100 million in a settlement with the SEC for profit-sharing arrangements, so here’s what leads to his ultimate arrest. </span>
-<span class="sline" data-line="38" onclick="scrollToLine(38)">On December 3, 2000, CSFB&#x27;s general counsel David Brodsky emails Quattrone about ongoing SEC and grand jury investigations into the firm&#x27;s IPO allocation process and tells him not to tell anyone.</span>
-<span class="sline" data-line="39" onclick="scrollToLine(39)">The next day, Richard Char, one of Quattrone&#x27;s colleagues, sends an email suggesting the tech group do some year-end “file cleaning” — standard housekeeping under CSFB&#x27;s document retention policy. Quattrone replies: &quot;You shouldn&#x27;t make jokes like that on email!&quot;</span>
-<span class="sline" data-line="40" onclick="scrollToLine(40)">The next day on December 5th, Quattrone sends his own email to the group, writing: &quot;Having been a key witness in a securities litigation case in south texas,I strongly advise you to follow these procedures.&quot; and these 22 words becomes the basis for his prosecution.</span>
-<span class="sline" data-line="41" onclick="scrollToLine(41)">The prosecution argues that Quattrone knew about the grand jury subpoena and forwarded a memo encouraging documentation destruction, and therefore corruptly obstructing justice</span>
-<span class="sline" data-line="42" onclick="scrollToLine(42)">In February 2003, Quattrone is suspendedfrom CSFB but he doesn’t seem too bothered by it seeing as he plays golf with Bill Murray and Kevin Costner days later</span>
-<span class="sline" data-line="43" onclick="scrollToLine(43)">But in April 2003, Quattrone is arrested by the FBI with charges brought by US Attorney Jim Comey - the same one who became the FBI director. </span>
-<span class="sline" data-line="44" onclick="scrollToLine(44)">In October 2003, the first trial ends in a hung jury that’s deadlocked after 5 days of deliberation, in May 2004 he’s convicted on 3 counts, and in September 2004, he’s sentenced to 18 months in prison in part for also lying on the witness stand and also given a lifetime ban by the NASD from the securities industry</span>
-<span class="sline" data-line="45" onclick="scrollToLine(45)">Quattrone appeals the sentence and long-story short after many years of legal battles, all chargse are dropped in 2007, CSFB is ordered to pay him up to $550 million in overdue compensation, and the most powerful tech banker in the world is finally allowed to start working again but the empire he had built is gone</span>
-<span class="sline" data-line="46" onclick="scrollToLine(46)">Most people who fall this far don&#x27;t come back, but here’s the thing about Quattrone: his superpower was never just deal execution. It was making people feel like the most important person in the room, and in cinematic timing, Quattrone moves from one market crash to the next by launching Qatalyst in 2008 during the Great Recession and within days, gets a phone call from Google .</span>
+<span class="sline" onclick="scrollToLine(34)">Suddenly, the same practices that made Quattrone rich are under attack in the press, causing him to go from his absolute peak to a prison sentence</span>
+<span class="sline" onclick="scrollToLine(35)">After the dot com bubble bursts, companies go from billions to near zero, and everyone is trying to look for someone to blame and who better than the prince of Silicon Valley</span>
+<span class="sline" onclick="scrollToLine(36)">It’s a well known secret that Quattrone had been handing out hot tech IPO share allocations that were guaranteed to make money on day one to key executives who could help sway their company’s decision to use CSFB as their investment bank and this group was known as “Friends of Frank”</span>
+<span class="sline" onclick="scrollToLine(37)">Interestingly, Quattrone is never charged for that shady conduct, and CSFB pays $100 million in a settlement with the SEC for profit-sharing arrangements, so here’s what leads to his ultimate arrest. </span>
+<span class="sline" onclick="scrollToLine(38)">On December 3, 2000, CSFB&#x27;s general counsel David Brodsky emails Quattrone about ongoing SEC and grand jury investigations into the firm&#x27;s IPO allocation process and tells him not to tell anyone.</span>
+<span class="sline" onclick="scrollToLine(39)">The next day, Richard Char, one of Quattrone&#x27;s colleagues, sends an email suggesting the tech group do some year-end “file cleaning” — standard housekeeping under CSFB&#x27;s document retention policy. Quattrone replies: &quot;You shouldn&#x27;t make jokes like that on email!&quot;</span>
+<span class="sline" onclick="scrollToLine(40)">The next day on December 5th, Quattrone sends his own email to the group, writing: &quot;Having been a key witness in a securities litigation case in south texas,I strongly advise you to follow these procedures.&quot; and these 22 words becomes the basis for his prosecution.</span>
+<span class="sline" onclick="scrollToLine(41)">The prosecution argues that Quattrone knew about the grand jury subpoena and forwarded a memo encouraging documentation destruction, and therefore corruptly obstructing justice</span>
+<span class="sline" onclick="scrollToLine(42)">In February 2003, Quattrone is suspendedfrom CSFB but he doesn’t seem too bothered by it seeing as he plays golf with Bill Murray and Kevin Costner days later</span>
+<span class="sline" onclick="scrollToLine(43)">But in April 2003, Quattrone is arrested by the FBI with charges brought by US Attorney Jim Comey - the same one who became the FBI director. </span>
+<span class="sline" onclick="scrollToLine(44)">In October 2003, the first trial ends in a hung jury that’s deadlocked after 5 days of deliberation, in May 2004 he’s convicted on 3 counts, and in September 2004, he’s sentenced to 18 months in prison in part for also lying on the witness stand and also given a lifetime ban by the NASD from the securities industry</span>
+<span class="sline" onclick="scrollToLine(45)">Quattrone appeals the sentence and long-story short after many years of legal battles, all chargse are dropped in 2007, CSFB is ordered to pay him up to $550 million in overdue compensation, and the most powerful tech banker in the world is finally allowed to start working again but the empire he had built is gone</span>
+<span class="sline" onclick="scrollToLine(46)">Most people who fall this far don&#x27;t come back, but here’s the thing about Quattrone: his superpower was never just deal execution. It was making people feel like the most important person in the room, and in cinematic timing, Quattrone moves from one market crash to the next by launching Qatalyst in 2008 during the Great Recession and within days, gets a phone call from Google .</span>
 <br>
 <span class="section-head">SECTION 3: The Improbable Comeback</span>
-<span class="sline" data-line="49" onclick="scrollToLine(49)">The timing looks insane in hindsight. Bear Stearns has just been sold to JPMorgan for $2 a share — down from $150 a year earlier. Lehman falls six months later. M&amp;A freezes globally and the entire banking industry is in shambles.</span>
-<span class="sline" data-line="50" onclick="scrollToLine(50)">But Quattrone&#x27;s rolodex is fully intact. Within days of the founding press release going out, Google reaches out. They need someone to help them create an alternative to Microsoft&#x27;s $45 billion hostile takeover bid for Yahoo. The firm hasn&#x27;t even closed its first deal yet and Google is on the phone.</span>
-<span class="sline" data-line="51" onclick="scrollToLine(51)">That first year, Quattrone doesn&#x27;t even know if they can make payroll but manages to pull off his first deal and earn fees on December 25th, 2008. Literally Christmas Day.</span>
-<span class="sline" data-line="52" onclick="scrollToLine(52)">But their first true breakout deal is Data Domain&#x27;s sale to EMC in 2009. Qatalyst runs the process, engineers a bidding war and nearly doubles the purchase price from an original $1.5 billion offer from NetApp to $2.4 billion by the end of it</span>
-<span class="sline" data-line="53" onclick="scrollToLine(53)">That&#x27;s followed by 3PAR. In 2010, Dell makes an initial bid of $1.15 billion and Qatalyst runs another competitive process, driving the ultimate acquisition price to $2.4 billion with the winning bid from HP.</span>
-<span class="sline" data-line="54" onclick="scrollToLine(54)">And here&#x27;s where there’s some tea with HP. Later in October 2011, Qatalyst runs a process for Autonomy which is sold to HP for $10.3 billion which after a CEO transition is inherited by Meg Whitman. </span>
-<span class="sline" data-line="55" onclick="scrollToLine(55)">Barely a year after the deal, HP announces an $8.8 billion writedown of the Autonomy deal due to accounting fraud and Whitman publicly turns on Qatalyst, saying the firm was &quot;guilty&quot; of playing too aggressively.</span>
-<span class="sline" data-line="56" onclick="scrollToLine(56)">She hates Qatalyst so much that when the bank was running a sale process for Aruba Networks, Whitman could only negotiate by bringing in a buffer person to sit between Whitman and Qatalyst so the two sides never had to directly face each other. The deal amazingly still closed at $2.7BN with HP as the buyer even with Whitman believing George Boutros to be “evil.” </span>
-<span class="sline" data-line="57" onclick="scrollToLine(57)">And so this is a great time for us to talk about the 2nd most important person in Qatalyst’s history - George Boutros</span>
-<span class="sline" data-line="58" onclick="scrollToLine(58)">Boutros joined Qatalyst in 2010, coming from Credit Suisse, where he led the sales of YouTube to Google and Pixar to Disney. </span>
-<span class="sline" data-line="59" onclick="scrollToLine(59)">Quattrone and Boutros are a powerful duo that is known for their good cop, bad cop personas. Quattrone’s reputation is all about relationships — warm, client-facing, and making you feel heard. Boutro’s reputation is notorious for being brash, aggressive, and execution-focused.</span>
-<span class="sline" data-line="60" onclick="scrollToLine(60)">Quattrone is the optimist. Boutros is the pessimist. On client calls, Quattrone tells you to shoot for the moon. Boutros brings you back with risk-adjusted reality. Clients get both shoulders of the advice and that polarizing dynamic sets the foundation for Qatalyst’s dominance in the years that followed.</span>
-<span class="sline" data-line="61" onclick="scrollToLine(61)">i After just one year of Boutros joining, things really start to fly in 2011. Motorola to Google - $12.5 billion. Autonomy to HP - $10.3 billion. National Semiconductor to TI - $6.5BN. Riot Games to Tencent and so many more all in a single year with a team of only 20 bankers so you know those bonuses were fat and at this point the question isn’t if Qatalyst can compete with Goldman and Morgan Stanley - it’s whether the big banks can compete with Qatalyst</span>
-<span class="sline" data-line="62" onclick="scrollToLine(62)">By this point, Quattrone is hailed as an all-time rainmaker and takes Qatalyst to new heights by advising Dell’s $24.4 billion take-private transaction and in 2015, Qatalyst advises on 12 deals worth $33.5 billion, capturing 7% of total tech deal volume with only an 80 person firm</span>
-<span class="sline" data-line="63" onclick="scrollToLine(63)">Then suddenly in 2016 like Michael Jordan’s retirement at the peak of his powers, Quattrone steps down as CEO and hands over day to day operations to Boutros, which is an important step in establishing Qatalyst as an institution with a succession structure, not just a personality cult around one man and this is when Qatalyst goes on a tear making it the most feared tech bank bully on Wall Street</span>
+<span class="sline" onclick="scrollToLine(49)">The timing looks insane in hindsight. Bear Stearns has just been sold to JPMorgan for $2 a share — down from $150 a year earlier. Lehman falls six months later. M&amp;A freezes globally and the entire banking industry is in shambles.</span>
+<span class="sline" onclick="scrollToLine(50)">But Quattrone&#x27;s rolodex is fully intact. Within days of the founding press release going out, Google reaches out. They need someone to help them create an alternative to Microsoft&#x27;s $45 billion hostile takeover bid for Yahoo. The firm hasn&#x27;t even closed its first deal yet and Google is on the phone.</span>
+<span class="sline" onclick="scrollToLine(51)">That first year, Quattrone doesn&#x27;t even know if they can make payroll but manages to pull off his first deal and earn fees on December 25th, 2008. Literally Christmas Day.</span>
+<span class="sline" onclick="scrollToLine(52)">But their first true breakout deal is Data Domain&#x27;s sale to EMC in 2009. Qatalyst runs the process, engineers a bidding war and nearly doubles the purchase price from an original $1.5 billion offer from NetApp to $2.4 billion by the end of it</span>
+<span class="sline" onclick="scrollToLine(53)">That&#x27;s followed by 3PAR. In 2010, Dell makes an initial bid of $1.15 billion and Qatalyst runs another competitive process, driving the ultimate acquisition price to $2.4 billion with the winning bid from HP.</span>
+<span class="sline" onclick="scrollToLine(54)">And here&#x27;s where there’s some tea with HP. Later in October 2011, Qatalyst runs a process for Autonomy which is sold to HP for $10.3 billion which after a CEO transition is inherited by Meg Whitman. </span>
+<span class="sline" onclick="scrollToLine(55)">Barely a year after the deal, HP announces an $8.8 billion writedown of the Autonomy deal due to accounting fraud and Whitman publicly turns on Qatalyst, saying the firm was &quot;guilty&quot; of playing too aggressively.</span>
+<span class="sline" onclick="scrollToLine(56)">She hates Qatalyst so much that when the bank was running a sale process for Aruba Networks, Whitman could only negotiate by bringing in a buffer person to sit between Whitman and Qatalyst so the two sides never had to directly face each other. The deal amazingly still closed at $2.7BN with HP as the buyer even with Whitman believing George Boutros to be “evil.” </span>
+<span class="sline" onclick="scrollToLine(57)">And so this is a great time for us to talk about the 2nd most important person in Qatalyst’s history - George Boutros</span>
+<span class="sline" onclick="scrollToLine(58)">Boutros joined Qatalyst in 2010, coming from Credit Suisse, where he led the sales of YouTube to Google and Pixar to Disney. </span>
+<span class="sline" onclick="scrollToLine(59)">Quattrone and Boutros are a powerful duo that is known for their good cop, bad cop personas. Quattrone’s reputation is all about relationships — warm, client-facing, and making you feel heard. Boutro’s reputation is notorious for being brash, aggressive, and execution-focused.</span>
+<span class="sline" onclick="scrollToLine(60)">Quattrone is the optimist. Boutros is the pessimist. On client calls, Quattrone tells you to shoot for the moon. Boutros brings you back with risk-adjusted reality. Clients get both shoulders of the advice and that polarizing dynamic sets the foundation for Qatalyst’s dominance in the years that followed.</span>
+<span class="sline" onclick="scrollToLine(61)">i After just one year of Boutros joining, things really start to fly in 2011. Motorola to Google - $12.5 billion. Autonomy to HP - $10.3 billion. National Semiconductor to TI - $6.5BN. Riot Games to Tencent and so many more all in a single year with a team of only 20 bankers so you know those bonuses were fat and at this point the question isn’t if Qatalyst can compete with Goldman and Morgan Stanley - it’s whether the big banks can compete with Qatalyst</span>
+<span class="sline" onclick="scrollToLine(62)">By this point, Quattrone is hailed as an all-time rainmaker and takes Qatalyst to new heights by advising Dell’s $24.4 billion take-private transaction and in 2015, Qatalyst advises on 12 deals worth $33.5 billion, capturing 7% of total tech deal volume with only an 80 person firm</span>
+<span class="sline" onclick="scrollToLine(63)">Then suddenly in 2016 like Michael Jordan’s retirement at the peak of his powers, Quattrone steps down as CEO and hands over day to day operations to Boutros, which is an important step in establishing Qatalyst as an institution with a succession structure, not just a personality cult around one man and this is when Qatalyst goes on a tear making it the most feared tech bank bully on Wall Street</span>
 <br>
 <span class="section-head">SECTION 4: From Underdog to Bully</span>
-<span class="sline" data-line="66" onclick="scrollToLine(66)">With Quattrone still deeply involved in deals, Qatalyst goes on a tear and for those of you who are deal junkies, you’re going to love the 3 deals I’m about to detail that showcase why Qatalyst went from being a dominant boutique to a nightmare to its competitors</span>
-<span class="sline" data-line="67" onclick="scrollToLine(67)">First is LinkedIn’s $26 billion sale to Microsoft in 2016 which resulted in one major bank disseminating a 10 page presentation to counteract Qatalyst, who was deemed Sillicon Valley’s Favorite Bully</span>
-<span class="sline" data-line="68" onclick="scrollToLine(68)">But besides this being Qatalyst’s largest deal at the time, what makes this deal so fascinating is the baked in revenge story</span>
-<span class="sline" data-line="69" onclick="scrollToLine(69)">In April 2016 just months before the LinkedIn deal would be announced, Quattrone tweeted about Credit Suisse throwing a top performer under the bus making it clear he still felt he was treated unfairly by the bank</span>
-<span class="sline" data-line="70" onclick="scrollToLine(70)">The greater context behind this is that Credit Suisse used to be Sillicon Valley’s bank in the 2000s but Quattrone had lured away Boutros who brought all his relationships with him as Credit Suisse’s Chairman of Tech banking</span>
-<span class="sline" data-line="71" onclick="scrollToLine(71)">The LinkedIn deal was the defining deal of the era that showcased that Quattrone rebuilt the exact tech banking franchise that Credit Suisse took away from him and his tweet was just the cherry on top</span>
-<span class="sline" data-line="72" onclick="scrollToLine(72)">The second deal is AppDynamics, which was supposed to be the first big tech IPO of 2017 with Goldman, Morgan Stanley, and JP Morgan as the top 3 underwriters</span>
-<span class="sline" data-line="73" onclick="scrollToLine(73)">The IPO roadshow was going well but at the same time, the company had tapped Qatalyst to simultaneously run a sale and deliberately chose them to avoid info about the deal leaking to the press</span>
-<span class="sline" data-line="74" onclick="scrollToLine(74)">In just 72 hours, Qatalyst sold the company to Cisco for $3.7 billion - 20% higher than the expected post IPO price and Qatalyst brilliantly used the pressure of the IPO as leverage for negotiations</span>
-<span class="sline" data-line="75" onclick="scrollToLine(75)">This meant AppDynamics’ CEO was pitching the stock to investors hours before the acquisition’s announcement, which sent shock waves throughout the industry</span>
-<span class="sline" data-line="76" onclick="scrollToLine(76)">Senior bankers pride themselves and win business by having deep relationships with their clients and during IPO roadshows are literally in rooms and planes with the CEO and CFO every day, so I’m sure the bankers leading the IPO were pissed because it means pennies for all their hard work while Qatalyst swooped in and collection tens of millions in fees</span>
-<span class="sline" data-line="77" onclick="scrollToLine(77)">Qatalyst was becoming every top tech firm’s preferred tech advisor and by 2019, Morgan Stanley and other top banks began pitching M&amp;A IPO dual mandates during IPO conversations so Qatalyst couldn’t slide in and take away another deal, which is incredible since the biggest bank in tech is building its pitch around a 90 person boutique bank</span>
-<span class="sline" data-line="78" onclick="scrollToLine(78)">The last deal is Qualtrics’ sale to SAP, which is a masterclass in dealmaking. Quattrone invites both Ryan Smith — the CEO of Qualtrics — and Bill McDermott — the CEO of SAP — to speak back to back at Qatalyst’s annual Pebble Beach retreat so they could essentially inspire one another. </span>
-<span class="sline" data-line="79" onclick="scrollToLine(79)">The two men disappear to a coffee shop mid-retreat and Quattrone joins them later and instructs that each of them give each other three reasons of why a merger would work. He steps away for an hour and comes back to a cocktail napkin with the deal terms sketched out and just like that an $8 billion deal is live.</span>
-<span class="sline" data-line="80" onclick="scrollToLine(80)">What makes this deal crazy is that Goldman and Morgan Stanley were lead banks for Qualtrics’ IPO meaning they had deep relationships with the company but had absolutely zero idea about the sale and learned about it on the news like everyone else</span>
-<span class="sline" data-line="81" onclick="scrollToLine(81)">These transactions turn Qatalyst into the most feared bank in Silicon Valley as they’re able to pitch to every company that they consistently get higher premiums on billion-dollar sell-side deals, capture the highest revenue multiples in tech M&amp;A, and dominate market share on the biggest transactions by a significant margin.</span>
-<span class="sline" data-line="82" onclick="scrollToLine(82)">So after looking back at all of this, what is the secret sauce? What is that actually makes Qatalyst so dominant?</span>
+<span class="sline" onclick="scrollToLine(66)">With Quattrone still deeply involved in deals, Qatalyst goes on a tear and for those of you who are deal junkies, you’re going to love the 3 deals I’m about to detail that showcase why Qatalyst went from being a dominant boutique to a nightmare to its competitors</span>
+<span class="sline" onclick="scrollToLine(67)">First is LinkedIn’s $26 billion sale to Microsoft in 2016 which resulted in one major bank disseminating a 10 page presentation to counteract Qatalyst, who was deemed Sillicon Valley’s Favorite Bully</span>
+<span class="sline" onclick="scrollToLine(68)">But besides this being Qatalyst’s largest deal at the time, what makes this deal so fascinating is the baked in revenge story</span>
+<span class="sline" onclick="scrollToLine(69)">In April 2016 just months before the LinkedIn deal would be announced, Quattrone tweeted about Credit Suisse throwing a top performer under the bus making it clear he still felt he was treated unfairly by the bank</span>
+<span class="sline" onclick="scrollToLine(70)">The greater context behind this is that Credit Suisse used to be Sillicon Valley’s bank in the 2000s but Quattrone had lured away Boutros who brought all his relationships with him as Credit Suisse’s Chairman of Tech banking</span>
+<span class="sline" onclick="scrollToLine(71)">The LinkedIn deal was the defining deal of the era that showcased that Quattrone rebuilt the exact tech banking franchise that Credit Suisse took away from him and his tweet was just the cherry on top</span>
+<span class="sline" onclick="scrollToLine(72)">The second deal is AppDynamics, which was supposed to be the first big tech IPO of 2017 with Goldman, Morgan Stanley, and JP Morgan as the top 3 underwriters</span>
+<span class="sline" onclick="scrollToLine(73)">The IPO roadshow was going well but at the same time, the company had tapped Qatalyst to simultaneously run a sale and deliberately chose them to avoid info about the deal leaking to the press</span>
+<span class="sline" onclick="scrollToLine(74)">In just 72 hours, Qatalyst sold the company to Cisco for $3.7 billion - 20% higher than the expected post IPO price and Qatalyst brilliantly used the pressure of the IPO as leverage for negotiations</span>
+<span class="sline" onclick="scrollToLine(75)">This meant AppDynamics’ CEO was pitching the stock to investors hours before the acquisition’s announcement, which sent shock waves throughout the industry</span>
+<span class="sline" onclick="scrollToLine(76)">Senior bankers pride themselves and win business by having deep relationships with their clients and during IPO roadshows are literally in rooms and planes with the CEO and CFO every day, so I’m sure the bankers leading the IPO were pissed because it means pennies for all their hard work while Qatalyst swooped in and collection tens of millions in fees</span>
+<span class="sline" onclick="scrollToLine(77)">Qatalyst was becoming every top tech firm’s preferred tech advisor and by 2019, Morgan Stanley and other top banks began pitching M&amp;A IPO dual mandates during IPO conversations so Qatalyst couldn’t slide in and take away another deal, which is incredible since the biggest bank in tech is building its pitch around a 90 person boutique bank</span>
+<span class="sline" onclick="scrollToLine(78)">The last deal is Qualtrics’ sale to SAP, which is a masterclass in dealmaking. Quattrone invites both Ryan Smith — the CEO of Qualtrics — and Bill McDermott — the CEO of SAP — to speak back to back at Qatalyst’s annual Pebble Beach retreat so they could essentially inspire one another. </span>
+<span class="sline" onclick="scrollToLine(79)">The two men disappear to a coffee shop mid-retreat and Quattrone joins them later and instructs that each of them give each other three reasons of why a merger would work. He steps away for an hour and comes back to a cocktail napkin with the deal terms sketched out and just like that an $8 billion deal is live.</span>
+<span class="sline" onclick="scrollToLine(80)">What makes this deal crazy is that Goldman and Morgan Stanley were lead banks for Qualtrics’ IPO meaning they had deep relationships with the company but had absolutely zero idea about the sale and learned about it on the news like everyone else</span>
+<span class="sline" onclick="scrollToLine(81)">These transactions turn Qatalyst into the most feared bank in Silicon Valley as they’re able to pitch to every company that they consistently get higher premiums on billion-dollar sell-side deals, capture the highest revenue multiples in tech M&amp;A, and dominate market share on the biggest transactions by a significant margin.</span>
+<span class="sline" onclick="scrollToLine(82)">So after looking back at all of this, what is the secret sauce? What is that actually makes Qatalyst so dominant?</span>
 <span class="section-head">SECTION 5: The Secret Sauce</span>
-<span class="sline" data-line="84" onclick="scrollToLine(84)">After speaking with 2 Qatalyst bankers, I’ve learned that the firm’s dominance boils down to three main reasons</span>
-<span class="sline" data-line="85" onclick="scrollToLine(85)">First is the fact that they focus on one thing - tech sell-side M&amp;A and as Bruce Lee said - I do not fear the man who has practiced 10,000 kicks one, but I fear the man who has practiced one kick 10,000 times</span>
-<span class="sline" data-line="86" onclick="scrollToLine(86)">Every big bank is trying to win IPO mandates, serve corporate buyers, manage lending relationships, and advising sellers</span>
-<span class="sline" data-line="87" onclick="scrollToLine(87)">[George Boutros interview b-roll - &quot;The big banks are trying to serve too many stakeholders at once. When the sell-side advisor and the buy-side advisor are both the same bank, that&#x27;s not advisory. That&#x27;s conflict.&quot;]</span>
-<span class="sline" data-line="88" onclick="scrollToLine(88)">While banks are practicing 10,000 different kicks, Qatalyst extracts the highest possible price from the buyer and has done so 10,000 times, with one spokesperson even saying &quot;Our advice is never clouded by the fear that if we push for the highest price we might offend the buyer&quot;</span>
-<span class="sline" data-line="89" onclick="scrollToLine(89)">So when the top tech companies want to sell, they know Qatalyst will get them the best price</span>
-<span class="sline" data-line="90" onclick="scrollToLine(90)">Second is the network built over decades that has compounded over time with Quattrone and Boutrous at the helm</span>
-<span class="sline" data-line="91" onclick="scrollToLine(91)">Every time Qatalyst closes a deal, they learn something no one else knows - how Microsoft negotiates under pressure, what Google’s internal approval process looks like, or where Amazon’s ceiling is</span>
-<span class="sline" data-line="92" onclick="scrollToLine(92)">Quattrone in particular has seen it all - from helping Apple buy Next to ringing in the dotcom era to dominating software sell-side M&amp;A when you’re a client, you know you’re getting insight you can’t get anywhere else</span>
-<span class="sline" data-line="93" onclick="scrollToLine(93)">Lastly, there’s  the senior attention that scales down, not up</span>
-<span class="sline" data-line="94" onclick="scrollToLine(94)">At a bulge bracket, deal size determines who shows up. A $2 billion transaction may get a senior MD while a $20 billion transaction gets a vice chairman</span>
-<span class="sline" data-line="95" onclick="scrollToLine(95)">At Qatalyst, the model inverts: CEO George Boutros is personally in every deal above $1 billion, screen-sharing presentations on client calls, in the numbers himself, and giving first-week analysts direct feedback. </span>
-<span class="sline" data-line="96" onclick="scrollToLine(96)">When the person who closes the deal is the same person who ran the last three deals for the same buyer, information doesn&#x27;t get lost in translation.</span>
-<span class="sline" data-line="97" onclick="scrollToLine(97)">These 3 factors are what has helped Qatalyst rise to the top. In 2023, Qatalyst announced $61 billion across 9 deals and in 2024, $95 billion across 14, leading to averages of $6.8 billion per deal while for context, Goldman’s value per deal hovers around $3 billion despite having a much larger team and more resources</span>
+<span class="sline" onclick="scrollToLine(84)">After speaking with 2 Qatalyst bankers, I’ve learned that the firm’s dominance boils down to three main reasons</span>
+<span class="sline" onclick="scrollToLine(85)">First is the fact that they focus on one thing - tech sell-side M&amp;A and as Bruce Lee said - I do not fear the man who has practiced 10,000 kicks one, but I fear the man who has practiced one kick 10,000 times</span>
+<span class="sline" onclick="scrollToLine(86)">Every big bank is trying to win IPO mandates, serve corporate buyers, manage lending relationships, and advising sellers</span>
+<span class="sline" onclick="scrollToLine(87)">[George Boutros interview b-roll - &quot;The big banks are trying to serve too many stakeholders at once. When the sell-side advisor and the buy-side advisor are both the same bank, that&#x27;s not advisory. That&#x27;s conflict.&quot;]</span>
+<span class="sline" onclick="scrollToLine(88)">While banks are practicing 10,000 different kicks, Qatalyst extracts the highest possible price from the buyer and has done so 10,000 times, with one spokesperson even saying &quot;Our advice is never clouded by the fear that if we push for the highest price we might offend the buyer&quot;</span>
+<span class="sline" onclick="scrollToLine(89)">So when the top tech companies want to sell, they know Qatalyst will get them the best price</span>
+<span class="sline" onclick="scrollToLine(90)">Second is the network built over decades that has compounded over time with Quattrone and Boutrous at the helm</span>
+<span class="sline" onclick="scrollToLine(91)">Every time Qatalyst closes a deal, they learn something no one else knows - how Microsoft negotiates under pressure, what Google’s internal approval process looks like, or where Amazon’s ceiling is</span>
+<span class="sline" onclick="scrollToLine(92)">Quattrone in particular has seen it all - from helping Apple buy Next to ringing in the dotcom era to dominating software sell-side M&amp;A when you’re a client, you know you’re getting insight you can’t get anywhere else</span>
+<span class="sline" onclick="scrollToLine(93)">Lastly, there’s  the senior attention that scales down, not up</span>
+<span class="sline" onclick="scrollToLine(94)">At a bulge bracket, deal size determines who shows up. A $2 billion transaction may get a senior MD while a $20 billion transaction gets a vice chairman</span>
+<span class="sline" onclick="scrollToLine(95)">At Qatalyst, the model inverts: CEO George Boutros is personally in every deal above $1 billion, screen-sharing presentations on client calls, in the numbers himself, and giving first-week analysts direct feedback. </span>
+<span class="sline" onclick="scrollToLine(96)">When the person who closes the deal is the same person who ran the last three deals for the same buyer, information doesn&#x27;t get lost in translation.</span>
+<span class="sline" onclick="scrollToLine(97)">These 3 factors are what has helped Qatalyst rise to the top. In 2023, Qatalyst announced $61 billion across 9 deals and in 2024, $95 billion across 14, leading to averages of $6.8 billion per deal while for context, Goldman’s value per deal hovers around $3 billion despite having a much larger team and more resources</span>
 <br>
 <span class="section-head">OUTRO</span>
-<span class="sline" data-line="100" onclick="scrollToLine(100)">Qatalyst proves that the biggest firm or doing the most doesn&#x27;t always win. Whether you’re a student or a business owner, at some point, you’ll come across a fork in the road where you need to choose between chasing more opportunities and spreading your eggs across multiple baskets or sticking to what you know, honing your craft and practicing that one kick 10,000 times. If Qatalyst’s story teaches you anything, it’s that once you find your passion, you need to pick the latter because less is actually more.</span>
-<span class="sline" data-line="101" onclick="scrollToLine(101)">Hope you enjoyed this deep dive into Qatalyst. I actually resonate a lot with Quattrone’s story because for the past 5+ years of working on this channel, my main focus has been helping students break into investment banking and I’ve helped students break into firms like Qatalyst, Goldman, and every top bank. I’ve honed this craft of helping students for years now and [add plug]</span>
+<span class="sline" onclick="scrollToLine(100)">Qatalyst proves that the biggest firm or doing the most doesn&#x27;t always win. Whether you’re a student or a business owner, at some point, you’ll come across a fork in the road where you need to choose between chasing more opportunities and spreading your eggs across multiple baskets or sticking to what you know, honing your craft and practicing that one kick 10,000 times. If Qatalyst’s story teaches you anything, it’s that once you find your passion, you need to pick the latter because less is actually more.</span>
+<span class="sline" onclick="scrollToLine(101)">Hope you enjoyed this deep dive into Qatalyst. I actually resonate a lot with Quattrone’s story because for the past 5+ years of working on this channel, my main focus has been helping students break into investment banking and I’ve helped students break into firms like Qatalyst, Goldman, and every top bank. I’ve honed this craft of helping students for years now and [add plug]</span>
 <br>
-<span class="sline" data-line="103" onclick="scrollToLine(103)">With that said I hope you enjoyed this video and comment below which bank on Wall Street I should cover next! Thanks for watching, and I&#x27;ll see you in the next one!</span>
-</div></div>
-<div class="line-card" id="line-1" data-types="broll image" data-text="rareliquid – qatalyst partners: the most dominant tech bank you’ve never heard of – script - 3.9.2026">
+<span class="sline" onclick="scrollToLine(103)">With that said I hope you enjoyed this video and comment below which bank on Wall Street I should cover next! Thanks for watching, and I&#x27;ll see you in the next one!</span>
+</div></div></div>
+<div class="line-card" id="line-1" data-types="image broll" data-text="rareliquid – qatalyst partners: the most dominant tech bank you’ve never heard of – script - 3.9.2026">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 1</span>
@@ -242,7 +236,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=56" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:56 &ndash; 1:03</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=56&end=63&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_0"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">early career and Silicon Valley beginnings</div>
@@ -258,7 +252,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=M0QcqrWSrTc&amp;t=15" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:15 &ndash; 0:22</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/M0QcqrWSrTc?start=15&end=22&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_1"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">business exits in the current economic environment</div>
@@ -301,7 +295,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=9GumiLIxLMM&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/9GumiLIxLMM?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_2"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the hours are brutal but the deals are worth it</div>
@@ -317,7 +311,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=06kJXhOZhLU&amp;t=60" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">1:00 &ndash; 1:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/06kJXhOZhLU?start=60&end=67&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_3"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">investment bankers advise companies on major transactions</div>
@@ -327,7 +321,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-4" data-types="broll image" data-text="nxp to qualcomm - $47 billion. ansys to synopsys - $32 billion. linkedin to microsoft - $26 billion.">
+<div class="line-card" id="line-4" data-types="image broll" data-text="nxp to qualcomm - $47 billion. ansys to synopsys - $32 billion. linkedin to microsoft - $26 billion.">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 4</span>
@@ -343,7 +337,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=AeKnw4awmQY&amp;t=720" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">12:00 &ndash; 12:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/AeKnw4awmQY?start=720&end=727&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_4"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">that was a defining moment for the firm</div>
@@ -369,7 +363,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-5" data-types="broll image" data-text="what all these deals have in common is that the sellers weren’t advised by goldman sachs, morgan stanley, or jp morgan. these global banks lost some of the largest tech m&amp;a mandates to a small but mighty elite boutique investment bank founded by the legendary frank quattrone at the height of the 2008 financial crisis. this is the story of qatalyst partners - the most feared bank in silicon valley">
+<div class="line-card" id="line-5" data-types="image broll" data-text="what all these deals have in common is that the sellers weren’t advised by goldman sachs, morgan stanley, or jp morgan. these global banks lost some of the largest tech m&amp;a mandates to a small but mighty elite boutique investment bank founded by the legendary frank quattrone at the height of the 2008 financial crisis. this is the story of qatalyst partners - the most feared bank in silicon valley">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 5</span>
@@ -385,7 +379,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=480" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">8:00 &ndash; 8:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=480&end=487&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_5"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">built the technology group from nothing</div>
@@ -401,7 +395,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=PXgUea6JVcI&amp;t=300" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">5:00 &ndash; 5:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/PXgUea6JVcI?start=300&end=307&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_6"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">Goldman Sachs has thousands of bankers worldwide</div>
@@ -444,7 +438,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=9GumiLIxLMM&amp;t=60" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">1:00 &ndash; 1:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/9GumiLIxLMM?start=60&end=67&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_7"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">banking industry operations</div>
@@ -481,7 +475,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
   </div>
 </div>
 <div class="section-div">SECTION 1: The Rise of the Silicon Prince</div>
-<div class="line-card" id="line-10" data-types="broll image" data-text="to understand how qatalyst rose, we first need to talk about frank quattrone,the most powerful banker in silicon valley who had it all taken away before making a generational comeback">
+<div class="line-card" id="line-10" data-types="image broll" data-text="to understand how qatalyst rose, we first need to talk about frank quattrone,the most powerful banker in silicon valley who had it all taken away before making a generational comeback">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 10</span>
@@ -497,7 +491,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=1500" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">25:00 &ndash; 25:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=1500&end=1507&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_8"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">started Qatalyst in the worst possible market</div>
@@ -513,7 +507,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=M0QcqrWSrTc&amp;t=60" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">1:00 &ndash; 1:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/M0QcqrWSrTc?start=60&end=67&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_9"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the opportunity to start fresh</div>
@@ -591,7 +585,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-13" data-types="broll image" data-text="quattrone takes the deal, goes to stanford for business school, and that stanford-to-silicon valley pipeline defines the rest of his career.">
+<div class="line-card" id="line-13" data-types="image broll" data-text="quattrone takes the deal, goes to stanford for business school, and that stanford-to-silicon valley pipeline defines the rest of his career.">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 13</span>
@@ -607,7 +601,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=180" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">3:00 &ndash; 3:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=180&end=187&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_10"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">teaching assistant at Stanford, picked up an Apple II</div>
@@ -641,7 +635,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=9GumiLIxLMM&amp;t=180" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">3:00 &ndash; 3:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/9GumiLIxLMM?start=180&end=187&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_11"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">financial markets in action</div>
@@ -667,7 +661,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=9GumiLIxLMM&amp;t=300" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">5:00 &ndash; 5:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/9GumiLIxLMM?start=300&end=307&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_12"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">high-stakes corporate negotiations</div>
@@ -677,7 +671,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-16" data-types="broll image" data-text="a year later, a 25-year-old steve jobs walks into jack mcdonald&#x27;s stanford investment class. quattrone is in the room and basically gets a glimpse into the future when steve jobs pitches the future of personal computing andquattrone is hooked. so much so that he bets his entire career on it.">
+<div class="line-card" id="line-16" data-types="image broll" data-text="a year later, a 25-year-old steve jobs walks into jack mcdonald&#x27;s stanford investment class. quattrone is in the room and basically gets a glimpse into the future when steve jobs pitches the future of personal computing andquattrone is hooked. so much so that he bets his entire career on it.">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 16</span>
@@ -693,7 +687,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=300" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">5:00 &ndash; 5:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=300&end=307&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_13"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">Steve Jobs walked into Jack McDonalds class</div>
@@ -735,7 +729,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=9GumiLIxLMM&amp;t=420" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">7:00 &ndash; 7:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/9GumiLIxLMM?start=420&end=427&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_14"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">presenting to corporate clients</div>
@@ -761,7 +755,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=420" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">7:00 &ndash; 7:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=420&end=427&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_15"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">moved to the San Francisco office, colleagues thought it was crazy</div>
@@ -787,7 +781,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=9GumiLIxLMM&amp;t=540" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">9:00 &ndash; 9:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/9GumiLIxLMM?start=540&end=547&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_16"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the grueling hours of investment banking</div>
@@ -813,7 +807,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=540" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">9:00 &ndash; 9:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=540&end=547&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_17"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">Cisco public offering was a turning point</div>
@@ -823,7 +817,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-21" data-types="broll image" data-text="but the world would change forever in 1995 when quattrone led netscape’s ipo, which was originally set to be offered at $14 per share and opened at $71, becoming a $2.9 billion company with zero profits and kicking off the dot.com bubble that would burst 5 years later. the internet had arrived, and quattrone was the one who rang the bell">
+<div class="line-card" id="line-21" data-types="image broll" data-text="but the world would change forever in 1995 when quattrone led netscape’s ipo, which was originally set to be offered at $14 per share and opened at $71, becoming a $2.9 billion company with zero profits and kicking off the dot.com bubble that would burst 5 years later. the internet had arrived, and quattrone was the one who rang the bell">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 21</span>
@@ -839,7 +833,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=637" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">10:37 &ndash; 10:44</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=637&end=644&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_18"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">Netscape IPO changed everything, opened at $71</div>
@@ -855,7 +849,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=QQ90FbqDhwo&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/QQ90FbqDhwo?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_19"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the internet was going to change the world</div>
@@ -907,7 +901,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-23" data-types="broll image" data-text="but quattrone felt he wasn’t being compensated fairly despite making $1 million more than morgan stanley’s chairman and so lured by a 3 year $20 million deal plus incentives, quattrone decided to take his talents to deutsche bank, creating a mass exodus of bankers - a trend that you’ll see happen continuously - and took amazon public in 1997 but the joyous marriage doesn’t last long">
+<div class="line-card" id="line-23" data-types="image broll" data-text="but quattrone felt he wasn’t being compensated fairly despite making $1 million more than morgan stanley’s chairman and so lured by a 3 year $20 million deal plus incentives, quattrone decided to take his talents to deutsche bank, creating a mass exodus of bankers - a trend that you’ll see happen continuously - and took amazon public in 1997 but the joyous marriage doesn’t last long">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 23</span>
@@ -923,7 +917,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=720" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">12:00 &ndash; 12:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=720&end=727&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_20"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">Deutsche Bank offered a significant package</div>
@@ -939,7 +933,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=750" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">12:30 &ndash; 12:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=750&end=757&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_21"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">took Amazon public at Deutsche Bank in 1997</div>
@@ -965,7 +959,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-24" data-types="broll image" data-text="while deutsche bank pulled back its sillicon valley ambitions, credit suisse first boston gave quattrone an offer he couldn’t refuse: a shot at building his own kingdom.">
+<div class="line-card" id="line-24" data-types="image broll" data-text="while deutsche bank pulled back its sillicon valley ambitions, credit suisse first boston gave quattrone an offer he couldn’t refuse: a shot at building his own kingdom.">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 24</span>
@@ -981,7 +975,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=810" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">13:30 &ndash; 13:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=810&end=817&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_22"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">brought over 150 bankers to Credit Suisse First Boston</div>
@@ -1033,7 +1027,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-26" data-types="broll image" data-text="from 1998 to 2000, quattrone almost single-handedly helps boost csfb’s underwriting rank in ipos from 8 in 1998 to number 1 in 2000 and tripling fees from $203 million to $686 million, and csfb leads more tech ipos than goldman or morgan stanley combined.">
+<div class="line-card" id="line-26" data-types="image broll" data-text="from 1998 to 2000, quattrone almost single-handedly helps boost csfb’s underwriting rank in ipos from 8 in 1998 to number 1 in 2000 and tripling fees from $203 million to $686 million, and csfb leads more tech ipos than goldman or morgan stanley combined.">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 26</span>
@@ -1049,7 +1043,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=900" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">15:00 &ndash; 15:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=900&end=907&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_23"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">we went from number 8 to number 1 in IPO rankings</div>
@@ -1065,7 +1059,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=RpUJfW4WTKw&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/RpUJfW4WTKw?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_24"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">relationships are everything in this business</div>
@@ -1107,7 +1101,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=QQ90FbqDhwo&amp;t=300" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">5:00 &ndash; 5:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/QQ90FbqDhwo?start=300&end=307&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_25"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">stocks were going up 500, 600, 700 percent on day one</div>
@@ -1117,7 +1111,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-28" data-types="broll image" data-text="in the year 2000, quattrone earns $120 million in a single year and he reportedly threw some crazy all-night parties and is crowned the prince of sillicon valley, a gatekeeper to the world’s top tech ipos and riding this high is exactly what gets him into trouble when the dot-com bubble bursts">
+<div class="line-card" id="line-28" data-types="image broll" data-text="in the year 2000, quattrone earns $120 million in a single year and he reportedly threw some crazy all-night parties and is crowned the prince of sillicon valley, a gatekeeper to the world’s top tech ipos and riding this high is exactly what gets him into trouble when the dot-com bubble bursts">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 28</span>
@@ -1133,7 +1127,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=QQ90FbqDhwo&amp;t=600" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">10:00 &ndash; 10:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/QQ90FbqDhwo?start=600&end=607&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_26"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the bubble finally burst</div>
@@ -1149,7 +1143,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=W-Q9AOp2FW8&amp;t=180" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">3:00 &ndash; 3:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/W-Q9AOp2FW8?start=180&end=187&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_27"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">billions of dollars in value evaporated overnight</div>
@@ -1192,7 +1186,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=PXgUea6JVcI&amp;t=180" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">3:00 &ndash; 3:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/PXgUea6JVcI?start=180&end=187&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_28"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">winning client mandates</div>
@@ -1218,7 +1212,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=PXgUea6JVcI&amp;t=420" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">7:00 &ndash; 7:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/PXgUea6JVcI?start=420&end=427&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_29"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">bulge bracket banking operations</div>
@@ -1244,7 +1238,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=1020" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">17:00 &ndash; 17:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=1020&end=1027&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_30"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the allocation process became controversial</div>
@@ -1260,7 +1254,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=B4TWN54KqfQ&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/B4TWN54KqfQ?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_31"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">prosecutors were looking at every major firm</div>
@@ -1286,7 +1280,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=RpUJfW4WTKw&amp;t=60" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">1:00 &ndash; 1:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/RpUJfW4WTKw?start=60&end=67&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_32"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">relationship-driven banking</div>
@@ -1312,7 +1306,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=RpUJfW4WTKw&amp;t=240" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">4:00 &ndash; 4:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/RpUJfW4WTKw?start=240&end=247&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_33"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the art of dealmaking</div>
@@ -1338,7 +1332,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=W-Q9AOp2FW8&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/W-Q9AOp2FW8?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_34"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the heart of American finance</div>
@@ -1364,7 +1358,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=1200" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">20:00 &ndash; 20:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=1200&end=1207&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_35"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the hardest period of my life</div>
@@ -1390,7 +1384,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=W-Q9AOp2FW8&amp;t=360" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">6:00 &ndash; 6:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/W-Q9AOp2FW8?start=360&end=367&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_36"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the world of high finance</div>
@@ -1416,7 +1410,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=W-Q9AOp2FW8&amp;t=900" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">15:00 &ndash; 15:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/W-Q9AOp2FW8?start=900&end=907&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_37"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">power brokers of Wall Street</div>
@@ -1442,7 +1436,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=Mb786mTZVHk&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/Mb786mTZVHk?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_38"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">global financial markets</div>
@@ -1468,7 +1462,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=Mb786mTZVHk&amp;t=300" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">5:00 &ndash; 5:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/Mb786mTZVHk?start=300&end=307&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_39"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">SEC oversight and regulation</div>
@@ -1494,7 +1488,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=Mb786mTZVHk&amp;t=480" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">8:00 &ndash; 8:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/Mb786mTZVHk?start=480&end=487&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_40"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the competitive landscape of banking</div>
@@ -1520,7 +1514,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=06kJXhOZhLU&amp;t=30" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:30 &ndash; 0:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/06kJXhOZhLU?start=30&end=37&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_41"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">what investment bankers actually do</div>
@@ -1531,7 +1525,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
   </div>
 </div>
 <div class="section-div">SECTION 3: The Improbable Comeback</div>
-<div class="line-card" id="line-44" data-types="broll image" data-text="the timing looks insane in hindsight. bear stearns has just been sold to jpmorgan for $2 a share — down from $150 a year earlier. lehman falls six months later. m&amp;a freezes globally and the entire banking industry is in shambles.">
+<div class="line-card" id="line-44" data-types="image broll" data-text="the timing looks insane in hindsight. bear stearns has just been sold to jpmorgan for $2 a share — down from $150 a year earlier. lehman falls six months later. m&amp;a freezes globally and the entire banking industry is in shambles.">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 44</span>
@@ -1547,7 +1541,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=W-Q9AOp2FW8&amp;t=600" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">10:00 &ndash; 10:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/W-Q9AOp2FW8?start=600&end=607&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_42"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">Bear Stearns was sold for $2 a share</div>
@@ -1563,7 +1557,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=1QeUcfqkUzc&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/1QeUcfqkUzc?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_43"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the entire banking system was on the brink</div>
@@ -1605,7 +1599,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=C6eXTvqdaro&amp;t=180" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">3:00 &ndash; 3:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/C6eXTvqdaro?start=180&end=187&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_44"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">financial market dynamics</div>
@@ -1631,7 +1625,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=C6eXTvqdaro&amp;t=360" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">6:00 &ndash; 6:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/C6eXTvqdaro?start=360&end=367&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_45"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">market boom and bust cycles</div>
@@ -1657,7 +1651,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=1800" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">30:00 &ndash; 30:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=1800&end=1807&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_46"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">our first real breakout deal</div>
@@ -1683,7 +1677,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=At1hnVKMoMs&amp;t=5" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:05 &ndash; 0:12</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/At1hnVKMoMs?start=5&end=12&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_47"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">3PAR accepted Dells offer</div>
@@ -1693,7 +1687,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-49" data-types="broll image" data-text="and here&#x27;s where there’s some tea with hp. later in october 2011, qatalyst runs a process for autonomy which is sold to hp for $10.3 billion which after a ceo transition is inherited by meg whitman.">
+<div class="line-card" id="line-49" data-types="image broll" data-text="and here&#x27;s where there’s some tea with hp. later in october 2011, qatalyst runs a process for autonomy which is sold to hp for $10.3 billion which after a ceo transition is inherited by meg whitman.">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 49</span>
@@ -1709,7 +1703,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=41S8Gd_u5KU&amp;t=10" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:10 &ndash; 0:17</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/41S8Gd_u5KU?start=10&end=17&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_48"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">who knew about the accounting problems at Autonomy</div>
@@ -1725,7 +1719,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=8LYBjpmjB4k&amp;t=5" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:05 &ndash; 0:12</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/8LYBjpmjB4k?start=5&end=12&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_49"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">billions in writedowns</div>
@@ -1751,7 +1745,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-50" data-types="broll image" data-text="barely a year after the deal, hp announces an $8.8 billion writedown of the autonomy deal due to accounting fraud and whitman publicly turns on qatalyst, saying the firm was &quot;guilty&quot; of playing too aggressively.">
+<div class="line-card" id="line-50" data-types="image broll" data-text="barely a year after the deal, hp announces an $8.8 billion writedown of the autonomy deal due to accounting fraud and whitman publicly turns on qatalyst, saying the firm was &quot;guilty&quot; of playing too aggressively.">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 50</span>
@@ -1767,7 +1761,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=06ChbedZuvA&amp;t=30" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:30 &ndash; 0:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/06ChbedZuvA?start=30&end=37&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_50"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the biggest acquisition disaster in tech history</div>
@@ -1785,7 +1779,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
     </div>
   </div>
 </div>
-<div class="line-card" id="line-51" data-types="broll image" data-text="she hates qatalyst so much that when the bank was running a sale process for aruba networks, whitman could only negotiate by bringing in a buffer person to sit between whitman and qatalyst so the two sides never had to directly face each other. the deal amazingly still closed at $2.7bn with hp as the buyer even with whitman believing george boutros to be “evil.”">
+<div class="line-card" id="line-51" data-types="image broll" data-text="she hates qatalyst so much that when the bank was running a sale process for aruba networks, whitman could only negotiate by bringing in a buffer person to sit between whitman and qatalyst so the two sides never had to directly face each other. the deal amazingly still closed at $2.7bn with hp as the buyer even with whitman believing george boutros to be “evil.”">
   <div class="line-split">
     <div class="line-left">
       <span class="lnum">LINE 51</span>
@@ -1801,7 +1795,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=AeKnw4awmQY&amp;t=480" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">8:00 &ndash; 8:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/AeKnw4awmQY?start=480&end=487&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_51"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">every deal is different, but the principles are the same</div>
@@ -1843,7 +1837,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=B4TWN54KqfQ&amp;t=60" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">1:00 &ndash; 1:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/B4TWN54KqfQ?start=60&end=67&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_52"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">Wall Street enforcement</div>
@@ -1869,7 +1863,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=AeKnw4awmQY&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/AeKnw4awmQY?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_53"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">you have to be willing to walk away</div>
@@ -1895,7 +1889,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=AeKnw4awmQY&amp;t=300" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">5:00 &ndash; 5:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/AeKnw4awmQY?start=300&end=307&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_54"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">I push hard because my clients deserve the best price</div>
@@ -1921,7 +1915,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=B4TWN54KqfQ&amp;t=240" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">4:00 &ndash; 4:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/B4TWN54KqfQ?start=240&end=247&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_55"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">justice on Wall Street</div>
@@ -1947,7 +1941,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=B4TWN54KqfQ&amp;t=420" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">7:00 &ndash; 7:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/B4TWN54KqfQ?start=420&end=427&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_56"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">legal battles in finance</div>
@@ -1973,7 +1967,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=1050" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">17:30 &ndash; 17:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=1050&end=1057&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_57"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">career reflections</div>
@@ -1999,7 +1993,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=1350" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">22:30 &ndash; 22:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=1350&end=1357&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_58"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">M&amp;A strategic thinking</div>
@@ -2026,7 +2020,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=2100" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">35:00 &ndash; 35:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=2100&end=2107&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_59"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the importance of relationships</div>
@@ -2070,7 +2064,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=2700" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">45:00 &ndash; 45:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=2700&end=2707&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_60"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">deep industry knowledge</div>
@@ -2096,7 +2090,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=3000" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">50:00 &ndash; 50:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=3000&end=3007&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_61"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">what sets boutique banks apart</div>
@@ -2122,7 +2116,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=3300" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">55:00 &ndash; 55:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=3300&end=3307&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_62"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">looking ahead in tech banking</div>
@@ -2148,7 +2142,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=AeKnw4awmQY&amp;t=180" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">3:00 &ndash; 3:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/AeKnw4awmQY?start=180&end=187&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_63"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the mechanics of closing deals</div>
@@ -2174,7 +2168,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=eAwY9Z3G_bo&amp;t=30" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:30 &ndash; 0:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/eAwY9Z3G_bo?start=30&end=37&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_64"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">Cisco pulled the trigger on a $3.7 billion deal</div>
@@ -2190,7 +2184,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=ex3wCwZl2kg&amp;t=15" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:15 &ndash; 0:22</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/ex3wCwZl2kg?start=15&end=22&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_65"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">AppDynamics acquired for $3.7 billion just hours before IPO</div>
@@ -2216,7 +2210,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=AeKnw4awmQY&amp;t=540" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">9:00 &ndash; 9:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/AeKnw4awmQY?start=540&end=547&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_66"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">earning client trust</div>
@@ -2242,7 +2236,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=AeKnw4awmQY&amp;t=960" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">16:00 &ndash; 16:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/AeKnw4awmQY?start=960&end=967&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_67"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">how tech M&amp;A has changed</div>
@@ -2268,7 +2262,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=AeKnw4awmQY&amp;t=1500" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">25:00 &ndash; 25:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/AeKnw4awmQY?start=1500&end=1507&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_68"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the boutique model advantage</div>
@@ -2294,7 +2288,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=5uj5GILfl_I&amp;t=30" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:30 &ndash; 0:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/5uj5GILfl_I?start=30&end=37&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_69"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">talent-driven success story</div>
@@ -2320,7 +2314,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=5uj5GILfl_I&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/5uj5GILfl_I?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_70"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">career trajectory analysis</div>
@@ -2346,7 +2340,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=AeKnw4awmQY&amp;t=900" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">15:00 &ndash; 15:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/AeKnw4awmQY?start=900&end=907&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_71"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">sometimes the best deals happen over coffee</div>
@@ -2372,7 +2366,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=c7-0bCrG7ys&amp;t=15" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:15 &ndash; 0:22</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/c7-0bCrG7ys?start=15&end=22&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_72"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">growth segments in technology</div>
@@ -2398,7 +2392,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=c7-0bCrG7ys&amp;t=60" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">1:00 &ndash; 1:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/c7-0bCrG7ys?start=60&end=67&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_73"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">technology investment landscape</div>
@@ -2424,7 +2418,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=073uKAH_Ibs&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/073uKAH_Ibs?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_74"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">Quattrone speaking at tech conference</div>
@@ -2450,7 +2444,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=AeKnw4awmQY&amp;t=1200" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">20:00 &ndash; 20:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/AeKnw4awmQY?start=1200&end=1207&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_75"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">we only do one thing and we do it better than anyone</div>
@@ -2466,7 +2460,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=foDmbiR2kH8&amp;t=2400" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">40:00 &ndash; 40:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/foDmbiR2kH8?start=2400&end=2407&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_76"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-high" style="width:64px"></div></div><span class="rel-n">8/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">focus is the key to everything</div>
@@ -2493,7 +2487,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=M0QcqrWSrTc&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/M0QcqrWSrTc?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_77"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">exit strategy discussion</div>
@@ -2519,7 +2513,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=M0QcqrWSrTc&amp;t=300" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">5:00 &ndash; 5:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/M0QcqrWSrTc?start=300&end=307&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_78"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">market environment analysis</div>
@@ -2545,7 +2539,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=QQ90FbqDhwo&amp;t=180" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">3:00 &ndash; 3:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/QQ90FbqDhwo?start=180&end=187&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_79"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the dot-com boom</div>
@@ -2571,7 +2565,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=QQ90FbqDhwo&amp;t=480" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">8:00 &ndash; 8:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/QQ90FbqDhwo?start=480&end=487&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_80"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">irrational exuberance era</div>
@@ -2597,7 +2591,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=QQ90FbqDhwo&amp;t=720" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">12:00 &ndash; 12:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/QQ90FbqDhwo?start=720&end=727&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_81"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the wreckage of the dot-com crash</div>
@@ -2623,7 +2617,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=TpCb3xjh-Kk&amp;t=60" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">1:00 &ndash; 1:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/TpCb3xjh-Kk?start=60&end=67&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_82"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">dramatic financial industry scene</div>
@@ -2649,7 +2643,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=bluUxKIB4pA&amp;t=30" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:30 &ndash; 0:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/bluUxKIB4pA?start=30&end=37&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_83"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">market crash moments</div>
@@ -2675,7 +2669,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=bluUxKIB4pA&amp;t=90" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">1:30 &ndash; 1:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/bluUxKIB4pA?start=90&end=97&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_84"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">markets in freefall</div>
@@ -2701,7 +2695,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=x4F5gIWS_Is&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/x4F5gIWS_Is?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_85"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">historical economic crisis</div>
@@ -2727,7 +2721,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=x4F5gIWS_Is&amp;t=300" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">5:00 &ndash; 5:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/x4F5gIWS_Is?start=300&end=307&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_86"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">rebuilding after crisis</div>
@@ -2753,7 +2747,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=hmtuvNfytjM&amp;t=60" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">1:00 &ndash; 1:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/hmtuvNfytjM?start=60&end=67&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_87"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">cutting-edge technology</div>
@@ -2779,7 +2773,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=hmtuvNfytjM&amp;t=180" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">3:00 &ndash; 3:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/hmtuvNfytjM?start=180&end=187&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_88"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the future of technology</div>
@@ -2805,7 +2799,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=oX7OduG1YmI&amp;t=120" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">2:00 &ndash; 2:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/oX7OduG1YmI?start=120&end=127&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_89"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">the tech industry epicenter</div>
@@ -2831,7 +2825,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=oX7OduG1YmI&amp;t=300" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">5:00 &ndash; 5:07</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/oX7OduG1YmI?start=300&end=307&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_90"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">how tech companies operate</div>
@@ -2858,7 +2852,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=pn548uALuYw&amp;t=30" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:30 &ndash; 0:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/pn548uALuYw?start=30&end=37&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_91"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">executive decision making</div>
@@ -2884,7 +2878,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=SCPLWaC_m6k&amp;t=30" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:30 &ndash; 0:37</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/SCPLWaC_m6k?start=30&end=37&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_92"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">major tech M&amp;A announcement</div>
@@ -2910,7 +2904,7 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
           <a class="vlink" href="https://www.youtube.com/watch?v=D_C29BhZaYA&amp;t=15" target="_blank">Open in YouTube &rarr;</a>
           <span class="tstamp">0:15 &ndash; 0:22</span>
         </div>
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/D_C29BhZaYA?start=15&end=22&rel=0&modestbranding=1" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+        <div class="yt-player-wrap"><div id="player_93"></div></div>
         <div class="rel-row"><div class="rel-bg"><div class="rel-fill rel-med" style="width:48px"></div></div><span class="rel-n">6/10</span><span class="era-ok">ERA OK</span></div>
         <div class="tx-label">Transcript at this moment</div>
         <div class="tx-box">banking industry solidarity</div>
@@ -2923,33 +2917,92 @@ body{background:#0a0a1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFo
 </div>
 
 <script>
-let cf='all';
-function setF(btn){
-  document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('active'));
+// Player configs
+var PLAYER_CONFIGS = [{"id": "player_0", "videoId": "foDmbiR2kH8", "start": 56, "end": 63}, {"id": "player_1", "videoId": "M0QcqrWSrTc", "start": 15, "end": 22}, {"id": "player_2", "videoId": "9GumiLIxLMM", "start": 120, "end": 127}, {"id": "player_3", "videoId": "06kJXhOZhLU", "start": 60, "end": 67}, {"id": "player_4", "videoId": "AeKnw4awmQY", "start": 720, "end": 727}, {"id": "player_5", "videoId": "foDmbiR2kH8", "start": 480, "end": 487}, {"id": "player_6", "videoId": "PXgUea6JVcI", "start": 300, "end": 307}, {"id": "player_7", "videoId": "9GumiLIxLMM", "start": 60, "end": 67}, {"id": "player_8", "videoId": "foDmbiR2kH8", "start": 1500, "end": 1507}, {"id": "player_9", "videoId": "M0QcqrWSrTc", "start": 60, "end": 67}, {"id": "player_10", "videoId": "foDmbiR2kH8", "start": 180, "end": 187}, {"id": "player_11", "videoId": "9GumiLIxLMM", "start": 180, "end": 187}, {"id": "player_12", "videoId": "9GumiLIxLMM", "start": 300, "end": 307}, {"id": "player_13", "videoId": "foDmbiR2kH8", "start": 300, "end": 307}, {"id": "player_14", "videoId": "9GumiLIxLMM", "start": 420, "end": 427}, {"id": "player_15", "videoId": "foDmbiR2kH8", "start": 420, "end": 427}, {"id": "player_16", "videoId": "9GumiLIxLMM", "start": 540, "end": 547}, {"id": "player_17", "videoId": "foDmbiR2kH8", "start": 540, "end": 547}, {"id": "player_18", "videoId": "foDmbiR2kH8", "start": 637, "end": 644}, {"id": "player_19", "videoId": "QQ90FbqDhwo", "start": 120, "end": 127}, {"id": "player_20", "videoId": "foDmbiR2kH8", "start": 720, "end": 727}, {"id": "player_21", "videoId": "foDmbiR2kH8", "start": 750, "end": 757}, {"id": "player_22", "videoId": "foDmbiR2kH8", "start": 810, "end": 817}, {"id": "player_23", "videoId": "foDmbiR2kH8", "start": 900, "end": 907}, {"id": "player_24", "videoId": "RpUJfW4WTKw", "start": 120, "end": 127}, {"id": "player_25", "videoId": "QQ90FbqDhwo", "start": 300, "end": 307}, {"id": "player_26", "videoId": "QQ90FbqDhwo", "start": 600, "end": 607}, {"id": "player_27", "videoId": "W-Q9AOp2FW8", "start": 180, "end": 187}, {"id": "player_28", "videoId": "PXgUea6JVcI", "start": 180, "end": 187}, {"id": "player_29", "videoId": "PXgUea6JVcI", "start": 420, "end": 427}, {"id": "player_30", "videoId": "foDmbiR2kH8", "start": 1020, "end": 1027}, {"id": "player_31", "videoId": "B4TWN54KqfQ", "start": 120, "end": 127}, {"id": "player_32", "videoId": "RpUJfW4WTKw", "start": 60, "end": 67}, {"id": "player_33", "videoId": "RpUJfW4WTKw", "start": 240, "end": 247}, {"id": "player_34", "videoId": "W-Q9AOp2FW8", "start": 120, "end": 127}, {"id": "player_35", "videoId": "foDmbiR2kH8", "start": 1200, "end": 1207}, {"id": "player_36", "videoId": "W-Q9AOp2FW8", "start": 360, "end": 367}, {"id": "player_37", "videoId": "W-Q9AOp2FW8", "start": 900, "end": 907}, {"id": "player_38", "videoId": "Mb786mTZVHk", "start": 120, "end": 127}, {"id": "player_39", "videoId": "Mb786mTZVHk", "start": 300, "end": 307}, {"id": "player_40", "videoId": "Mb786mTZVHk", "start": 480, "end": 487}, {"id": "player_41", "videoId": "06kJXhOZhLU", "start": 30, "end": 37}, {"id": "player_42", "videoId": "W-Q9AOp2FW8", "start": 600, "end": 607}, {"id": "player_43", "videoId": "1QeUcfqkUzc", "start": 120, "end": 127}, {"id": "player_44", "videoId": "C6eXTvqdaro", "start": 180, "end": 187}, {"id": "player_45", "videoId": "C6eXTvqdaro", "start": 360, "end": 367}, {"id": "player_46", "videoId": "foDmbiR2kH8", "start": 1800, "end": 1807}, {"id": "player_47", "videoId": "At1hnVKMoMs", "start": 5, "end": 12}, {"id": "player_48", "videoId": "41S8Gd_u5KU", "start": 10, "end": 17}, {"id": "player_49", "videoId": "8LYBjpmjB4k", "start": 5, "end": 12}, {"id": "player_50", "videoId": "06ChbedZuvA", "start": 30, "end": 37}, {"id": "player_51", "videoId": "AeKnw4awmQY", "start": 480, "end": 487}, {"id": "player_52", "videoId": "B4TWN54KqfQ", "start": 60, "end": 67}, {"id": "player_53", "videoId": "AeKnw4awmQY", "start": 120, "end": 127}, {"id": "player_54", "videoId": "AeKnw4awmQY", "start": 300, "end": 307}, {"id": "player_55", "videoId": "B4TWN54KqfQ", "start": 240, "end": 247}, {"id": "player_56", "videoId": "B4TWN54KqfQ", "start": 420, "end": 427}, {"id": "player_57", "videoId": "foDmbiR2kH8", "start": 1050, "end": 1057}, {"id": "player_58", "videoId": "foDmbiR2kH8", "start": 1350, "end": 1357}, {"id": "player_59", "videoId": "foDmbiR2kH8", "start": 2100, "end": 2107}, {"id": "player_60", "videoId": "foDmbiR2kH8", "start": 2700, "end": 2707}, {"id": "player_61", "videoId": "foDmbiR2kH8", "start": 3000, "end": 3007}, {"id": "player_62", "videoId": "foDmbiR2kH8", "start": 3300, "end": 3307}, {"id": "player_63", "videoId": "AeKnw4awmQY", "start": 180, "end": 187}, {"id": "player_64", "videoId": "eAwY9Z3G_bo", "start": 30, "end": 37}, {"id": "player_65", "videoId": "ex3wCwZl2kg", "start": 15, "end": 22}, {"id": "player_66", "videoId": "AeKnw4awmQY", "start": 540, "end": 547}, {"id": "player_67", "videoId": "AeKnw4awmQY", "start": 960, "end": 967}, {"id": "player_68", "videoId": "AeKnw4awmQY", "start": 1500, "end": 1507}, {"id": "player_69", "videoId": "5uj5GILfl_I", "start": 30, "end": 37}, {"id": "player_70", "videoId": "5uj5GILfl_I", "start": 120, "end": 127}, {"id": "player_71", "videoId": "AeKnw4awmQY", "start": 900, "end": 907}, {"id": "player_72", "videoId": "c7-0bCrG7ys", "start": 15, "end": 22}, {"id": "player_73", "videoId": "c7-0bCrG7ys", "start": 60, "end": 67}, {"id": "player_74", "videoId": "073uKAH_Ibs", "start": 120, "end": 127}, {"id": "player_75", "videoId": "AeKnw4awmQY", "start": 1200, "end": 1207}, {"id": "player_76", "videoId": "foDmbiR2kH8", "start": 2400, "end": 2407}, {"id": "player_77", "videoId": "M0QcqrWSrTc", "start": 120, "end": 127}, {"id": "player_78", "videoId": "M0QcqrWSrTc", "start": 300, "end": 307}, {"id": "player_79", "videoId": "QQ90FbqDhwo", "start": 180, "end": 187}, {"id": "player_80", "videoId": "QQ90FbqDhwo", "start": 480, "end": 487}, {"id": "player_81", "videoId": "QQ90FbqDhwo", "start": 720, "end": 727}, {"id": "player_82", "videoId": "TpCb3xjh-Kk", "start": 60, "end": 67}, {"id": "player_83", "videoId": "bluUxKIB4pA", "start": 30, "end": 37}, {"id": "player_84", "videoId": "bluUxKIB4pA", "start": 90, "end": 97}, {"id": "player_85", "videoId": "x4F5gIWS_Is", "start": 120, "end": 127}, {"id": "player_86", "videoId": "x4F5gIWS_Is", "start": 300, "end": 307}, {"id": "player_87", "videoId": "hmtuvNfytjM", "start": 60, "end": 67}, {"id": "player_88", "videoId": "hmtuvNfytjM", "start": 180, "end": 187}, {"id": "player_89", "videoId": "oX7OduG1YmI", "start": 120, "end": 127}, {"id": "player_90", "videoId": "oX7OduG1YmI", "start": 300, "end": 307}, {"id": "player_91", "videoId": "pn548uALuYw", "start": 30, "end": 37}, {"id": "player_92", "videoId": "SCPLWaC_m6k", "start": 30, "end": 37}, {"id": "player_93", "videoId": "D_C29BhZaYA", "start": 15, "end": 22}];
+var loadedPlayers = {};
+
+// YouTube IFrame API
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScript = document.getElementsByTagName('script')[0];
+firstScript.parentNode.insertBefore(tag, firstScript);
+
+var ytReady = false;
+function onYouTubeIframeAPIReady() {
+  ytReady = true;
+  // Start observing all player divs
+  observePlayers();
+}
+
+function createPlayer(cfg) {
+  if (loadedPlayers[cfg.id]) return;
+  loadedPlayers[cfg.id] = new YT.Player(cfg.id, {
+    videoId: cfg.videoId,
+    playerVars: {
+      start: cfg.start,
+      end: cfg.end,
+      rel: 0,
+      modestbranding: 1,
+      fs: 1
+    },
+    events: {}
+  });
+}
+
+function observePlayers() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var id = entry.target.id;
+        var cfg = PLAYER_CONFIGS.find(function(c) { return c.id === id; });
+        if (cfg && ytReady) {
+          createPlayer(cfg);
+          observer.unobserve(entry.target);
+        }
+      }
+    });
+  }, { rootMargin: '200px' });
+
+  PLAYER_CONFIGS.forEach(function(cfg) {
+    var el = document.getElementById(cfg.id);
+    if (el) observer.observe(el);
+  });
+}
+
+// Script toggle
+function toggleScript(el) {
+  el.classList.toggle('open');
+  document.getElementById('scriptBody').classList.toggle('open');
+}
+
+// Filter/search
+var cf = 'all';
+function setF(btn) {
+  document.querySelectorAll('.fbtn').forEach(function(b) { b.classList.remove('active'); });
   btn.classList.add('active');
-  cf=btn.getAttribute('data-f');
+  cf = btn.getAttribute('data-f');
   filterCards();
 }
-function filterCards(){
-  const q=document.getElementById('searchBox').value.toLowerCase();
-  const cards=document.querySelectorAll('.line-card');
-  let vis=0;
-  cards.forEach(c=>{
-    const t=c.getAttribute('data-text')||'';
-    const types=c.getAttribute('data-types')||'';
-    const mt=!q||t.includes(q);
-    const mf=cf==='all'||types.includes(cf);
-    c.style.display=(mt&&mf)?'':'none';
-    if(mt&&mf)vis++;
+function filterCards() {
+  var q = document.getElementById('searchBox').value.toLowerCase();
+  var cards = document.querySelectorAll('.line-card');
+  var vis = 0;
+  cards.forEach(function(c) {
+    var t = c.getAttribute('data-text') || '';
+    var types = c.getAttribute('data-types') || '';
+    var mt = !q || t.indexOf(q) !== -1;
+    var mf = cf === 'all' || types.indexOf(cf) !== -1;
+    c.style.display = (mt && mf) ? '' : 'none';
+    if (mt && mf) vis++;
   });
-  document.getElementById('lcount').textContent=vis+' lines';
+  document.getElementById('lcount').textContent = vis + ' lines';
 }
-function scrollToLine(n){
-  const el=document.getElementById('line-'+n);
-  if(el){
-    el.scrollIntoView({behavior:'smooth',block:'center'});
-    el.style.borderColor='#3b82f6';
-    setTimeout(()=>el.style.borderColor='',2500);
+function scrollToLine(n) {
+  var el = document.getElementById('line-' + n);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    el.style.borderColor = '#3b82f6';
+    setTimeout(function() { el.style.borderColor = ''; }, 2500);
   }
 }
 </script>
