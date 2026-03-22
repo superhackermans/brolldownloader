@@ -1,7 +1,7 @@
 [
   {
     "line_number": 1,
-    "line_text": "rareliquid \u2013 Qatalyst Partners: The Most Dominant Tech Bank You\u2019ve Never Heard of \u2013 Script - 3.9.2026",
+    "line_text": "rareliquid – Qatalyst Partners: The Most Dominant Tech Bank You’ve Never Heard of – Script - 3.9.2026",
     "assets": [
       {
         "type": "broll",
@@ -11,7 +11,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Frank Quattrone discussing his career journey",
-        "transcript_excerpt": "early career and Silicon Valley beginnings",
+        "transcript_excerpt": "good reviews but I do want to start way back because I heard that meeting Steve Jobs at a Stanford investment class was the inspiration for your career in",
         "match_reasoning": "Matches script line about quattrone intro: Frank Quattrone discussing his career journey",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -29,7 +29,7 @@
         "video_title": "Frank Quattrone: Business Exits in the Current Economic Environment",
         "channel": "Knowledge at Wharton",
         "description": "Quattrone speaking at business event about M&A exits",
-        "transcript_excerpt": "business exits in the current economic environment",
+        "transcript_excerpt": "in your view are there any difference that we can expect in terms of the",
         "match_reasoning": "Matches script line about quattrone intro: Quattrone speaking at business event about M&A exits",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -91,7 +91,7 @@
         "video_title": "Money, Power and Wall Street, Part One (full documentary) | FRONTLINE",
         "channel": "FRONTLINE PBS | Official",
         "description": "Wall Street establishing footage",
-        "transcript_excerpt": "the financial district of New York",
+        "transcript_excerpt": "never expected once the seed was planted there wasn't any stopping it we never imagined they were just taking the risk and it came right back like a",
         "match_reasoning": "General financial/banking footage supporting script context",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -117,7 +117,7 @@
         "video_title": "How Millionaire Bankers Actually Work | Authorized Account | Insider",
         "channel": "Insider",
         "description": "Inside an investment bank operations",
-        "transcript_excerpt": "the hours are brutal but the deals are worth it",
+        "transcript_excerpt": "lose a lot of money with without it appearing like you losing a lot of money so for example if you're making 100 Grand a day for the bank just for",
         "match_reasoning": "Matches script line about banking general: Inside an investment bank operations",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -135,7 +135,7 @@
         "video_title": "What do investment bankers actually do?",
         "channel": "Good Work",
         "description": "Explaining what investment bankers do",
-        "transcript_excerpt": "investment bankers advise companies on major transactions",
+        "transcript_excerpt": "actually do what do investment bankers actually do Investopedia defines Investment Banking as a type of banking that organizes and advises large complex",
         "match_reasoning": "Matches script line about banking general: Explaining what investment bankers do",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -158,10 +158,10 @@
         "url": "https://www.youtube.com/watch?v=AeKnw4awmQY",
         "start_time": "12:00",
         "end_time": "12:07",
-        "video_title": "Negotiating Advice From the Man Behind Tech\u2019s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
+        "video_title": "Negotiating Advice From the Man Behind Tech’s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
         "channel": "The Logan Bartlett Show",
         "description": "Boutros on the LinkedIn-Microsoft deal",
-        "transcript_excerpt": "that was a defining moment for the firm",
+        "transcript_excerpt": "um was were there any moments uh I guess as you sort of look back on the last whatever 13 years I'm sure there's been a ton of moments that you felt you you broke through a different level of the",
         "match_reasoning": "Matches script line about linkedin deal: Boutros on the LinkedIn-Microsoft deal",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -213,7 +213,7 @@
   },
   {
     "line_number": 5,
-    "line_text": "What all these deals have in common is that the sellers weren\u2019t advised by Goldman Sachs, Morgan Stanley, or JP Morgan. These global banks lost some of the largest tech M&A mandates to a small but mighty elite boutique investment bank founded by the legendary Frank Quattrone at the height of the 2008 financial crisis. This is the story of Qatalyst Partners - The Most Feared Bank in Silicon Valley",
+    "line_text": "What all these deals have in common is that the sellers weren’t advised by Goldman Sachs, Morgan Stanley, or JP Morgan. These global banks lost some of the largest tech M&A mandates to a small but mighty elite boutique investment bank founded by the legendary Frank Quattrone at the height of the 2008 financial crisis. This is the story of Qatalyst Partners - The Most Feared Bank in Silicon Valley",
     "assets": [
       {
         "type": "broll",
@@ -223,7 +223,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on building Morgan Stanleys tech group",
-        "transcript_excerpt": "built the technology group from nothing",
+        "transcript_excerpt": "ultimately I was put in charge of of the technology practice and we took it together with a few others from um the smallest Industry Group at the firm",
         "match_reasoning": "Matches script line about quattrone morgan stanley: Quattrone on building Morgan Stanleys tech group",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -241,7 +241,7 @@
         "video_title": "Why Goldman Sachs Went From Investing For The Rich To Targeting Everyone",
         "channel": "CNBC",
         "description": "Goldman Sachs tech banking operations",
-        "transcript_excerpt": "Goldman Sachs has thousands of bankers worldwide",
+        "transcript_excerpt": "equity of something like 70 75 which is just gargantuan numbers welcome disneyland is your land in 1957",
         "match_reasoning": "Matches script line about goldman competition: Goldman Sachs tech banking operations",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -303,7 +303,7 @@
         "video_title": "Money, Power and Wall Street, Part Two (full documentary) | FRONTLINE",
         "channel": "FRONTLINE PBS | Official",
         "description": "Wall Street trading floor activity",
-        "transcript_excerpt": "billions changing hands every day",
+        "transcript_excerpt": "education of a future president the economy is melting the bush administration is leaving and all eyes are now on barack obama to turn it around",
         "match_reasoning": "General financial/banking footage supporting script context",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -329,7 +329,7 @@
         "video_title": "",
         "channel": "",
         "description": "Investment bankers at work in the office",
-        "transcript_excerpt": "banking industry operations",
+        "transcript_excerpt": "restaurants and clubs and taken out to Holiday I got taken to Vegas when I was 21 before I I went to Jay-Z's Afterparty in LA and then I went to K elect's",
         "match_reasoning": "Supporting visual: Investment bankers at work in the office",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -345,7 +345,7 @@
   },
   {
     "line_number": 8,
-    "line_text": "It\u2019s a story that involves Steve Jobs, a prison sentence, and lots and lots of sly deal making and what you\u2019ll learn is that the most dangerous person in the room isn\u2019t the one who knows a little about everything - it\u2019s the one who has gone so deep on one thing that there\u2019s simply no one else to call",
+    "line_text": "It’s a story that involves Steve Jobs, a prison sentence, and lots and lots of sly deal making and what you’ll learn is that the most dangerous person in the room isn’t the one who knows a little about everything - it’s the one who has gone so deep on one thing that there’s simply no one else to call",
     "assets": [
       {
         "type": "image",
@@ -399,7 +399,7 @@
         "video_title": "Wall Street's $5 Trillion Scam: The Truth About the Dot-Com Bubble.",
         "channel": "",
         "description": "Late 90s tech excess and party culture",
-        "transcript_excerpt": "it was like the entire market had lost its mind",
+        "transcript_excerpt": "$1.2 million Super Bowl ad. Revenue was $619,000 that quarter. The burn rate was unsustainable. But investment banks kept taking these companies public. Boo.",
         "match_reasoning": "Matches script line about dot com peak: Late 90s tech excess and party culture",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -417,7 +417,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on the peak years",
-        "transcript_excerpt": "it was an extraordinary time in Silicon Valley",
+        "transcript_excerpt": "it gets to the point where you say this just isn't sustainable like more recently when Cloud software companies were trading at 30 40 times revenues",
         "match_reasoning": "Matches script line about dot com peak: Quattrone on the peak years",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -443,7 +443,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on founding Qatalyst",
-        "transcript_excerpt": "started Qatalyst in the worst possible market",
+        "transcript_excerpt": "than they did in the past but at some point they need a public currency if they're going to be serious about uh Acquisitions they need access to public debt markets this will take time what",
         "match_reasoning": "Matches script line about quattrone comeback: Quattrone on founding Qatalyst",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -461,7 +461,7 @@
         "video_title": "Frank Quattrone: Business Exits in the Current Economic Environment",
         "channel": "Knowledge at Wharton",
         "description": "Quattrone speaking about business strategy post-crisis",
-        "transcript_excerpt": "the opportunity to start fresh",
+        "transcript_excerpt": "Intel en Rome and tandem went public but back then there was only maybe five companies a year that came public the average deal size was maybe 10 million it was really Apple's IPO and",
         "match_reasoning": "Matches script line about quattrone comeback: Quattrone speaking about business strategy post-crisis",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -611,7 +611,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone recounting Stanford days and Apple II encounter",
-        "transcript_excerpt": "teaching assistant at Stanford, picked up an Apple II",
+        "transcript_excerpt": "back when I opened up the box it had a tiny man or a very large Manila colored uh keyboard in which the single circuit",
         "match_reasoning": "Matches script line about quattrone stanford: Quattrone recounting Stanford days and Apple II encounter",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -655,7 +655,7 @@
         "video_title": "",
         "channel": "",
         "description": "Trading floor activity",
-        "transcript_excerpt": "financial markets in action",
+        "transcript_excerpt": "career had been like and then I realized like me were those guys just on cocaine the whole time and I and then since then one of my colleagues who um is very",
         "match_reasoning": "Supporting visual: Trading floor activity",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -681,7 +681,7 @@
         "video_title": "",
         "channel": "",
         "description": "Deal negotiations between bankers",
-        "transcript_excerpt": "high-stakes corporate negotiations",
+        "transcript_excerpt": "front of everyone I'm just thinking then I he like this bang this big bang right and then I think like I better turn around now because like what has he done",
         "match_reasoning": "Supporting visual: Deal negotiations between bankers",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -707,7 +707,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone describing Steve Jobs walking into Stanford class",
-        "transcript_excerpt": "Steve Jobs walked into Jack McDonalds class",
+        "transcript_excerpt": "for 800 $100 for working capital to get Apple computer started and um then the really interesting part happened he said",
         "match_reasoning": "Matches script line about quattrone jobs: Quattrone describing Steve Jobs walking into Stanford class",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -769,7 +769,7 @@
         "video_title": "",
         "channel": "",
         "description": "Client meetings and presentations",
-        "transcript_excerpt": "presenting to corporate clients",
+        "transcript_excerpt": "scene I was from so I I can't hated it to be honest and plus there's this weird thing that happens where like Brokers will take you to like I remember they took me to watch England my first",
         "match_reasoning": "Supporting visual: Client meetings and presentations",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -795,7 +795,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on moving to San Francisco office",
-        "transcript_excerpt": "moved to the San Francisco office, colleagues thought it was crazy",
+        "transcript_excerpt": "they said essentially Frank that's the stupidest idea I've ever heard a human being utter and and that would be essentially career",
         "match_reasoning": "Matches script line about quattrone sf move: Quattrone on moving to San Francisco office",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -811,7 +811,7 @@
   },
   {
     "line_number": 19,
-    "line_text": "But as we know now, Quattrone\u2019s move wasn\u2019t a foolish but a generational bet as he wouldn\u2019t just predict Silicon's Valley\u2019s rise - he would help cause it",
+    "line_text": "But as we know now, Quattrone’s move wasn’t a foolish but a generational bet as he wouldn’t just predict Silicon's Valley’s rise - he would help cause it",
     "assets": [
       {
         "type": "broll",
@@ -821,7 +821,7 @@
         "video_title": "",
         "channel": "",
         "description": "Working late on deal execution",
-        "transcript_excerpt": "the grueling hours of investment banking",
+        "transcript_excerpt": "really really young and the way it happened was my boss who was a Swiss frank Trad quit and a new boss got put in and um he was really",
         "match_reasoning": "Supporting visual: Working late on deal execution",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -847,7 +847,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone discussing early deals including Cisco",
-        "transcript_excerpt": "Cisco public offering was a turning point",
+        "transcript_excerpt": "the nucleus of our operation and we were welcomed into the industry by venture capitalist because you know and back in",
         "match_reasoning": "Matches script line about quattrone cisco ipo: Quattrone discussing early deals including Cisco",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -863,7 +863,7 @@
   },
   {
     "line_number": 21,
-    "line_text": "But the world would change forever in 1995 when Quattrone led Netscape\u2019s IPO, which was originally set to be offered at $14 per share and opened at $71, becoming a $2.9 billion company with zero profits and kicking off the dot.com bubble that would burst 5 years later. The Internet had arrived, and Quattrone was the one who rang the bell",
+    "line_text": "But the world would change forever in 1995 when Quattrone led Netscape’s IPO, which was originally set to be offered at $14 per share and opened at $71, becoming a $2.9 billion company with zero profits and kicking off the dot.com bubble that would burst 5 years later. The Internet had arrived, and Quattrone was the one who rang the bell",
     "assets": [
       {
         "type": "broll",
@@ -873,7 +873,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on the Netscape IPO moment",
-        "transcript_excerpt": "Netscape IPO changed everything, opened at $71",
+        "transcript_excerpt": "take them public and the job got a lot easier when you look at where we are now I'm too fascinated did it take longer than you thought it would for technology",
         "match_reasoning": "Matches script line about netscape ipo: Quattrone on the Netscape IPO moment",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -891,7 +891,7 @@
         "video_title": "Wall Street's $5 Trillion Scam: The Truth About the Dot-Com Bubble.",
         "channel": "",
         "description": "Dot-com era footage showing market frenzy",
-        "transcript_excerpt": "the internet was going to change the world",
+        "transcript_excerpt": "matters. The traditional metrics, earnings, cash flow, dividends are obsolete in the internet age. The lead underwriter for Netscape's IPO was Morgan Stanley. The banker who pushed it",
         "match_reasoning": "Matches script line about netscape ipo: Dot-com era footage showing market frenzy",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -943,7 +943,7 @@
   },
   {
     "line_number": 22,
-    "line_text": "By 1996, Quattrone had built Morgan Stanley\u2019s tech group from nothing to its largest industry group at the firm even advising on Apple\u2019s iconic acquisition of NeXT which brought Steve Jobs back to Apple.",
+    "line_text": "By 1996, Quattrone had built Morgan Stanley’s tech group from nothing to its largest industry group at the firm even advising on Apple’s iconic acquisition of NeXT which brought Steve Jobs back to Apple.",
     "assets": [
       {
         "type": "image",
@@ -987,7 +987,7 @@
   },
   {
     "line_number": 23,
-    "line_text": "But Quattrone felt he wasn\u2019t being compensated fairly despite making $1 million more than Morgan Stanley\u2019s chairman and so lured by a 3 year $20 million deal plus incentives, Quattrone decided to take his talents to Deutsche Bank, creating a mass exodus of bankers - a trend that you\u2019ll see happen continuously - and took Amazon public in 1997 but the joyous marriage doesn\u2019t last long",
+    "line_text": "But Quattrone felt he wasn’t being compensated fairly despite making $1 million more than Morgan Stanley’s chairman and so lured by a 3 year $20 million deal plus incentives, Quattrone decided to take his talents to Deutsche Bank, creating a mass exodus of bankers - a trend that you’ll see happen continuously - and took Amazon public in 1997 but the joyous marriage doesn’t last long",
     "assets": [
       {
         "type": "broll",
@@ -997,7 +997,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on moving to Deutsche Bank",
-        "transcript_excerpt": "Deutsche Bank offered a significant package",
+        "transcript_excerpt": "didn't have a chance and they all really got burned by not being part of Microsoft literally all the way up to 10 billion do everybody thought it was way",
         "match_reasoning": "Matches script line about deutsche bank: Quattrone on moving to Deutsche Bank",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1015,7 +1015,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on taking Amazon public",
-        "transcript_excerpt": "took Amazon public at Deutsche Bank in 1997",
+        "transcript_excerpt": "Apple in 19 80 and when we took ncape public the Morgan Stanley uh Telecom system almost got broken they had to add",
         "match_reasoning": "Matches script line about amazon ipo: Quattrone on taking Amazon public",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1067,7 +1067,7 @@
   },
   {
     "line_number": 24,
-    "line_text": "While Deutsche Bank pulled back its Sillicon Valley ambitions, Credit Suisse First Boston gave Quattrone an offer he couldn\u2019t refuse: a shot at building his own kingdom.",
+    "line_text": "While Deutsche Bank pulled back its Sillicon Valley ambitions, Credit Suisse First Boston gave Quattrone an offer he couldn’t refuse: a shot at building his own kingdom.",
     "assets": [
       {
         "type": "broll",
@@ -1077,7 +1077,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on building CSFB tech empire",
-        "transcript_excerpt": "brought over 150 bankers to Credit Suisse First Boston",
+        "transcript_excerpt": "revenues Maybe sometimes no revenues um you know we're testing the waters and the demand for these offerings the",
         "match_reasoning": "Matches script line about csfb kingdom: Quattrone on building CSFB tech empire",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1129,7 +1129,7 @@
   },
   {
     "line_number": 25,
-    "line_text": "So in 1998, Quattrone joins CSFB, bringing along with him over 150 bankers and support staff, gutting Deutsche Bank\u2019s entire tech practice so fast that Deutsche Bank simply sold its building to CSFB so Quattrone and his team didn\u2019t even need to move offices",
+    "line_text": "So in 1998, Quattrone joins CSFB, bringing along with him over 150 bankers and support staff, gutting Deutsche Bank’s entire tech practice so fast that Deutsche Bank simply sold its building to CSFB so Quattrone and his team didn’t even need to move offices",
     "assets": [
       {
         "type": "image",
@@ -1173,7 +1173,7 @@
   },
   {
     "line_number": 26,
-    "line_text": "From 1998 to 2000, Quattrone almost single-handedly helps boost CSFB\u2019s underwriting rank in IPOs from 8 in 1998 to number 1 in 2000 and tripling fees from $203 million to $686 million, and CSFB leads more tech IPOs than Goldman or Morgan Stanley combined.",
+    "line_text": "From 1998 to 2000, Quattrone almost single-handedly helps boost CSFB’s underwriting rank in IPOs from 8 in 1998 to number 1 in 2000 and tripling fees from $203 million to $686 million, and CSFB leads more tech IPOs than Goldman or Morgan Stanley combined.",
     "assets": [
       {
         "type": "broll",
@@ -1183,7 +1183,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone describing CSFB IPO dominance",
-        "transcript_excerpt": "we went from number 8 to number 1 in IPO rankings",
+        "transcript_excerpt": "normal valuation for a technology company was like maybe 10 to 20 times trailing earnings and then it got to 30 to 40 times this year's earnings and",
         "match_reasoning": "Matches script line about csfb dominance: Quattrone describing CSFB IPO dominance",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1201,7 +1201,7 @@
         "video_title": "\"Are You Destined to Deal?\" With Goldman Sachs Managing Director Jim Donovan",
         "channel": "University of Virginia School of Law",
         "description": "Goldman Sachs MD on dealmaking",
-        "transcript_excerpt": "relationships are everything in this business",
+        "transcript_excerpt": "that's atypical for jobs typically a job becomes somewhat routine over time and can become somewhat boring not true on deals",
         "match_reasoning": "Matches script line about goldman competition: Goldman Sachs MD on dealmaking",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1263,7 +1263,7 @@
         "video_title": "Wall Street's $5 Trillion Scam: The Truth About the Dot-Com Bubble.",
         "channel": "",
         "description": "Dot-com bubble footage with stock tickers soaring",
-        "transcript_excerpt": "stocks were going up 500, 600, 700 percent on day one",
+        "transcript_excerpt": "was accumulate to buy. Mary Maker at Morgan Stanley was dubbed queen of the net. Her reports on internet stocks were",
         "match_reasoning": "Matches script line about va linux: Dot-com bubble footage with stock tickers soaring",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1279,7 +1279,7 @@
   },
   {
     "line_number": 28,
-    "line_text": "In the year 2000, Quattrone earns $120 million in a single year and he reportedly threw some crazy all-night parties and is crowned the Prince of Sillicon Valley, a gatekeeper to the world\u2019s top tech IPOs and riding this high is exactly what gets him into trouble when the dot-com bubble bursts",
+    "line_text": "In the year 2000, Quattrone earns $120 million in a single year and he reportedly threw some crazy all-night parties and is crowned the Prince of Sillicon Valley, a gatekeeper to the world’s top tech IPOs and riding this high is exactly what gets him into trouble when the dot-com bubble bursts",
     "assets": [
       {
         "type": "broll",
@@ -1289,7 +1289,7 @@
         "video_title": "Wall Street's $5 Trillion Scam: The Truth About the Dot-Com Bubble.",
         "channel": "",
         "description": "Markets crashing, traders in panic",
-        "transcript_excerpt": "the bubble finally burst",
+        "transcript_excerpt": "faster, bypassing IPO scrutiny. Many had no revenue. Some were just PowerPoint presentations. Retail investors, fueled by zero commission trading apps and stimulus checks, bought in. The",
         "match_reasoning": "Matches script line about dot com crash: Markets crashing, traders in panic",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1307,7 +1307,7 @@
         "video_title": "Money, Power and Wall Street, Part One (full documentary) | FRONTLINE",
         "channel": "FRONTLINE PBS | Official",
         "description": "Wall Street during market crash footage",
-        "transcript_excerpt": "billions of dollars in value evaporated overnight",
+        "transcript_excerpt": "in is uh pretty clear actually that there was massive illegality going on and if uh somebody with subpoena power",
         "match_reasoning": "Matches script line about dot com crash: Wall Street during market crash footage",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1369,7 +1369,7 @@
         "video_title": "",
         "channel": "",
         "description": "Goldman Sachs headquarters exterior",
-        "transcript_excerpt": "major investment bank operations",
+        "transcript_excerpt": "emerged from the financial crisis relatively unscathed financially but its reputation took a beating and you want people to trust you",
         "match_reasoning": "Supporting visual: Goldman Sachs headquarters exterior",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1395,7 +1395,7 @@
         "video_title": "",
         "channel": "",
         "description": "Investment banking pitch process",
-        "transcript_excerpt": "winning client mandates",
+        "transcript_excerpt": "which were the huge growth engines at the beginning of the 20th century they were allowed to underwrite retail businesses that's where henry goldman pounced",
         "match_reasoning": "Supporting visual: Investment banking pitch process",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1421,7 +1421,7 @@
         "video_title": "",
         "channel": "",
         "description": "Goldman Sachs deal team at work",
-        "transcript_excerpt": "bulge bracket banking operations",
+        "transcript_excerpt": "people's money the traders were street smart sales oriented patio on the back and let's go to the next game",
         "match_reasoning": "Supporting visual: Goldman Sachs deal team at work",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1437,7 +1437,7 @@
   },
   {
     "line_number": 32,
-    "line_text": "It\u2019s a well known secret that Quattrone had been handing out hot tech IPO share allocations that were guaranteed to make money on day one to key executives who could help sway their company\u2019s decision to use CSFB as their investment bank and this group was known as \u201cFriends of Frank\u201d",
+    "line_text": "It’s a well known secret that Quattrone had been handing out hot tech IPO share allocations that were guaranteed to make money on day one to key executives who could help sway their company’s decision to use CSFB as their investment bank and this group was known as “Friends of Frank”",
     "assets": [
       {
         "type": "broll",
@@ -1447,7 +1447,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on the IPO allocation controversy",
-        "transcript_excerpt": "the allocation process became controversial",
+        "transcript_excerpt": "you do things from home became the new platform Zoom has always been a great company right but all of a sudden zoom's evaluation seems like it has no end and",
         "match_reasoning": "Matches script line about friends of frank: Quattrone on the IPO allocation controversy",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1465,7 +1465,7 @@
         "video_title": "The Untouchables (full documentary) | FRONTLINE",
         "channel": "FRONTLINE PBS | Official",
         "description": "Documentary footage on Wall Street fraud investigations",
-        "transcript_excerpt": "prosecutors were looking at every major firm",
+        "transcript_excerpt": "there was obviously a lot of conduct that had gone on uh that was improper and I think people were expecting to see",
         "match_reasoning": "Matches script line about friends of frank: Documentary footage on Wall Street fraud investigations",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1481,7 +1481,7 @@
   },
   {
     "line_number": 33,
-    "line_text": "Interestingly, Quattrone is never charged for that shady conduct, and CSFB pays $100 million in a settlement with the SEC for profit-sharing arrangements, so here\u2019s what leads to his ultimate arrest.",
+    "line_text": "Interestingly, Quattrone is never charged for that shady conduct, and CSFB pays $100 million in a settlement with the SEC for profit-sharing arrangements, so here’s what leads to his ultimate arrest.",
     "assets": [
       {
         "type": "broll",
@@ -1491,7 +1491,7 @@
         "video_title": "",
         "channel": "",
         "description": "Goldman Sachs MD discussing deal philosophy",
-        "transcript_excerpt": "relationship-driven banking",
+        "transcript_excerpt": "definition very important important to the CEO it's probably the most important matter the CEO has ever come across",
         "match_reasoning": "Supporting visual: Goldman Sachs MD discussing deal philosophy",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1517,7 +1517,7 @@
         "video_title": "",
         "channel": "",
         "description": "MD on what makes a great dealmaker",
-        "transcript_excerpt": "the art of dealmaking",
+        "transcript_excerpt": "major or a physics major or an engineer in college to have the prerequisite quantitative",
         "match_reasoning": "Supporting visual: MD on what makes a great dealmaker",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1533,7 +1533,7 @@
   },
   {
     "line_number": 35,
-    "line_text": "The next day, Richard Char, one of Quattrone's colleagues, sends an email suggesting the tech group do some year-end \u201cfile cleaning\u201d \u2014 standard housekeeping under CSFB's document retention policy. Quattrone replies: \"You shouldn't make jokes like that on email!\"",
+    "line_text": "The next day, Richard Char, one of Quattrone's colleagues, sends an email suggesting the tech group do some year-end “file cleaning” — standard housekeeping under CSFB's document retention policy. Quattrone replies: \"You shouldn't make jokes like that on email!\"",
     "assets": [
       {
         "type": "broll",
@@ -1543,7 +1543,7 @@
         "video_title": "",
         "channel": "",
         "description": "Wall Street financial district",
-        "transcript_excerpt": "the heart of American finance",
+        "transcript_excerpt": "Collective worth promising to invest the trillions of dollar that stream in from businesses Pension funds and savings accounts that belong to all of",
         "match_reasoning": "Supporting visual: Wall Street financial district",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1569,7 +1569,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone discussing his legal battles",
-        "transcript_excerpt": "the hardest period of my life",
+        "transcript_excerpt": "Frozen because you're worried about your own uh Outlook and visibility but as a venture investor today you know we need the spigot to open on the other end we",
         "match_reasoning": "Matches script line about quattrone trial: Quattrone discussing his legal battles",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1595,7 +1595,7 @@
         "video_title": "",
         "channel": "",
         "description": "Banking industry overview footage",
-        "transcript_excerpt": "the world of high finance",
+        "transcript_excerpt": "and that the manag ERS of these large financial institutions in some ways have been given an impossible task that they won't be able to",
         "match_reasoning": "Supporting visual: Banking industry overview footage",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1611,7 +1611,7 @@
   },
   {
     "line_number": 38,
-    "line_text": "In February 2003, Quattrone is suspendedfrom CSFB but he doesn\u2019t seem too bothered by it seeing as he plays golf with Bill Murray and Kevin Costner days later",
+    "line_text": "In February 2003, Quattrone is suspendedfrom CSFB but he doesn’t seem too bothered by it seeing as he plays golf with Bill Murray and Kevin Costner days later",
     "assets": [
       {
         "type": "broll",
@@ -1621,7 +1621,7 @@
         "video_title": "",
         "channel": "",
         "description": "Financial industry networking",
-        "transcript_excerpt": "power brokers of Wall Street",
+        "transcript_excerpt": "derivatives group at JP Morgan were in their 20s including Masters and duon but with the creation of the credit default swap Market they had made",
         "match_reasoning": "Supporting visual: Financial industry networking",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1647,7 +1647,7 @@
         "video_title": "",
         "channel": "",
         "description": "Financial markets and trading",
-        "transcript_excerpt": "global financial markets",
+        "transcript_excerpt": "there's a trimmer the stock starts to go down the cfo of bear starts calling down to his desks",
         "match_reasoning": "Supporting visual: Financial markets and trading",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1663,7 +1663,7 @@
   },
   {
     "line_number": 40,
-    "line_text": "In October 2003, the first trial ends in a hung jury that\u2019s deadlocked after 5 days of deliberation, in May 2004 he\u2019s convicted on 3 counts, and in September 2004, he\u2019s sentenced to 18 months in prison in part for also lying on the witness stand and also given a lifetime ban by the NASD from the securities industry",
+    "line_text": "In October 2003, the first trial ends in a hung jury that’s deadlocked after 5 days of deliberation, in May 2004 he’s convicted on 3 counts, and in September 2004, he’s sentenced to 18 months in prison in part for also lying on the witness stand and also given a lifetime ban by the NASD from the securities industry",
     "assets": [
       {
         "type": "broll",
@@ -1673,7 +1673,7 @@
         "video_title": "",
         "channel": "",
         "description": "Wall Street regulatory environment",
-        "transcript_excerpt": "SEC oversight and regulation",
+        "transcript_excerpt": "credit default swaps and nobody understood how they'd kind of gotten into the blood of the financial system geithner learned that bear had made credit default swap deals worth",
         "match_reasoning": "Supporting visual: Wall Street regulatory environment",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1699,7 +1699,7 @@
         "video_title": "",
         "channel": "",
         "description": "Banking industry competition",
-        "transcript_excerpt": "the competitive landscape of banking",
+        "transcript_excerpt": "the story has continued to mushroom and there are concerns now with bear failing those dark markets threatened to bring down the american",
         "match_reasoning": "Supporting visual: Banking industry competition",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1715,7 +1715,7 @@
   },
   {
     "line_number": 42,
-    "line_text": "Most people who fall this far don't come back, but here\u2019s the thing about Quattrone: his superpower was never just deal execution. It was making people feel like the most important person in the room, and in cinematic timing, Quattrone moves from one market crash to the next by launching Qatalyst in 2008 during the Great Recession and within days, gets a phone call from Google .",
+    "line_text": "Most people who fall this far don't come back, but here’s the thing about Quattrone: his superpower was never just deal execution. It was making people feel like the most important person in the room, and in cinematic timing, Quattrone moves from one market crash to the next by launching Qatalyst in 2008 during the Great Recession and within days, gets a phone call from Google .",
     "assets": [
       {
         "type": "broll",
@@ -1725,7 +1725,7 @@
         "video_title": "",
         "channel": "",
         "description": "Explaining investment banking roles",
-        "transcript_excerpt": "what investment bankers actually do",
+        "transcript_excerpt": "do I'm here outside the offices of Goldman Sachs just behind these very doors dozens of my high school bullies are chained to ergonomic chairs staring",
         "match_reasoning": "Supporting visual: Explaining investment banking roles",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1751,7 +1751,7 @@
         "video_title": "",
         "channel": "",
         "description": "Deal execution process explained",
-        "transcript_excerpt": "how M&A deals get done",
+        "transcript_excerpt": "world of banking anytime you want to do anything in Investment Banking it goes through iterative Cycles your boss sees your work and then he gives you comments and then your boss's boss sees your work",
         "match_reasoning": "Supporting visual: Deal execution process explained",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1767,7 +1767,7 @@
   },
   {
     "line_number": 44,
-    "line_text": "The timing looks insane in hindsight. Bear Stearns has just been sold to JPMorgan for $2 a share \u2014 down from $150 a year earlier. Lehman falls six months later. M&A freezes globally and the entire banking industry is in shambles.",
+    "line_text": "The timing looks insane in hindsight. Bear Stearns has just been sold to JPMorgan for $2 a share — down from $150 a year earlier. Lehman falls six months later. M&A freezes globally and the entire banking industry is in shambles.",
     "assets": [
       {
         "type": "broll",
@@ -1777,7 +1777,7 @@
         "video_title": "Money, Power and Wall Street, Part One (full documentary) | FRONTLINE",
         "channel": "FRONTLINE PBS | Official",
         "description": "Bear Stearns collapse footage",
-        "transcript_excerpt": "Bear Stearns was sold for $2 a share",
+        "transcript_excerpt": "if x were to fail on their obligations then JP Morgan would have to step in and make good on those obligations on their behalf it was a large amount of exposure",
         "match_reasoning": "Matches script line about bear stearns: Bear Stearns collapse footage",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1795,7 +1795,7 @@
         "video_title": "Why Warren Buffett Said No to Lehman and AIG in 2008",
         "channel": "The Wall Street Journal",
         "description": "Analysis of 2008 bank failures",
-        "transcript_excerpt": "the entire banking system was on the brink",
+        "transcript_excerpt": "panic Lehman was looking for money at that time and they approached Berkshire",
         "match_reasoning": "Matches script line about bear stearns: Analysis of 2008 bank failures",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1857,7 +1857,7 @@
         "video_title": "",
         "channel": "",
         "description": "Market analysis and predictions",
-        "transcript_excerpt": "financial market dynamics",
+        "transcript_excerpt": "new AI startup. Apple $10.7 billion to make Siri smarter. To be honest, it's probably going to take more than that.",
         "match_reasoning": "Supporting visual: Market analysis and predictions",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1883,7 +1883,7 @@
         "video_title": "",
         "channel": "",
         "description": "Economic cycles and crashes",
-        "transcript_excerpt": "market boom and bust cycles",
+        "transcript_excerpt": "to this. It's being referred to as the AI money machine. It's the main reason I'm starting to get worried about the state of the AI industry. So, let's rub some of these arrows out [music] and",
         "match_reasoning": "Supporting visual: Economic cycles and crashes",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -1909,7 +1909,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on early Qatalyst deals",
-        "transcript_excerpt": "our first real breakout deal",
+        "transcript_excerpt": "such a great story that I'm looking and I'm interviewing him right like you're interviewing me and meanwhile I got I'm looking out of the corner of my eye and I see Ryan in the front seat and I see him starting to lean in and his eyes",
         "match_reasoning": "Matches script line about data domain: Quattrone on early Qatalyst deals",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1935,7 +1935,7 @@
         "video_title": "News Update: 3PAR Accepted Dell&#39;s Upped Offer Of $24.30 Per Share August 26, 2010",
         "channel": "TradeTheTrend",
         "description": "3PAR bidding war news coverage",
-        "transcript_excerpt": "3PAR accepted Dells offer",
+        "transcript_excerpt": "I'm Christy Duffy for smart Trend news Dell announced that three par has accepted its increased offer to acquire the company for",
         "match_reasoning": "Matches script line about 3par deal: 3PAR bidding war news coverage",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1951,7 +1951,7 @@
   },
   {
     "line_number": 49,
-    "line_text": "And here's where there\u2019s some tea with HP. Later in October 2011, Qatalyst runs a process for Autonomy which is sold to HP for $10.3 billion which after a CEO transition is inherited by Meg Whitman.",
+    "line_text": "And here's where there’s some tea with HP. Later in October 2011, Qatalyst runs a process for Autonomy which is sold to HP for $10.3 billion which after a CEO transition is inherited by Meg Whitman.",
     "assets": [
       {
         "type": "broll",
@@ -1961,7 +1961,7 @@
         "video_title": "HP/Autonomy: who knew?",
         "channel": "Financial Times",
         "description": "HP Autonomy controversy coverage",
-        "transcript_excerpt": "who knew about the accounting problems at Autonomy",
+        "transcript_excerpt": "so Vincent uh H Packard has taken a big write down on its acquisition of autonomy uh where does the story start well I think it all begins actually with",
         "match_reasoning": "Matches script line about autonomy scandal: HP Autonomy controversy coverage",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -1979,7 +1979,7 @@
         "video_title": "HP Chairman Faces Fury Over Autonomy Acquisition",
         "channel": "Bloomberg Originals",
         "description": "HP Chairman faces fury over Autonomy acquisition",
-        "transcript_excerpt": "billions in writedowns",
+        "transcript_excerpt": "Packard's chairman Ray Lane he could get hammered at hp's annual shareholder meeting today because of the Fiasco over the company's disastrous purchase of the",
         "match_reasoning": "Matches script line about autonomy scandal: HP Chairman faces fury over Autonomy acquisition",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -2041,7 +2041,7 @@
         "video_title": "An &#39;Autonomy&#39; of a Scandal - Accrual World S1 E2",
         "channel": "Accrual World with Tom & Ben",
         "description": "Autonomy scandal documentary analysis",
-        "transcript_excerpt": "the biggest acquisition disaster in tech history",
+        "transcript_excerpt": "a big fraud investigation extradition to the us and sponsorship of the dodgy football team so tom what do you know about autonomy",
         "match_reasoning": "Matches script line about autonomy scandal: Autonomy scandal documentary analysis",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -2075,17 +2075,17 @@
   },
   {
     "line_number": 51,
-    "line_text": "She hates Qatalyst so much that when the bank was running a sale process for Aruba Networks, Whitman could only negotiate by bringing in a buffer person to sit between Whitman and Qatalyst so the two sides never had to directly face each other. The deal amazingly still closed at $2.7BN with HP as the buyer even with Whitman believing George Boutros to be \u201cevil.\u201d",
+    "line_text": "She hates Qatalyst so much that when the bank was running a sale process for Aruba Networks, Whitman could only negotiate by bringing in a buffer person to sit between Whitman and Qatalyst so the two sides never had to directly face each other. The deal amazingly still closed at $2.7BN with HP as the buyer even with Whitman believing George Boutros to be “evil.”",
     "assets": [
       {
         "type": "broll",
         "url": "https://www.youtube.com/watch?v=AeKnw4awmQY",
         "start_time": "8:00",
         "end_time": "8:07",
-        "video_title": "Negotiating Advice From the Man Behind Tech\u2019s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
+        "video_title": "Negotiating Advice From the Man Behind Tech’s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
         "channel": "The Logan Bartlett Show",
         "description": "Boutros discussing major deal execution",
-        "transcript_excerpt": "every deal is different, but the principles are the same",
+        "transcript_excerpt": "decision not to really join Frank at the beginning was not predicated on you know concerns about whether or not the business will be successful I think",
         "match_reasoning": "Matches script line about boutros deals: Boutros discussing major deal execution",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -2137,7 +2137,7 @@
   },
   {
     "line_number": 52,
-    "line_text": "And so this is a great time for us to talk about the 2nd most important person in Qatalyst\u2019s history - George Boutros",
+    "line_text": "And so this is a great time for us to talk about the 2nd most important person in Qatalyst’s history - George Boutros",
     "assets": [
       {
         "type": "broll",
@@ -2147,7 +2147,7 @@
         "video_title": "",
         "channel": "",
         "description": "Financial crime investigations",
-        "transcript_excerpt": "Wall Street enforcement",
+        "transcript_excerpt": "things being hit today's numbers suggest job losses are 600,000 biggest loss 1974 in 2009 Wall Street Bankers were on",
         "match_reasoning": "Supporting visual: Financial crime investigations",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2170,10 +2170,10 @@
         "url": "https://www.youtube.com/watch?v=AeKnw4awmQY",
         "start_time": "2:00",
         "end_time": "2:07",
-        "video_title": "Negotiating Advice From the Man Behind Tech\u2019s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
+        "video_title": "Negotiating Advice From the Man Behind Tech’s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
         "channel": "The Logan Bartlett Show",
         "description": "George Boutros discussing his dealmaking philosophy",
-        "transcript_excerpt": "you have to be willing to walk away",
+        "transcript_excerpt": "because I thought we would be starting at the absolute Peak at a point of a bubble so that being said we considered it what year was this this was I believe",
         "match_reasoning": "Matches script line about boutros intro: George Boutros discussing his dealmaking philosophy",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -2189,17 +2189,17 @@
   },
   {
     "line_number": 54,
-    "line_text": "Quattrone and Boutros are a powerful duo that is known for their good cop, bad cop personas. Quattrone\u2019s reputation is all about relationships \u2014 warm, client-facing, and making you feel heard. Boutro\u2019s reputation is notorious for being brash, aggressive, and execution-focused.",
+    "line_text": "Quattrone and Boutros are a powerful duo that is known for their good cop, bad cop personas. Quattrone’s reputation is all about relationships — warm, client-facing, and making you feel heard. Boutro’s reputation is notorious for being brash, aggressive, and execution-focused.",
     "assets": [
       {
         "type": "broll",
         "url": "https://www.youtube.com/watch?v=AeKnw4awmQY",
         "start_time": "5:00",
         "end_time": "5:07",
-        "video_title": "Negotiating Advice From the Man Behind Tech\u2019s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
+        "video_title": "Negotiating Advice From the Man Behind Tech’s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
         "channel": "The Logan Bartlett Show",
         "description": "Boutros on his reputation for aggressive negotiations",
-        "transcript_excerpt": "I push hard because my clients deserve the best price",
+        "transcript_excerpt": "advisory and then beyond advisory but then I believe they ended up spinning off the Investment Bank part of the business",
         "match_reasoning": "Matches script line about boutros aggressive: Boutros on his reputation for aggressive negotiations",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -2215,7 +2215,7 @@
   },
   {
     "line_number": 55,
-    "line_text": "Quattrone is the optimist. Boutros is the pessimist. On client calls, Quattrone tells you to shoot for the moon. Boutros brings you back with risk-adjusted reality. Clients get both shoulders of the advice and that polarizing dynamic sets the foundation for Qatalyst\u2019s dominance in the years that followed.",
+    "line_text": "Quattrone is the optimist. Boutros is the pessimist. On client calls, Quattrone tells you to shoot for the moon. Boutros brings you back with risk-adjusted reality. Clients get both shoulders of the advice and that polarizing dynamic sets the foundation for Qatalyst’s dominance in the years that followed.",
     "assets": [
       {
         "type": "broll",
@@ -2225,7 +2225,7 @@
         "video_title": "",
         "channel": "",
         "description": "Prosecution of financial crimes",
-        "transcript_excerpt": "justice on Wall Street",
+        "transcript_excerpt": "to investors all over the world began of course on the ground with mortgage Originators what my econ one Prof taught",
         "match_reasoning": "Supporting visual: Prosecution of financial crimes",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2241,7 +2241,7 @@
   },
   {
     "line_number": 56,
-    "line_text": "i After just one year of Boutros joining, things really start to fly in 2011. Motorola to Google - $12.5 billion. Autonomy to HP - $10.3 billion. National Semiconductor to TI - $6.5BN. Riot Games to Tencent and so many more all in a single year with a team of only 20 bankers so you know those bonuses were fat and at this point the question isn\u2019t if Qatalyst can compete with Goldman and Morgan Stanley - it\u2019s whether the big banks can compete with Qatalyst",
+    "line_text": "i After just one year of Boutros joining, things really start to fly in 2011. Motorola to Google - $12.5 billion. Autonomy to HP - $10.3 billion. National Semiconductor to TI - $6.5BN. Riot Games to Tencent and so many more all in a single year with a team of only 20 bankers so you know those bonuses were fat and at this point the question isn’t if Qatalyst can compete with Goldman and Morgan Stanley - it’s whether the big banks can compete with Qatalyst",
     "assets": [
       {
         "type": "broll",
@@ -2251,7 +2251,7 @@
         "video_title": "",
         "channel": "",
         "description": "Courtroom proceedings",
-        "transcript_excerpt": "legal battles in finance",
+        "transcript_excerpt": "people in The Mortgage business to say let's come up with one of the worst loans we can possibly imagine and see if Wall Street will buy it new homes are",
         "match_reasoning": "Supporting visual: Courtroom proceedings",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2267,7 +2267,7 @@
   },
   {
     "line_number": 57,
-    "line_text": "By this point, Quattrone is hailed as an all-time rainmaker and takes Qatalyst to new heights by advising Dell\u2019s $24.4 billion take-private transaction and in 2015, Qatalyst advises on 12 deals worth $33.5 billion, capturing 7% of total tech deal volume with only an 80 person firm",
+    "line_text": "By this point, Quattrone is hailed as an all-time rainmaker and takes Qatalyst to new heights by advising Dell’s $24.4 billion take-private transaction and in 2015, Qatalyst advises on 12 deals worth $33.5 billion, capturing 7% of total tech deal volume with only an 80 person firm",
     "assets": [
       {
         "type": "broll",
@@ -2277,7 +2277,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone reflecting on career",
-        "transcript_excerpt": "career reflections",
+        "transcript_excerpt": "face or a single client face to face was our single best year in history and the valuations were um were were very",
         "match_reasoning": "Supporting visual: Quattrone reflecting on career",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2293,7 +2293,7 @@
   },
   {
     "line_number": 58,
-    "line_text": "Then suddenly in 2016 like Michael Jordan\u2019s retirement at the peak of his powers, Quattrone steps down as CEO and hands over day to day operations to Boutros, which is an important step in establishing Qatalyst as an institution with a succession structure, not just a personality cult around one man and this is when Qatalyst goes on a tear making it the most feared tech bank bully on Wall Street",
+    "line_text": "Then suddenly in 2016 like Michael Jordan’s retirement at the peak of his powers, Quattrone steps down as CEO and hands over day to day operations to Boutros, which is an important step in establishing Qatalyst as an institution with a succession structure, not just a personality cult around one man and this is when Qatalyst goes on a tear making it the most feared tech bank bully on Wall Street",
     "assets": [
       {
         "type": "broll",
@@ -2303,7 +2303,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone on deal strategy",
-        "transcript_excerpt": "M&A strategic thinking",
+        "transcript_excerpt": "know are more reluctant to put their money in because they they don't know where the rise in interest rates going to stop and if you buy fixed income while interest rates are rising you",
         "match_reasoning": "Supporting visual: Quattrone on deal strategy",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2329,7 +2329,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone on building a firm",
-        "transcript_excerpt": "firm building philosophy",
+        "transcript_excerpt": "so we introduced him to a whole bunch of different uh serial buyers of cloud software companies and uh it was it was interesting who sort of bit on it and",
         "match_reasoning": "Supporting visual: Quattrone on building a firm",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2345,7 +2345,7 @@
   },
   {
     "line_number": 60,
-    "line_text": "With Quattrone still deeply involved in deals, Qatalyst goes on a tear and for those of you who are deal junkies, you\u2019re going to love the 3 deals I\u2019m about to detail that showcase why Qatalyst went from being a dominant boutique to a nightmare to its competitors",
+    "line_text": "With Quattrone still deeply involved in deals, Qatalyst goes on a tear and for those of you who are deal junkies, you’re going to love the 3 deals I’m about to detail that showcase why Qatalyst went from being a dominant boutique to a nightmare to its competitors",
     "assets": [
       {
         "type": "broll",
@@ -2355,7 +2355,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone on client relationships",
-        "transcript_excerpt": "the importance of relationships",
+        "transcript_excerpt": "rout so in that case the board chose Microsoft it was best and final and they went down to the definitive agreement line so they went into like a 30-day exclusivity to try to get to definitive",
         "match_reasoning": "Supporting visual: Quattrone on client relationships",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2371,7 +2371,7 @@
   },
   {
     "line_number": 61,
-    "line_text": "First is LinkedIn\u2019s $26 billion sale to Microsoft in 2016 which resulted in one major bank disseminating a 10 page presentation to counteract Qatalyst, who was deemed Sillicon Valley\u2019s Favorite Bully",
+    "line_text": "First is LinkedIn’s $26 billion sale to Microsoft in 2016 which resulted in one major bank disseminating a 10 page presentation to counteract Qatalyst, who was deemed Sillicon Valley’s Favorite Bully",
     "assets": [
       {
         "type": "image",
@@ -2397,7 +2397,7 @@
   },
   {
     "line_number": 62,
-    "line_text": "But besides this being Qatalyst\u2019s largest deal at the time, what makes this deal so fascinating is the baked in revenge story",
+    "line_text": "But besides this being Qatalyst’s largest deal at the time, what makes this deal so fascinating is the baked in revenge story",
     "assets": [
       {
         "type": "broll",
@@ -2407,7 +2407,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone on market insights",
-        "transcript_excerpt": "deep industry knowledge",
+        "transcript_excerpt": "think you hit the nail on the head when you said what you really need is a period of stability when either valuations are coming down rapidly going",
         "match_reasoning": "Supporting visual: Quattrone on market insights",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2433,7 +2433,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone on competitive advantage",
-        "transcript_excerpt": "what sets boutique banks apart",
+        "transcript_excerpt": "firms that all look at it and say yeah I want that and it's just kind of a question of price in many strategic situations there might only be one buyer",
         "match_reasoning": "Supporting visual: Quattrone on competitive advantage",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2449,7 +2449,7 @@
   },
   {
     "line_number": 64,
-    "line_text": "The greater context behind this is that Credit Suisse used to be Sillicon Valley\u2019s bank in the 2000s but Quattrone had lured away Boutros who brought all his relationships with him as Credit Suisse\u2019s Chairman of Tech banking",
+    "line_text": "The greater context behind this is that Credit Suisse used to be Sillicon Valley’s bank in the 2000s but Quattrone had lured away Boutros who brought all his relationships with him as Credit Suisse’s Chairman of Tech banking",
     "assets": [
       {
         "type": "broll",
@@ -2459,7 +2459,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone on legacy and future",
-        "transcript_excerpt": "looking ahead in tech banking",
+        "transcript_excerpt": "some internet companies as Wave Riders uh back then a lot of people were focused on digital media companies but Bill was more focused on not picking the",
         "match_reasoning": "Supporting visual: Quattrone on legacy and future",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2485,7 +2485,7 @@
         "video_title": "",
         "channel": "",
         "description": "Boutros on deal mechanics",
-        "transcript_excerpt": "the mechanics of closing deals",
+        "transcript_excerpt": "and taking advantage of so yes we considered it but I think we uh we quickly came to the conclusion that it just at the time it didn't make sense",
         "match_reasoning": "Supporting visual: Boutros on deal mechanics",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2511,7 +2511,7 @@
         "video_title": "Why Cisco Wants to Buy AppDynamics for $3.7 Billion",
         "channel": "Bloomberg Technology",
         "description": "Analysis of Cisco buying AppDynamics",
-        "transcript_excerpt": "Cisco pulled the trigger on a $3.7 billion deal",
+        "transcript_excerpt": "billion that must be such a reward for you and how of did this take you by surprise how long was this we understand there were talks with Cisco late at night in hotels when did you get the",
         "match_reasoning": "Matches script line about appdynamics deal: Analysis of Cisco buying AppDynamics",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -2529,7 +2529,7 @@
         "video_title": "AppDynamics Acquired for $3.7 Billion | Crunch Report",
         "channel": "TechCrunch",
         "description": "AppDynamics acquisition breaking news",
-        "transcript_excerpt": "AppDynamics acquired for $3.7 billion just hours before IPO",
+        "transcript_excerpt": "crunch report what up Tech crunch land you",
         "match_reasoning": "Matches script line about appdynamics deal: AppDynamics acquisition breaking news",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -2555,7 +2555,7 @@
         "video_title": "",
         "channel": "",
         "description": "Boutros on client loyalty",
-        "transcript_excerpt": "earning client trust",
+        "transcript_excerpt": "opportunity to create a business out of scratch this time not on the back or another platform so it was the entrepreneurial bug again that sort of",
         "match_reasoning": "Supporting visual: Boutros on client loyalty",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2581,7 +2581,7 @@
         "video_title": "",
         "channel": "",
         "description": "Boutros on industry evolution",
-        "transcript_excerpt": "how tech M&A has changed",
+        "transcript_excerpt": "intellectual property it's it's advice right I think putting that team together becomes critical so there's no question we wouldn't be where we are if we didn't",
         "match_reasoning": "Supporting visual: Boutros on industry evolution",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2597,7 +2597,7 @@
   },
   {
     "line_number": 69,
-    "line_text": "This meant AppDynamics\u2019 CEO was pitching the stock to investors hours before the acquisition\u2019s announcement, which sent shock waves throughout the industry",
+    "line_text": "This meant AppDynamics’ CEO was pitching the stock to investors hours before the acquisition’s announcement, which sent shock waves throughout the industry",
     "assets": [
       {
         "type": "broll",
@@ -2607,7 +2607,7 @@
         "video_title": "",
         "channel": "",
         "description": "Boutros on future of boutique banking",
-        "transcript_excerpt": "the boutique model advantage",
+        "transcript_excerpt": "their behavior is unconscionable in situations like this I mean I've seen them do things where I could tell they were just absolutely afraid to do anything because maybe it would upset",
         "match_reasoning": "Supporting visual: Boutros on future of boutique banking",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2623,7 +2623,7 @@
   },
   {
     "line_number": 70,
-    "line_text": "Senior bankers pride themselves and win business by having deep relationships with their clients and during IPO roadshows are literally in rooms and planes with the CEO and CFO every day, so I\u2019m sure the bankers leading the IPO were pissed because it means pennies for all their hard work while Qatalyst swooped in and collection tens of millions in fees",
+    "line_text": "Senior bankers pride themselves and win business by having deep relationships with their clients and during IPO roadshows are literally in rooms and planes with the CEO and CFO every day, so I’m sure the bankers leading the IPO were pissed because it means pennies for all their hard work while Qatalyst swooped in and collection tens of millions in fees",
     "assets": [
       {
         "type": "broll",
@@ -2633,7 +2633,7 @@
         "video_title": "",
         "channel": "",
         "description": "Commentary on Quattrone success",
-        "transcript_excerpt": "talent-driven success story",
+        "transcript_excerpt": "boutique advisory firm Catalyst Partners he's been involved in nearly every major Tech merger in the last year including",
         "match_reasoning": "Supporting visual: Commentary on Quattrone success",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2649,7 +2649,7 @@
   },
   {
     "line_number": 71,
-    "line_text": "Qatalyst was becoming every top tech firm\u2019s preferred tech advisor and by 2019, Morgan Stanley and other top banks began pitching M&A IPO dual mandates during IPO conversations so Qatalyst couldn\u2019t slide in and take away another deal, which is incredible since the biggest bank in tech is building its pitch around a 90 person boutique bank",
+    "line_text": "Qatalyst was becoming every top tech firm’s preferred tech advisor and by 2019, Morgan Stanley and other top banks began pitching M&A IPO dual mandates during IPO conversations so Qatalyst couldn’t slide in and take away another deal, which is incredible since the biggest bank in tech is building its pitch around a 90 person boutique bank",
     "assets": [
       {
         "type": "broll",
@@ -2659,7 +2659,7 @@
         "video_title": "",
         "channel": "",
         "description": "Analysis of Quattrone career",
-        "transcript_excerpt": "career trajectory analysis",
+        "transcript_excerpt": "violations including uh spinning and biased research and there there were so many regulatory probes after the bubble because the tech stocks had uh and",
         "match_reasoning": "Supporting visual: Analysis of Quattrone career",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2675,17 +2675,17 @@
   },
   {
     "line_number": 72,
-    "line_text": "The last deal is Qualtrics\u2019 sale to SAP, which is a masterclass in dealmaking. Quattrone invites both Ryan Smith \u2014 the CEO of Qualtrics \u2014 and Bill McDermott \u2014 the CEO of SAP \u2014 to speak back to back at Qatalyst\u2019s annual Pebble Beach retreat so they could essentially inspire one another.",
+    "line_text": "The last deal is Qualtrics’ sale to SAP, which is a masterclass in dealmaking. Quattrone invites both Ryan Smith — the CEO of Qualtrics — and Bill McDermott — the CEO of SAP — to speak back to back at Qatalyst’s annual Pebble Beach retreat so they could essentially inspire one another.",
     "assets": [
       {
         "type": "broll",
         "url": "https://www.youtube.com/watch?v=AeKnw4awmQY",
         "start_time": "15:00",
         "end_time": "15:07",
-        "video_title": "Negotiating Advice From the Man Behind Tech\u2019s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
+        "video_title": "Negotiating Advice From the Man Behind Tech’s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
         "channel": "The Logan Bartlett Show",
         "description": "Boutros on deals born from relationships",
-        "transcript_excerpt": "sometimes the best deals happen over coffee",
+        "transcript_excerpt": "more credibility was there a moment in time in which you found felt like it went from being frank and George and",
         "match_reasoning": "Matches script line about qualtrics deal: Boutros on deals born from relationships",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -2711,7 +2711,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone on exciting tech sectors",
-        "transcript_excerpt": "growth segments in technology",
+        "transcript_excerpt": "Web 2.0 Summit he had this to say about how much the technology landscape has changed in 1990 the year that we took",
         "match_reasoning": "Supporting visual: Quattrone on exciting tech sectors",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2727,7 +2727,7 @@
   },
   {
     "line_number": 74,
-    "line_text": "What makes this deal crazy is that Goldman and Morgan Stanley were lead banks for Qualtrics\u2019 IPO meaning they had deep relationships with the company but had absolutely zero idea about the sale and learned about it on the news like everyone else",
+    "line_text": "What makes this deal crazy is that Goldman and Morgan Stanley were lead banks for Qualtrics’ IPO meaning they had deep relationships with the company but had absolutely zero idea about the sale and learned about it on the news like everyone else",
     "assets": [
       {
         "type": "broll",
@@ -2737,7 +2737,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone on tech investment trends",
-        "transcript_excerpt": "technology investment landscape",
+        "transcript_excerpt": "but these days he said it's a lot easier to go public than be public and that companies should think long and hard about what strategically they'll",
         "match_reasoning": "Supporting visual: Quattrone on tech investment trends",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2753,7 +2753,7 @@
   },
   {
     "line_number": 75,
-    "line_text": "These transactions turn Qatalyst into the most feared bank in Silicon Valley as they\u2019re able to pitch to every company that they consistently get higher premiums on billion-dollar sell-side deals, capture the highest revenue multiples in tech M&A, and dominate market share on the biggest transactions by a significant margin.",
+    "line_text": "These transactions turn Qatalyst into the most feared bank in Silicon Valley as they’re able to pitch to every company that they consistently get higher premiums on billion-dollar sell-side deals, capture the highest revenue multiples in tech M&A, and dominate market share on the biggest transactions by a significant margin.",
     "assets": [
       {
         "type": "broll",
@@ -2763,7 +2763,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone at Web 2.0 Summit",
-        "transcript_excerpt": "Quattrone speaking at tech conference",
+        "transcript_excerpt": "that because now it seems almost trit it's happened a thousand times uh since then maybe not to that same extent but I",
         "match_reasoning": "Supporting visual: Quattrone at Web 2.0 Summit",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2786,10 +2786,10 @@
         "url": "https://www.youtube.com/watch?v=AeKnw4awmQY",
         "start_time": "20:00",
         "end_time": "20:07",
-        "video_title": "Negotiating Advice From the Man Behind Tech\u2019s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
+        "video_title": "Negotiating Advice From the Man Behind Tech’s BIGGEST Acquisitions (LinkedIn, Slack, Figma)",
         "channel": "The Logan Bartlett Show",
         "description": "Boutros on Qatalysts competitive advantage",
-        "transcript_excerpt": "we only do one thing and we do it better than anyone",
+        "transcript_excerpt": "that person over there look that's a really good question in fact one of my concerns when I was thinking about it technology banking Boutique exclusively",
         "match_reasoning": "Matches script line about secret sauce: Boutros on Qatalysts competitive advantage",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -2807,7 +2807,7 @@
         "video_title": "Frank Quattrone: Lessons from 650 M&amp;A Deals Worth Over $1TRN &amp; Taking Amazon and Cisco Public| E1121",
         "channel": "20VC with Harry Stebbings",
         "description": "Quattrone on focus and specialization",
-        "transcript_excerpt": "focus is the key to everything",
+        "transcript_excerpt": "being investigated for broader antitrust issues and so they reached the conclusion that the deal wasn't going to happen and you'd think oh poor into it they've just been dragged through the",
         "match_reasoning": "Matches script line about secret sauce: Quattrone on focus and specialization",
         "relevance_score": 8,
         "era_appropriate": true,
@@ -2833,7 +2833,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone discussing tech industry",
-        "transcript_excerpt": "Silicon Valley perspectives",
+        "transcript_excerpt": "Investment Bank when uh the existing crowd uh weren't exactly covering themselves in glory yeah many of them were uh coming close to bankruptcy and a",
         "match_reasoning": "Supporting visual: Quattrone discussing tech industry",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2849,7 +2849,7 @@
   },
   {
     "line_number": 78,
-    "line_text": "After speaking with 2 Qatalyst bankers, I\u2019ve learned that the firm\u2019s dominance boils down to three main reasons",
+    "line_text": "After speaking with 2 Qatalyst bankers, I’ve learned that the firm’s dominance boils down to three main reasons",
     "assets": [
       {
         "type": "broll",
@@ -2859,7 +2859,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone on business exits",
-        "transcript_excerpt": "exit strategy discussion",
+        "transcript_excerpt": "2007 there were 62 deal per year and $880 billion of proceeds were raised about 11 billion a year um in the last two years just to put that in",
         "match_reasoning": "Supporting visual: Quattrone on business exits",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2885,7 +2885,7 @@
         "video_title": "",
         "channel": "",
         "description": "Quattrone on market conditions",
-        "transcript_excerpt": "market environment analysis",
+        "transcript_excerpt": "U exit if I look back to 2009 9 in Q3 of 2009 H 11 out of the 22 disclosed deal",
         "match_reasoning": "Supporting visual: Quattrone on market conditions",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2911,7 +2911,7 @@
         "video_title": "",
         "channel": "",
         "description": "Dot-com era stock market footage",
-        "transcript_excerpt": "the dot-com boom",
+        "transcript_excerpt": "at Morgan Stanley, Henry Blahett at Meil Lynch, Kleiner Perkins, and Sequoia Capital on the VC side. This wasn't a market, it was a machine, and it was",
         "match_reasoning": "Supporting visual: Dot-com era stock market footage",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2937,7 +2937,7 @@
         "video_title": "",
         "channel": "",
         "description": "Internet company valuations soaring",
-        "transcript_excerpt": "irrational exuberance era",
+        "transcript_excerpt": "paper wealth vanished, but not evenly. Stage three, the insider escape. Frank Quatron and his team had cashed out through bonuses and stock compensation",
         "match_reasoning": "Supporting visual: Internet company valuations soaring",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2963,7 +2963,7 @@
         "video_title": "",
         "channel": "",
         "description": "Dot-com aftermath",
-        "transcript_excerpt": "the wreckage of the dot-com crash",
+        "transcript_excerpt": "(no transcript available)",
         "match_reasoning": "Supporting visual: Dot-com aftermath",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -2989,7 +2989,7 @@
         "video_title": "",
         "channel": "",
         "description": "The Big Short financial drama scene",
-        "transcript_excerpt": "dramatic financial industry scene",
+        "transcript_excerpt": "[Applause]",
         "match_reasoning": "Supporting visual: The Big Short financial drama scene",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3015,7 +3015,7 @@
         "video_title": "",
         "channel": "",
         "description": "Stock market crash footage",
-        "transcript_excerpt": "market crash moments",
+        "transcript_excerpt": "(no transcript available)",
         "match_reasoning": "Supporting visual: Stock market crash footage",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3031,7 +3031,7 @@
   },
   {
     "line_number": 85,
-    "line_text": "Every time Qatalyst closes a deal, they learn something no one else knows - how Microsoft negotiates under pressure, what Google\u2019s internal approval process looks like, or where Amazon\u2019s ceiling is",
+    "line_text": "Every time Qatalyst closes a deal, they learn something no one else knows - how Microsoft negotiates under pressure, what Google’s internal approval process looks like, or where Amazon’s ceiling is",
     "assets": [
       {
         "type": "broll",
@@ -3041,7 +3041,7 @@
         "video_title": "",
         "channel": "",
         "description": "Financial crisis market panic",
-        "transcript_excerpt": "markets in freefall",
+        "transcript_excerpt": "(no transcript available)",
         "match_reasoning": "Supporting visual: Financial crisis market panic",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3057,7 +3057,7 @@
   },
   {
     "line_number": 86,
-    "line_text": "Quattrone in particular has seen it all - from helping Apple buy Next to ringing in the dotcom era to dominating software sell-side M&A when you\u2019re a client, you know you\u2019re getting insight you can\u2019t get anywhere else",
+    "line_text": "Quattrone in particular has seen it all - from helping Apple buy Next to ringing in the dotcom era to dominating software sell-side M&A when you’re a client, you know you’re getting insight you can’t get anywhere else",
     "assets": [
       {
         "type": "broll",
@@ -3067,7 +3067,7 @@
         "video_title": "",
         "channel": "",
         "description": "Great Depression historical footage",
-        "transcript_excerpt": "historical economic crisis",
+        "transcript_excerpt": "Mine is the story of every soul who got caught up in the Great Depression of the 1930s. Just one of many, but all in it",
         "match_reasoning": "Supporting visual: Great Depression historical footage",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3083,7 +3083,7 @@
   },
   {
     "line_number": 87,
-    "line_text": "Lastly, there\u2019s  the senior attention that scales down, not up",
+    "line_text": "Lastly, there’s  the senior attention that scales down, not up",
     "assets": [
       {
         "type": "broll",
@@ -3093,7 +3093,7 @@
         "video_title": "",
         "channel": "",
         "description": "Economic recovery footage",
-        "transcript_excerpt": "rebuilding after crisis",
+        "transcript_excerpt": "Me too. I ended up on the street. All that prosperity in the 20s had meant my that prosperity in the 20s had meant my parents could pay for my studies. But",
         "match_reasoning": "Supporting visual: Economic recovery footage",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3119,7 +3119,7 @@
         "video_title": "",
         "channel": "",
         "description": "Tech industry innovation showcase",
-        "transcript_excerpt": "cutting-edge technology",
+        "transcript_excerpt": "technological shift like this, and it's happening all around you and me right now. So, in this episode, I want to try to time travel with Sam Alman into the",
         "match_reasoning": "Supporting visual: Tech industry innovation showcase",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3145,7 +3145,7 @@
         "video_title": "",
         "channel": "",
         "description": "AI and tech future discussion",
-        "transcript_excerpt": "the future of technology",
+        "transcript_excerpt": "for a bunch of jobs or you know what people are going to do.\" And you know, this is a bunch of positive impacts that you might have predicted that haven't",
         "match_reasoning": "Supporting visual: AI and tech future discussion",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3171,7 +3171,7 @@
         "video_title": "",
         "channel": "",
         "description": "Silicon Valley tech headquarters",
-        "transcript_excerpt": "the tech industry epicenter",
+        "transcript_excerpt": "imagining this looks like in future how are you imagining people use this um all of that yeah cool all right awesome so",
         "match_reasoning": "Supporting visual: Silicon Valley tech headquarters",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3187,7 +3187,7 @@
   },
   {
     "line_number": 91,
-    "line_text": "These 3 factors are what has helped Qatalyst rise to the top. In 2023, Qatalyst announced $61 billion across 9 deals and in 2024, $95 billion across 14, leading to averages of $6.8 billion per deal while for context, Goldman\u2019s value per deal hovers around $3 billion despite having a much larger team and more resources",
+    "line_text": "These 3 factors are what has helped Qatalyst rise to the top. In 2023, Qatalyst announced $61 billion across 9 deals and in 2024, $95 billion across 14, leading to averages of $6.8 billion per deal while for context, Goldman’s value per deal hovers around $3 billion despite having a much larger team and more resources",
     "assets": [
       {
         "type": "broll",
@@ -3197,7 +3197,7 @@
         "video_title": "",
         "channel": "",
         "description": "Tech company operations",
-        "transcript_excerpt": "how tech companies operate",
+        "transcript_excerpt": "projectors that um basically shoot light into the wave guides right it's a special type of display system I mean",
         "match_reasoning": "Supporting visual: Tech company operations",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3223,7 +3223,7 @@
         "video_title": "",
         "channel": "",
         "description": "Steve Ballmer energetic presentation",
-        "transcript_excerpt": "passionate corporate leadership",
+        "transcript_excerpt": "[Music]",
         "match_reasoning": "Supporting visual: Steve Ballmer energetic presentation",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3239,7 +3239,7 @@
   },
   {
     "line_number": 93,
-    "line_text": "Qatalyst proves that the biggest firm or doing the most doesn't always win. Whether you\u2019re a student or a business owner, at some point, you\u2019ll come across a fork in the road where you need to choose between chasing more opportunities and spreading your eggs across multiple baskets or sticking to what you know, honing your craft and practicing that one kick 10,000 times. If Qatalyst\u2019s story teaches you anything, it\u2019s that once you find your passion, you need to pick the latter because less is actually more.",
+    "line_text": "Qatalyst proves that the biggest firm or doing the most doesn't always win. Whether you’re a student or a business owner, at some point, you’ll come across a fork in the road where you need to choose between chasing more opportunities and spreading your eggs across multiple baskets or sticking to what you know, honing your craft and practicing that one kick 10,000 times. If Qatalyst’s story teaches you anything, it’s that once you find your passion, you need to pick the latter because less is actually more.",
     "assets": [
       {
         "type": "broll",
@@ -3249,7 +3249,7 @@
         "video_title": "",
         "channel": "",
         "description": "Corporate leadership and strategy",
-        "transcript_excerpt": "executive decision making",
+        "transcript_excerpt": "and then just started them there's something grotesque about a hundred men in suits watching two women going at it hammer and tongs and i remember",
         "match_reasoning": "Supporting visual: Corporate leadership and strategy",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3265,7 +3265,7 @@
   },
   {
     "line_number": 94,
-    "line_text": "Hope you enjoyed this deep dive into Qatalyst. I actually resonate a lot with Quattrone\u2019s story because for the past 5+ years of working on this channel, my main focus has been helping students break into investment banking and I\u2019ve helped students break into firms like Qatalyst, Goldman, and every top bank. I\u2019ve honed this craft of helping students for years now and [add plug]",
+    "line_text": "Hope you enjoyed this deep dive into Qatalyst. I actually resonate a lot with Quattrone’s story because for the past 5+ years of working on this channel, my main focus has been helping students break into investment banking and I’ve helped students break into firms like Qatalyst, Goldman, and every top bank. I’ve honed this craft of helping students for years now and [add plug]",
     "assets": [
       {
         "type": "broll",
@@ -3275,7 +3275,7 @@
         "video_title": "",
         "channel": "",
         "description": "Tech acquisition news breaking",
-        "transcript_excerpt": "major tech M&A announcement",
+        "transcript_excerpt": "has shelled out a billion or close to a billion dollars for companies only a few times that includes Zappos pill pack ring and twitch you can see the timeline",
         "match_reasoning": "Supporting visual: Tech acquisition news breaking",
         "relevance_score": 6,
         "era_appropriate": true,
@@ -3301,7 +3301,7 @@
         "video_title": "",
         "channel": "",
         "description": "Silicon Valley Bank support effort",
-        "transcript_excerpt": "banking industry solidarity",
+        "transcript_excerpt": "continue to survive and thrive uh what there are conversations being had with some banks obviously it's it's unclear",
         "match_reasoning": "Supporting visual: Silicon Valley Bank support effort",
         "relevance_score": 6,
         "era_appropriate": true,
